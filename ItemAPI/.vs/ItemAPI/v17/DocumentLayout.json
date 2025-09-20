@@ -3,36 +3,68 @@
   "WorkspaceRootPath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|g:\\repos\\its152l_project\\itemapi\\itemdatalibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|g:\\repos\\its152l_project\\itemapi\\itemdatalibrary\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BF27E74-3FD2-487D-BA8F-1528DEE515EF}|FormsUI\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\formsui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1BF27E74-3FD2-487D-BA8F-1528DEE515EF}|FormsUI\\FormsUI.csproj|solutionrelative:formsui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|g:\\repos\\its152l_project\\itemapi\\itemdatalibrary\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BF27E74-3FD2-487D-BA8F-1528DEE515EF}|FormsUI\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\formsui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BF27E74-3FD2-487D-BA8F-1528DEE515EF}|FormsUI\\FormsUI.csproj|solutionrelative:formsui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\its152l-project.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\its152l-project.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\its152l-project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\its152l-project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|g:\\repos\\its152l_project\\itemapi\\itemdatalibrary\\models\\itemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\itemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920104712_user model added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ITS152L-Project\\Migrations\\20250920104712_user model added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\migrations\\20250920100625_item model added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\migrations\\20250920100625_item model added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920104223_user model added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ITS152L-Project\\Migrations\\20250920104223_user model added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\its152l-project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\its152l-project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\migrations\\20250920101225_item data added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\migrations\\20250920101225_item data added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,111 +74,209 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Class1.cs",
-              "RelativeDocumentMoniker": "ItemDataLibrary\\Class1.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Class1.cs",
-              "RelativeToolTip": "ItemDataLibrary\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "20250920104712_user model added.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920104712_user model added.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Migrations\\20250920104712_user model added.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920104712_user model added.cs",
+              "RelativeToolTip": "ITS152L-Project\\Migrations\\20250920104712_user model added.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T16:09:57.308Z",
+              "WhenOpened": "2025-09-20T10:47:12.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250920100625_item model added.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920100625_item model added.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Migrations\\20250920100625_item model added.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920100625_item model added.cs",
+              "RelativeToolTip": "ITS152L-Project\\Migrations\\20250920100625_item model added.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:06:25.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemAPIContext.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Data\\ItemAPIContext.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Data\\ItemAPIContext.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Data\\ItemAPIContext.cs",
+              "RelativeToolTip": "ITS152L-Project\\Data\\ItemAPIContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:03:52.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\appsettings.json",
+              "RelativeDocumentMoniker": "ITS152L-Project\\appsettings.json",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\appsettings.json",
+              "RelativeToolTip": "ITS152L-Project\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-20T09:32:52.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\ItemController.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "ITS152L-Project\\Controllers\\ItemController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T08:14:20.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\FormsUI\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "FormsUI\\Form1.Designer.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\FormsUI\\Form1.Designer.cs",
-              "RelativeToolTip": "FormsUI\\Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ITS152L-Project.http",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ITS152L-Project.http",
+              "RelativeDocumentMoniker": "ITS152L-Project\\ITS152L-Project.http",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ITS152L-Project.http",
+              "RelativeToolTip": "ITS152L-Project\\ITS152L-Project.http",
+              "ViewState": "AgIAADIAAAAAsBKrXoHPv0EAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-20T08:37:54.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\UserModel.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserModel.cs",
+              "RelativeToolTip": "ItemDataLibrary\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T16:08:55.041Z",
+              "WhenOpened": "2025-09-20T08:12:31.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemModel.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\ItemModel.cs",
+              "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\ItemModel.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\ItemModel.cs",
+              "RelativeToolTip": "ItemDataLibrary\\Models\\ItemModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T08:13:07.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\FormsUI\\Form1.cs",
-              "RelativeDocumentMoniker": "FormsUI\\Form1.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\FormsUI\\Form1.cs [Design]",
-              "RelativeToolTip": "FormsUI\\Form1.cs [Design]",
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserLogin.cs",
+              "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\UserLogin.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserLogin.cs",
+              "RelativeToolTip": "ItemDataLibrary\\Models\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T16:07:45.05Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+              "WhenOpened": "2025-09-20T08:12:13.998Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ITS152L-Project",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\UserController.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ITS152L-Project\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:39:27.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Program.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Program.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Program.cs",
+              "RelativeToolTip": "ITS152L-Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:54:01.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250920104223_user model added.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920104223_user model added.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Migrations\\20250920104223_user model added.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920104223_user model added.cs",
+              "RelativeToolTip": "ITS152L-Project\\Migrations\\20250920104223_user model added.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:42:23.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ITS152L-Project\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:44:25.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Properties\\launchSettings.json",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ITS152L-Project\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-20T10:01:14.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250920101225_item data added.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920101225_item data added.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Migrations\\20250920101225_item data added.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250920101225_item data added.cs",
+              "RelativeToolTip": "ITS152L-Project\\Migrations\\20250920101225_item data added.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:12:25.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ITS152L-Project.csproj",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ITS152L-Project.csproj",
               "RelativeDocumentMoniker": "ITS152L-Project\\ITS152L-Project.csproj",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ITS152L-Project.csproj",
               "RelativeToolTip": "ITS152L-Project\\ITS152L-Project.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-18T16:05:41.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\appsettings.json",
-              "RelativeDocumentMoniker": "ITS152L-Project\\appsettings.json",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\appsettings.json",
-              "RelativeToolTip": "ITS152L-Project\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-18T15:51:03.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Program.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Program.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Program.cs",
-              "RelativeToolTip": "ITS152L-Project\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T15:50:51.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Item.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Models\\Item.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Models\\Item.cs",
-              "RelativeToolTip": "ITS152L-Project\\Models\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T15:48:31.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\ItemController.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\ItemController.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\ItemController.cs",
-              "RelativeToolTip": "ITS152L-Project\\Controllers\\ItemController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAYwH4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T15:47:43.737Z"
+              "WhenOpened": "2025-09-20T09:48:30.481Z"
             }
           ]
         }

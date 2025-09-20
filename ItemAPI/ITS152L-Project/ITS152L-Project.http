@@ -1,6 +1,68 @@
-@ITS152L_Project_HostAddress = http://localhost:5111
+@rootURL = http://localhost:5111
 
-GET {{ITS152L_Project_HostAddress}}/weatherforecast/
+GET {{rootURL}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{rootURL}}/api/item
+Accept: application/JSON
+
+###
+GET {{rootURL}}/api/item/2
+Accept: application/JSON
+
+###
+POST {{rootURL}}/api/item
+Content-Type: application/JSON 
+{
+
+    "name": "Food",
+    "code": 1006,
+    "brand": "Oishi",
+    "unitPrice": 5.12,
+    "quantity": 15
+
+}
+
+###
+PUT {{rootURL}}/api/item/5
+Content-Type: application/JSON
+{
+    "id": 5,
+    "name": "Mouse",
+    "code": 1005,
+    "brand": "Razer",
+    "unitPrice": 22.5,
+    "quantity": 25
+}
+
+###
+
+DELETE {{rootURL}}/api/item/6
+
+
+###
+
+DELETE {{rootURL}}/api/item
+
+###
+
+GET {{rootURL}}/api/user
+Accept: application/JSON
+
+###
+GET {{rootURL}}/api/user/2
+Accept: application/JSON
+
+###
+POST {{rootURL}}/api/user
+Content-Type: application/JSON 
+{
+
+    "userName": "SHSHunter",
+    "firstName": "Juoross Phillip",
+    "lastName": "Jose",
+    "password": "12345678"
+
+}
