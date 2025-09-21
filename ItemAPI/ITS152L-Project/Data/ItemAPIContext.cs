@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ItemDataLibrary.Data
+namespace ITS152L_Project.Data
 {
     public class ItemAPIContext : DbContext
     {
@@ -16,12 +16,13 @@ namespace ItemDataLibrary.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<UserLogin>().HasNoKey();
 
         }
 
         public DbSet<ItemModel> Items { get; set; }
         public DbSet<UserModel> Users { get; set; }
-      //  public DbSet<UserLogin>  UserLogin { get; set; }
+        public DbSet<UserLogin>  UserLogin { get; set; }
 
     }
 }

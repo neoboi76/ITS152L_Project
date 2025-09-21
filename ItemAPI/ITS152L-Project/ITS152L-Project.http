@@ -66,3 +66,44 @@ Content-Type: application/JSON
     "password": "12345678"
 
 }
+
+###
+POST {{rootURL}}/api/user
+Content-Type: application/JSON 
+{
+
+    "userName": "BarneyBoy",
+    "firstName": "Ken",
+    "lastName": "Aliling",
+    "password": "ManoosLover69"
+
+}
+
+###
+PUT {{rootURL}}/api/user/2
+Content-Type: application/JSON 
+{
+    "id": "2",
+    "userName": "BarneyKid",
+    "firstName": "Ken",
+    "lastName": "Aliling",
+    "password": "ManoosLover69"
+
+}
+
+
+###
+DELETE {{rootURL}}/api/user/3
+
+###
+DELETE {{rootURL}}/api/user
+
+###
+POST {{rootURL}}/api/login
+Content-Type: application/JSON 
+{
+
+    "userName": "SHSHunter",
+    "password": "12345678"
+
+}

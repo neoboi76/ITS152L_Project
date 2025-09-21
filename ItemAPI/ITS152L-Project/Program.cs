@@ -1,4 +1,4 @@
-using ItemDataLibrary.Data;
+using ITS152L_Project.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
