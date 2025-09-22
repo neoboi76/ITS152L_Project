@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ITS152L-Project\\ITS152L-Project.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "LoginForm\\FormsUI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

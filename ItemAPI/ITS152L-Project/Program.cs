@@ -1,4 +1,8 @@
 using ITS152L_Project.Data;
+using ITS152L_Project.Repositories.Implementations;
+using ITS152L_Project.Repositories.Interfaces;
+using ITS152L_Project.Services.Implementations;
+using ITS152L_Project.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,9 +14,21 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 
-builder.Services.AddDbContext<ItemAPIContext>(options =>
+builder.Services.AddDbContext<ItemApiContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlDb"))
 );
+
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddScoped<ILoginRepository, LoginRepository>();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 

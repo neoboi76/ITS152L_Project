@@ -12,9 +12,9 @@ namespace ITS152L_Project.Controllers
     public class ItemController : ControllerBase
     {
 
-        private readonly ItemAPIContext _context;
+        private readonly ItemApiContext _context;
 
-        public ItemController(ItemAPIContext context)
+        public ItemController(ItemApiContext context)
         {
             _context = context;
         }

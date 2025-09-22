@@ -3,6 +3,7 @@ using ItemDataLibrary.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ITS152L_Project.Services.Interfaces;
 
 namespace ITS152L_Project.Controllers
 {
@@ -11,24 +12,23 @@ namespace ITS152L_Project.Controllers
     public class UserController : ControllerBase
     {
 
-        private readonly ItemAPIContext _context;
+        private readonly IUserService _service;
 
-        public UserController(ItemAPIContext context)
+        public UserController(IUserService service)
         {
-            _context = context;
+            _service = service;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<UserModel>>> GetAllUsers()
         {
-            return Ok(await _context.Users.ToListAsync());
+            return Ok(await _service.GetAllAsync());
         }
-
 
         [HttpGet("{id}")]
         public async Task<ActionResult<UserModel>> GetUserById(int id)
         {
-            var user = await _context.Users.FindAsync(id);
+            var user = await _service.GetByIdAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -37,70 +37,20 @@ namespace ITS152L_Project.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<UserModel>> AddUser(UserModel newUser)
+        public async Task<ActionResult<UserModel>> AddUser([FromBody] UserModel newUser)
         {
             if (newUser == null)
             {
                 return BadRequest();
             }
 
-            _context.Users.Add(newUser);
+            await _service.AddAsync(newUser);
 
-            await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
 
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, UserModel updatedUser)
-        {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
 
-            user.Id = updatedUser.Id;
-            user.FirstName = updatedUser.FirstName;
-            user.LastName = updatedUser.LastName;
-            user.UserName = updatedUser.UserName;
-            user.Password = updatedUser.Password;
-
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
-        {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        [HttpDelete]
-        public async Task<IActionResult> DeleteAll(int id)
-        {
-            var allUsers = _context.Users.ToList();
-            if (allUsers == null)
-            {
-                return NotFound();
-            }
-
-            _context.Users.RemoveRange(allUsers);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
     }
 }

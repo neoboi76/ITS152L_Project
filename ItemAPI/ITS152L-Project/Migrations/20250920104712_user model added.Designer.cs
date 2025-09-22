@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ITS152L_Project.Migrations
 {
-    [DbContext(typeof(ItemAPIContext))]
+    [DbContext(typeof(ItemApiContext))]
     [Migration("20250920104712_user model added")]
     partial class usermodeladded
     {

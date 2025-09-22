@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemDataLibrary", "ItemData
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ItemDB", "ItemDB\ItemDB.sqlproj", "{D0837201-D43D-4CC4-843E-05E61C5207A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsUI", "LoginForm\FormsUI.csproj", "{CA12D5E7-61BE-46D3-B992-E87741169A1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{D0837201-D43D-4CC4-843E-05E61C5207A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0837201-D43D-4CC4-843E-05E61C5207A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0837201-D43D-4CC4-843E-05E61C5207A4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CA12D5E7-61BE-46D3-B992-E87741169A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA12D5E7-61BE-46D3-B992-E87741169A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA12D5E7-61BE-46D3-B992-E87741169A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA12D5E7-61BE-46D3-B992-E87741169A1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

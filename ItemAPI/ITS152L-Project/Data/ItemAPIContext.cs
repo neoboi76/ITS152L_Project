@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace ITS152L_Project.Data
 {
-    public class ItemAPIContext : DbContext
+    public class ItemApiContext : DbContext
     {
-        public ItemAPIContext(DbContextOptions<ItemAPIContext> options) : base(options) {}
+        public ItemApiContext(DbContextOptions<ItemApiContext> options) : base(options) {}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,7 +22,6 @@ namespace ITS152L_Project.Data
 
         public DbSet<ItemModel> Items { get; set; }
         public DbSet<UserModel> Users { get; set; }
-        public DbSet<UserLogin>  UserLogin { get; set; }
 
     }
 }
