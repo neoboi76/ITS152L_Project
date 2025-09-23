@@ -6,7 +6,9 @@ namespace ITS152L_Project.Repositories.Interfaces
     {
 
         Task<UserModel> GetByIdAsync(int id);
-        Task<UserLogin> LogAsync(UserLogin realUser);
+        Task<UserModel> LogAsync(UserLogin realUser);
+
+        Task<UserModel> ResAsync(UserLogin existingUser);
 
     }
 }

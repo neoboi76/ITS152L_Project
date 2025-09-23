@@ -8,7 +8,7 @@ namespace ITS152L_Project.Services.Interfaces
         Task<IEnumerable<ItemModel>> GetAllAsync();
         Task<ItemModel?> GetByIdAsync(int id);
         Task<ItemModel> AddAsync(ItemModel item);
-        Task UpdateAsync(ItemModel item);
+        Task<ItemModel> UpdateAsync(ItemModel updatedItem);
         Task DeleteAsync(int id);
 
     }

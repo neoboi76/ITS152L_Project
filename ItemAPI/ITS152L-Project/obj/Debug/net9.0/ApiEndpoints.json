@@ -1,68 +1,6 @@
 [
   {
     "ContainingType": "ITS152L_Project.Controllers.ItemController",
-    "Method": "GetAllItems",
-    "RelativePath": "api/Item",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[ItemDataLibrary.Models.ItemModel, ItemDataLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ITS152L_Project.Controllers.ItemController",
-    "Method": "AddItem",
-    "RelativePath": "api/Item",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newItem",
-        "Type": "ItemDataLibrary.Models.ItemModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ItemDataLibrary.Models.ItemModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ITS152L_Project.Controllers.ItemController",
-    "Method": "DeleteAll",
-    "RelativePath": "api/Item",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ITS152L_Project.Controllers.ItemController",
     "Method": "GetItemById",
     "RelativePath": "api/Item/{id}",
     "HttpMethod": "GET",
@@ -89,27 +27,6 @@
   },
   {
     "ContainingType": "ITS152L_Project.Controllers.ItemController",
-    "Method": "UpdateItem",
-    "RelativePath": "api/Item/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "updatedItem",
-        "Type": "ItemDataLibrary.Models.ItemModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ITS152L_Project.Controllers.ItemController",
     "Method": "DeleteItem",
     "RelativePath": "api/Item/{id}",
     "HttpMethod": "DELETE",
@@ -119,6 +36,73 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ITS152L_Project.Controllers.ItemController",
+    "Method": "AddItem",
+    "RelativePath": "api/Item/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newItem",
+        "Type": "ItemDataLibrary.Models.ItemModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ItemDataLibrary.Models.ItemModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ITS152L_Project.Controllers.ItemController",
+    "Method": "GetAllItems",
+    "RelativePath": "api/Item/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ItemDataLibrary.Models.ItemModel, ItemDataLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ITS152L_Project.Controllers.ItemController",
+    "Method": "UpdateItem",
+    "RelativePath": "api/Item/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedItem",
+        "Type": "ItemDataLibrary.Models.ItemModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -153,13 +137,39 @@
   {
     "ContainingType": "ITS152L_Project.Controllers.LoginController",
     "Method": "LogUser",
-    "RelativePath": "api/Login",
+    "RelativePath": "api/Login/log",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "realUser",
+        "Type": "ItemDataLibrary.Models.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ItemDataLibrary.Models.UserLogin",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ITS152L_Project.Controllers.LoginController",
+    "Method": "ResUserPass",
+    "RelativePath": "api/Login/reset",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "existingUser",
         "Type": "ItemDataLibrary.Models.UserLogin",
         "IsRequired": true
       }

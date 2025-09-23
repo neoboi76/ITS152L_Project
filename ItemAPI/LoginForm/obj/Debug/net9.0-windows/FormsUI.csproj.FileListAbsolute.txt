@@ -82,3 +82,4 @@ G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ITS152L-Proj
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ItemDataLibrary.pdb
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ITS152L-Project.pdb
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.csproj.Up2Date
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.InventoryForm.resources

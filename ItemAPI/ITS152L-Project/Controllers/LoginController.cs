@@ -30,10 +30,24 @@ namespace ITS152L_Project.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost("log")]
         public async Task<ActionResult<UserLogin>> LogUser([FromBody] UserLogin realUser)
         {
             var user = await _service.LogAsync(realUser);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(user);
+
+        }
+
+        [HttpPost("reset")]
+        public async Task<ActionResult<UserLogin>> ResUserPass([FromBody] UserLogin existingUser)
+        {
+            var user = await _service.ResAsync(existingUser);
 
             if (user == null)
             {

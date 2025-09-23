@@ -83,6 +83,7 @@
             txtLogPass.Name = "txtLogPass";
             txtLogPass.Size = new Size(205, 29);
             txtLogPass.TabIndex = 4;
+            txtLogPass.UseSystemPasswordChar = true;
             // 
             // btnLogSub
             // 
@@ -131,7 +132,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "LoginForm";
-            Text = "LoginForm";
+            Text = "Login";
             ResumeLayout(false);
             PerformLayout();
         }

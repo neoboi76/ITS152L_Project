@@ -2,6 +2,8 @@
 using ITS152L_Project.Repositories.Implementations;
 using ITS152L_Project.Repositories.Interfaces;
 using ITS152L_Project.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
 using static Dapper.SqlMapper;
 
 namespace ITS152L_Project.Services.Implementations
@@ -17,7 +19,12 @@ namespace ITS152L_Project.Services.Implementations
 
         public Task<ItemModel> AddAsync(ItemModel entity)
         {
-            return _repository.AddAsync(entity);
+
+            if (entity?.Id == 0 || entity?.Id == null)
+                return _repository.AddAsync(entity);
+
+            return _repository.UpdateAsync(entity);
+
         }
 
         public Task DeleteAsync(int id)
@@ -39,9 +46,18 @@ namespace ITS152L_Project.Services.Implementations
             return _repository.GetByIdAsync(id);
         }
 
-        public Task UpdateAsync(ItemModel entity)
+        public Task<ItemModel> UpdateAsync(ItemModel updatedItem)
         {
-            return _repository.UpdateAsync(entity);
+            if (updatedItem?.Id == 0 || updatedItem?.Id == null)
+            {
+                return _repository.AddAsync(updatedItem);
+            }
+
+            else
+            {
+                return _repository.UpdateAsync(updatedItem);
+            }
+
         }
     }
 }

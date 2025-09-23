@@ -7,7 +7,9 @@ namespace ITS152L_Project.Services.Interfaces
 
         Task<UserModel> GetByIdAsync(int id);
 
-        Task<UserLogin?> LogAsync(UserLogin existingUser);
+        Task<UserModel> LogAsync(UserLogin existingUser);
+
+        Task<UserModel> ResAsync(UserLogin existingUser);
 
     }
 }

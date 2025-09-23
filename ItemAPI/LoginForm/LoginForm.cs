@@ -37,6 +37,7 @@ namespace FormsUI
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+
             ResetForm resetForm = new ResetForm();
 
 
@@ -57,14 +58,26 @@ namespace FormsUI
             {
                 UserName = txtLogName.Text,
                 Password = txtLogPass.Text
+                
             };
 
-            var response = await _httpClient.PostAsJsonAsync("api/login", loginDto);
+            var response = await _httpClient.PostAsJsonAsync("api/login/log", loginDto);
 
             if (response.IsSuccessStatusCode)
             {
                 var user = await response.Content.ReadFromJsonAsync<UserModel>();
-                MessageBox.Show($"Welcome {user.UserName}!");
+                if (user != null)
+                {
+                    MessageBox.Show($"Welcome {user.UserName}!");
+                    InventoryForm inventoryForm = new InventoryForm();
+                    inventoryForm.Show();
+                    this.Hide();
+                }
+
+                else
+                {
+                    MessageBox.Show($"{txtLogName} does not exist in the database");
+                }
             }
             else
             {

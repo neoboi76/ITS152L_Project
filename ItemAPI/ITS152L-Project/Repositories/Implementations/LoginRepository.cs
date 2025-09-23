@@ -2,6 +2,7 @@
 using ITS152L_Project.Data;
 using ITS152L_Project.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using static Dapper.SqlMapper;
 
 namespace ITS152L_Project.Repositories.Implementations
 {
@@ -22,11 +23,39 @@ namespace ITS152L_Project.Repositories.Implementations
 
         }
 
-        public async Task<UserLogin> LogAsync(UserLogin realUser)
+        public async Task<UserModel> LogAsync(UserLogin realUser)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Password == realUser.Password);
+            var user = await _context.Users
+                                        .FirstOrDefaultAsync(u => u.UserName == realUser.UserName
+                                                               && u.Password == realUser.Password);
 
-            return realUser;
+            if (user == null)
+            {
+                return null;
+            }
+
+            return user; 
         }
+
+
+        public async Task<UserModel> ResAsync(UserLogin existingUser)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == existingUser.UserName);
+
+            user.Password = existingUser.Password;
+
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+
+            if (user != null)
+
+            {
+                return user;
+            }
+
+            return null;
+        }
+
+
     }
 }

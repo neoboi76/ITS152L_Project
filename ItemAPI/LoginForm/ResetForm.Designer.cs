@@ -34,38 +34,44 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            txtResUser = new TextBox();
+            lblResUser = new Label();
             SuspendLayout();
             // 
             // btnReset
             // 
             btnReset.Font = new Font("Segoe UI", 12F);
-            btnReset.Location = new Point(247, 238);
+            btnReset.Location = new Point(393, 261);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(131, 31);
             btnReset.TabIndex = 13;
             btnReset.Text = "Reset Password";
             btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click;
             // 
             // txtResConfirm
             // 
-            txtResConfirm.Location = new Point(358, 176);
+            txtResConfirm.Font = new Font("Segoe UI", 12F);
+            txtResConfirm.Location = new Point(358, 211);
             txtResConfirm.Name = "txtResConfirm";
-            txtResConfirm.Size = new Size(205, 23);
+            txtResConfirm.Size = new Size(205, 29);
             txtResConfirm.TabIndex = 12;
+            txtResConfirm.UseSystemPasswordChar = true;
             // 
             // txtResNewPass
             // 
             txtResNewPass.Font = new Font("Segoe UI", 12F);
-            txtResNewPass.Location = new Point(358, 111);
+            txtResNewPass.Location = new Point(358, 154);
             txtResNewPass.Name = "txtResNewPass";
             txtResNewPass.Size = new Size(205, 29);
             txtResNewPass.TabIndex = 11;
+            txtResNewPass.UseSystemPasswordChar = true;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F);
-            label3.Location = new Point(222, 176);
+            label3.Location = new Point(222, 219);
             label3.Name = "label3";
             label3.Size = new Size(137, 21);
             label3.TabIndex = 10;
@@ -75,7 +81,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(247, 114);
+            label2.Location = new Point(247, 157);
             label2.Name = "label2";
             label2.Size = new Size(112, 21);
             label2.TabIndex = 9;
@@ -91,11 +97,31 @@
             label1.TabIndex = 8;
             label1.Text = "Multiplex Inventory System";
             // 
+            // txtResUser
+            // 
+            txtResUser.Font = new Font("Segoe UI", 12F);
+            txtResUser.Location = new Point(358, 102);
+            txtResUser.Name = "txtResUser";
+            txtResUser.Size = new Size(205, 29);
+            txtResUser.TabIndex = 15;
+            // 
+            // lblResUser
+            // 
+            lblResUser.AutoSize = true;
+            lblResUser.Font = new Font("Segoe UI", 12F);
+            lblResUser.Location = new Point(271, 110);
+            lblResUser.Name = "lblResUser";
+            lblResUser.Size = new Size(81, 21);
+            lblResUser.TabIndex = 14;
+            lblResUser.Text = "Username";
+            // 
             // ResetForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtResUser);
+            Controls.Add(lblResUser);
             Controls.Add(btnReset);
             Controls.Add(txtResConfirm);
             Controls.Add(txtResNewPass);
@@ -103,7 +129,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "ResetForm";
-            Text = "ResetPassword";
+            Text = "Reset Password";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -116,5 +142,7 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private TextBox txtResUser;
+        private Label lblResUser;
     }
 }

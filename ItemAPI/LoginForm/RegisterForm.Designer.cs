@@ -133,6 +133,7 @@
             txtRegNewPass.Name = "txtRegNewPass";
             txtRegNewPass.Size = new Size(243, 29);
             txtRegNewPass.TabIndex = 10;
+            txtRegNewPass.UseSystemPasswordChar = true;
             // 
             // txtRegConfirm
             // 
@@ -141,6 +142,7 @@
             txtRegConfirm.Name = "txtRegConfirm";
             txtRegConfirm.Size = new Size(243, 29);
             txtRegConfirm.TabIndex = 11;
+            txtRegConfirm.UseSystemPasswordChar = true;
             // 
             // btnRegSub
             // 
@@ -171,7 +173,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "RegisterForm";
-            Text = "RegisterForm";
+            Text = "Create Account";
             ResumeLayout(false);
             PerformLayout();
         }

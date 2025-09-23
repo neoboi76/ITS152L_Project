@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ITS152L_Project.Services.Interfaces;
 
 namespace ITS152L_Project.Controllers
 {
@@ -12,24 +13,24 @@ namespace ITS152L_Project.Controllers
     public class ItemController : ControllerBase
     {
 
-        private readonly ItemApiContext _context;
+        private readonly IItemService _service;
 
-        public ItemController(ItemApiContext context)
+        public ItemController(IItemService service)
         {
-            _context = context;
+            _service = service;
         }
 
-        [HttpGet]
+        [HttpGet("getAll")]
         public async Task<ActionResult<List<ItemModel>>> GetAllItems()
         {
-            return Ok(await _context.Items.ToListAsync());
+            return Ok(await _service.GetAllAsync());
         }
 
         
         [HttpGet("{id}")]
         public async Task<ActionResult<ItemModel>> GetItemById(int id)
         {
-            var item = await _context.Items.FindAsync(id);
+            var item = await _service.GetByIdAsync(id);
             if (item == null)
             {
                 return NotFound();
@@ -37,7 +38,7 @@ namespace ITS152L_Project.Controllers
             return Ok(item);
         }
 
-        [HttpPost]
+        [HttpPost("add")]
         public async Task<ActionResult<ItemModel>> AddItem(ItemModel newItem)
         {
             if (newItem == null)
@@ -45,31 +46,20 @@ namespace ITS152L_Project.Controllers
                 return BadRequest();
             }
 
-            _context.Items.Add(newItem);
-
-            await _context.SaveChangesAsync();
+            await _service.AddAsync(newItem);
 
             return CreatedAtAction(nameof(GetItemById), new { id = newItem.Id }, newItem);
 
         }
 
-        [HttpPut("{id}")]
-        public async  Task<IActionResult> UpdateItem(int id, ItemModel updatedItem)
+        [HttpPut("update/{id}")]
+        public async  Task<IActionResult> UpdateItem(ItemModel updatedItem)
         {
-            var item = await _context.Items.FindAsync(id);
+            var item = await _service.UpdateAsync(updatedItem);
             if (item == null)
             {
                 return NotFound();
             }
-
-            item.Id = updatedItem.Id;
-            item.Name = updatedItem.Name;
-            item.Code = updatedItem.Code;
-            item.Brand = updatedItem.Brand;
-            item.UnitPrice = updatedItem.UnitPrice;
-            item.Quantity = updatedItem.Quantity;
-
-            await _context.SaveChangesAsync();
 
             return NoContent();
 
@@ -78,18 +68,12 @@ namespace ITS152L_Project.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(int id)
         {
-            var item = await _context.Items.FindAsync(id);
-            if (item == null)
-            {
-                return NotFound();
-            }
-
-            _context.Items.Remove(item);
-            await _context.SaveChangesAsync();
+            await _service.DeleteAsync(id);
 
             return NoContent();
         }
 
+        /*
         [HttpDelete]
         public async Task<IActionResult> DeleteAll(int id)
         {
@@ -103,7 +87,7 @@ namespace ITS152L_Project.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
+        }*/
 
     } 
 
