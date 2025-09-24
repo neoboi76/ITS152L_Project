@@ -60,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)itemModelBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)itemModelBindingSource1).BeginInit();
+            groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)itemErrorProvider).BeginInit();
             SuspendLayout();
@@ -195,7 +196,7 @@
             // 
             txtItemName.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Name", true));
             txtItemName.Font = new Font("Segoe UI", 12F);
-            txtItemName.Location = new Point(105, 66);
+            txtItemName.Location = new Point(92, 81);
             txtItemName.Name = "txtItemName";
             txtItemName.Size = new Size(229, 29);
             txtItemName.TabIndex = 7;
@@ -204,7 +205,7 @@
             // 
             txtItemCode.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Code", true));
             txtItemCode.Font = new Font("Segoe UI", 12F);
-            txtItemCode.Location = new Point(105, 111);
+            txtItemCode.Location = new Point(92, 128);
             txtItemCode.Name = "txtItemCode";
             txtItemCode.Size = new Size(229, 29);
             txtItemCode.TabIndex = 8;
@@ -213,7 +214,7 @@
             // 
             txtItemBrand.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Brand", true));
             txtItemBrand.Font = new Font("Segoe UI", 12F);
-            txtItemBrand.Location = new Point(105, 157);
+            txtItemBrand.Location = new Point(91, 174);
             txtItemBrand.Name = "txtItemBrand";
             txtItemBrand.Size = new Size(229, 29);
             txtItemBrand.TabIndex = 9;
@@ -222,7 +223,7 @@
             // 
             txtItemPrice.DataBindings.Add(new Binding("Text", itemModelBindingSource, "UnitPrice", true));
             txtItemPrice.Font = new Font("Segoe UI", 12F);
-            txtItemPrice.Location = new Point(105, 207);
+            txtItemPrice.Location = new Point(92, 224);
             txtItemPrice.Name = "txtItemPrice";
             txtItemPrice.Size = new Size(229, 29);
             txtItemPrice.TabIndex = 10;
@@ -231,7 +232,7 @@
             // 
             txtItemQuantity.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Quantity", true));
             txtItemQuantity.Font = new Font("Segoe UI", 12F);
-            txtItemQuantity.Location = new Point(105, 256);
+            txtItemQuantity.Location = new Point(91, 273);
             txtItemQuantity.Name = "txtItemQuantity";
             txtItemQuantity.Size = new Size(229, 29);
             txtItemQuantity.TabIndex = 11;
@@ -264,9 +265,15 @@
             btnItemUpdate.TabIndex = 14;
             btnItemUpdate.Text = "Update Item";
             btnItemUpdate.UseVisualStyleBackColor = true;
+            btnItemUpdate.Click += btnItemUpdate_Click;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(txtItemName);
+            groupBox1.Controls.Add(txtItemCode);
+            groupBox1.Controls.Add(txtItemBrand);
+            groupBox1.Controls.Add(txtItemPrice);
+            groupBox1.Controls.Add(txtItemQuantity);
             groupBox1.Location = new Point(13, -20);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(337, 336);
@@ -282,6 +289,7 @@
             btnItemCancel.TabIndex = 16;
             btnItemCancel.Text = "Cancel";
             btnItemCancel.UseVisualStyleBackColor = true;
+            btnItemCancel.Click += btnItemCancel_Click;
             // 
             // errorProvider1
             // 
@@ -311,11 +319,6 @@
             Controls.Add(btnItemUpdate);
             Controls.Add(btnItemDelete);
             Controls.Add(btnItemNew);
-            Controls.Add(txtItemQuantity);
-            Controls.Add(txtItemPrice);
-            Controls.Add(txtItemBrand);
-            Controls.Add(txtItemCode);
-            Controls.Add(txtItemName);
             Controls.Add(lblItemQuantity);
             Controls.Add(lblItemPrice);
             Controls.Add(lblItemBrand);
@@ -330,6 +333,8 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)itemModelBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)itemModelBindingSource1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ((System.ComponentModel.ISupportInitialize)itemErrorProvider).EndInit();
             ResumeLayout(false);

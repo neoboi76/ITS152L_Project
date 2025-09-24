@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FormsUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fa755434a742b333aa4c9f67b0a57fdc72d2b43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+902f11e62d6606f1c2da5080dab9314638e583b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("FormsUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FormsUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

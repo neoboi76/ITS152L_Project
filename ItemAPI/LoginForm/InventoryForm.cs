@@ -61,33 +61,22 @@ namespace FormsUI
 
             if (!double.TryParse(txtItemPrice.Text, out price))
             {
-                MessageBox.Show("Invalid price! Please enter a valid number.");
+                MessageBox.Show("Invalid price! Please enter a valid number.", "Process Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
 
             if (!int.TryParse(txtItemCode.Text, out code))
             {
-                MessageBox.Show("Invalid code! Please enter a valid integer.");
+                MessageBox.Show("Invalid code! Please enter a valid integer.", "Process Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!int.TryParse(txtItemQuantity.Text, out quantity))
             {
-                MessageBox.Show("Invalid quantity! Please enter a valid integer.");
+                MessageBox.Show("Invalid quantity! Please enter a valid integer.", "Process Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            /*
-            var itemDto = new ItemModel
-            {
-                Name = txtItemName.Text,
-                Brand = txtItemBrand.Text,
-                Code = code,
-                UnitPrice = price,
-                Quantity = quantity
-
-            };*/
 
             entity.Name = txtItemName.Text;
             entity.Brand = txtItemBrand.Text;
@@ -101,10 +90,11 @@ namespace FormsUI
             if (response.IsSuccessStatusCode)
             {
                 var item = await response.Content.ReadFromJsonAsync<ItemModel>();
-                if (entity != null)
+                if (item != null)
                 {
-                    MessageBox.Show($"item {item.Code} registered!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Item {item.Code} registered!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ReadOnlyFields(true);
+                    itemModelBindingSource.DataSource = await _httpClient.GetFromJsonAsync<List<ItemModel>>("api/item/getAll");
 
                 }
             }
@@ -143,7 +133,17 @@ namespace FormsUI
                 itemModelBindingSource.RemoveCurrent();
 
             }
-            
+
+        }
+
+        private void btnItemUpdate_Click(object sender, EventArgs e)
+        {
+            ReadOnlyFields(false);
+        }
+
+        private void btnItemCancel_Click(object sender, EventArgs e)
+        {
+            ReadOnlyFields(true);
         }
     }
 }

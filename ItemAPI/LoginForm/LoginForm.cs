@@ -50,7 +50,9 @@ namespace FormsUI
             if (string.IsNullOrWhiteSpace(txtLogName.Text) ||
                string.IsNullOrWhiteSpace(txtLogPass.Text))
             {
-                MessageBox.Show("Username and Password are required.");
+                MessageBox.Show("Username and Password are required." , "Login Failed",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
                 return;
             }
 
@@ -68,7 +70,9 @@ namespace FormsUI
                 var user = await response.Content.ReadFromJsonAsync<UserModel>();
                 if (user != null)
                 {
-                    MessageBox.Show($"Welcome {user.UserName}!");
+                    MessageBox.Show($"Welcome {user.UserName}!", "Login Successful",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
                     InventoryForm inventoryForm = new InventoryForm();
                     inventoryForm.Show();
                     this.Hide();
@@ -76,12 +80,17 @@ namespace FormsUI
 
                 else
                 {
-                    MessageBox.Show($"{txtLogName} does not exist in the database");
+                    MessageBox.Show($"{txtLogName} does not exist in the database", "Login Failed",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Invalid login.");
+                MessageBox.Show("Invalid username or password!",
+                "Login Failed",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
             }
         }
     }

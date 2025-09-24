@@ -42,14 +42,15 @@ namespace ITS152L_Project.Repositories.Implementations
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == existingUser.UserName);
 
-            user.Password = existingUser.Password;
-
-            _context.Users.Update(user);
-            await _context.SaveChangesAsync();
 
             if (user != null)
 
             {
+                user.Password = existingUser.Password;
+
+                _context.Users.Update(user);
+                await _context.SaveChangesAsync();
+
                 return user;
             }
 

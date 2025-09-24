@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ITS152L_Project.Migrations
 {
     [DbContext(typeof(ItemApiContext))]
-    [Migration("20250920101225_item data added")]
-    partial class itemdataadded
+    [Migration("20250924134947_models added")]
+    partial class modelsadded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,53 +52,48 @@ namespace ITS152L_Project.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Items");
+                });
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Brand = "Penguin",
-                            Code = 1001,
-                            Name = "Book",
-                            Quantity = 10,
-                            UnitPrice = 10.5
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Brand = "Safegaurd",
-                            Code = 1002,
-                            Name = "Soap",
-                            Quantity = 10,
-                            UnitPrice = 12.5
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Brand = "Clear",
-                            Code = 1003,
-                            Name = "Shampoo",
-                            Quantity = 10,
-                            UnitPrice = 8.5
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Brand = "Durex",
-                            Code = 1004,
-                            Name = "Condom",
-                            Quantity = 10,
-                            UnitPrice = 6.5
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Brand = "Logitech",
-                            Code = 1005,
-                            Name = "Mouse",
-                            Quantity = 10,
-                            UnitPrice = 20.5
-                        });
+            modelBuilder.Entity("ItemDataLibrary.Models.UserLogin", b =>
+                {
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("UserLogin");
+                });
+
+            modelBuilder.Entity("ItemDataLibrary.Models.UserModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

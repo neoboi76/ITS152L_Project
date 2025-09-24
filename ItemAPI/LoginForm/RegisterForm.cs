@@ -35,13 +35,15 @@ namespace FormsUI
                 string.IsNullOrWhiteSpace(txtRegNewPass.Text) ||
                 string.IsNullOrWhiteSpace(txtRegConfirm.Text))
             {
-                MessageBox.Show("All fields are required.");
+                MessageBox.Show("All fields are required.", "Registration failed", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
                 return;
             }
 
             if (txtRegNewPass.Text != txtRegConfirm.Text)
             {
-                MessageBox.Show("Passwords do not match.");
+                MessageBox.Show("Passwords do not match.", "Registration failed", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
                 return;
             }
 
@@ -58,7 +60,9 @@ namespace FormsUI
             if (response.IsSuccessStatusCode)
             {
                 var user = await response.Content.ReadFromJsonAsync<UserModel>();
-                MessageBox.Show($"Account created for {user.UserName}!");
+                MessageBox.Show($"Account created for {user.UserName}!", "Registration Successful",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
 
                 // optionally close register form & show login form
                 this.Close();
@@ -66,8 +70,10 @@ namespace FormsUI
             else
             {
                 var error = await response.Content.ReadAsStringAsync();
-                MessageBox.Show($"Registration failed: {error}");
+                MessageBox.Show($"Registration failed: {error}", "Registration failed", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
             }
         }
+
     }
 }

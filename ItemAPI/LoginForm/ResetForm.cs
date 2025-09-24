@@ -34,13 +34,17 @@ namespace FormsUI
             if (string.IsNullOrWhiteSpace(txtResUser.Text) ||
                string.IsNullOrWhiteSpace(txtResNewPass.Text) || string.IsNullOrWhiteSpace(txtResConfirm.Text))
             {
-                MessageBox.Show("Username and Passwords are required.");
+                MessageBox.Show("Username and Passwords are required.", "Reset Failed",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
                 return;
             }
 
             if (txtResNewPass.Text != txtResConfirm.Text)
             {
-                MessageBox.Show("Passwords do not match.");
+                MessageBox.Show("Passwords do not match.", "Reset Failed",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
                 return;
             }
 
@@ -56,12 +60,16 @@ namespace FormsUI
             if (response.IsSuccessStatusCode)
             {
                 var user = await response.Content.ReadFromJsonAsync<UserModel>();
-                MessageBox.Show("Your password has been reset");
+                MessageBox.Show("Your password has been reset", "Reset Successful",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
                 this.Close();
             }
             else
             {
-                MessageBox.Show($"{txtResUser} does not exist in the database");
+                MessageBox.Show($"{txtResUser.Text} does not exist in the database", "Reset Failed",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
             }
         }
     }

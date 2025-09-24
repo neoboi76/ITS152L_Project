@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ITS152L_Project.Migrations
 {
     [DbContext(typeof(ItemApiContext))]
-    partial class ItemAPIContextModelSnapshot : ModelSnapshot
+    partial class ItemApiContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -49,6 +49,19 @@ namespace ITS152L_Project.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("ItemDataLibrary.Models.UserLogin", b =>
+                {
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("UserLogin");
                 });
 
             modelBuilder.Entity("ItemDataLibrary.Models.UserModel", b =>
