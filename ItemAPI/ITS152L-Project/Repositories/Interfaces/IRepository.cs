@@ -1,5 +1,14 @@
 ﻿using ItemDataLibrary.Models;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+
+//Generic interface that is inherited by the User and Item interfaces (not including Log in interface)
+
 namespace ITS152L_Project.Repositories.Interfaces
 {
     public interface IRepository<T> where T : class

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS152L-Project", "ITS152L-Project\ITS152L-Project.csproj", "{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemApi", "ITS152L-Project\ItemApi.csproj", "{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemDataLibrary", "ItemDataLibrary\ItemDataLibrary.csproj", "{1669E208-1522-4CC8-8332-103608656F20}"
 EndProject

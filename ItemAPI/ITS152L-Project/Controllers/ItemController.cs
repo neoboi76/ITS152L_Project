@@ -6,13 +6,21 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ITS152L_Project.Services.Interfaces;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//Item REST controller
+
 namespace ITS152L_Project.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ItemController : ControllerBase
     {
-
+        //Depdendency Injection
         private readonly IItemService _service;
 
         public ItemController(IItemService service)
@@ -20,13 +28,14 @@ namespace ITS152L_Project.Controllers
             _service = service;
         }
 
+        //Returns all items in the database via GET request
         [HttpGet("getAll")]
         public async Task<ActionResult<List<ItemModel>>> GetAllItems()
         {
             return Ok(await _service.GetAllAsync());
         }
 
-        
+        //Returns a specific item from the database via a GET request
         [HttpGet("{id}")]
         public async Task<ActionResult<ItemModel>> GetItemById(int id)
         {
@@ -38,6 +47,8 @@ namespace ITS152L_Project.Controllers
             return Ok(item);
         }
 
+
+        //Adds an item to the database via a POST request
         [HttpPost("add")]
         public async Task<ActionResult<ItemModel>> AddItem(ItemModel newItem)
         {
@@ -52,6 +63,8 @@ namespace ITS152L_Project.Controllers
 
         }
 
+
+        //Modifies an item in the database via a PUT request
         [HttpPut("update/{id}")]
         public async  Task<IActionResult> UpdateItem(ItemModel updatedItem)
         {
@@ -65,6 +78,7 @@ namespace ITS152L_Project.Controllers
 
         }
 
+        //Deletes an item from the database via a DELETE request
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(int id)
         {

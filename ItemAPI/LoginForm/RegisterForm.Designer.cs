@@ -1,4 +1,10 @@
-﻿namespace FormsUI
+﻿/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+namespace FormsUI
 {
     partial class RegisterForm
     {

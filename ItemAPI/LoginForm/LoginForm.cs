@@ -11,11 +11,20 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using ItemDataLibrary.Models;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//Log in form UI
+
 namespace FormsUI
 {
     public partial class LoginForm : Form
     {
 
+        //Facilitates http requests from front-ebd to back-end
         private readonly HttpClient _httpClient = new HttpClient
         {
             BaseAddress = new Uri("https://localhost:7173/")
@@ -44,6 +53,7 @@ namespace FormsUI
             resetForm.ShowDialog();
         }
 
+        //Facilitates log in mechanism
         private async void btnLogSub_ClickAsync(object sender, EventArgs e)
         {
 

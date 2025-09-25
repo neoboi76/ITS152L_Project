@@ -14,11 +14,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Dapper.SqlMapper;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//Inventory form UI
+
 namespace FormsUI
 {
     public partial class InventoryForm : Form
     {
-
+        //Facilitates http requests from front-end to back-end
         private readonly HttpClient _httpClient = new HttpClient
         {
             BaseAddress = new Uri("https://localhost:7173/")
@@ -29,6 +37,7 @@ namespace FormsUI
             InitializeComponent();
         }
 
+        //Creates new item
         private void btnItemNew_Click(object sender, EventArgs e)
         {
             itemModelBindingSource.AddNew();
@@ -49,9 +58,21 @@ namespace FormsUI
             btnItemSave.Enabled = !readOnly;
         }
 
+        //Saves new item in the database
         private async void btnItemSave_Click(object sender, EventArgs e)
         {
             ValidateFields();
+
+            if (string.IsNullOrWhiteSpace(txtItemName.Text) ||
+              string.IsNullOrWhiteSpace(txtItemBrand.Text) ||
+              string.IsNullOrWhiteSpace(txtItemCode.Text) ||
+              string.IsNullOrWhiteSpace(txtItemPrice.Text) ||
+              string.IsNullOrWhiteSpace(txtItemQuantity.Text))
+            {
+                MessageBox.Show("All fields are required.", "Process failed", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+                return;
+            }
 
             var entity = itemModelBindingSource.Current as ItemModel;
 
@@ -120,6 +141,7 @@ namespace FormsUI
             itemModelBindingSource.DataSource = await _httpClient.GetFromJsonAsync<List<ItemModel>>("api/item/getAll");
         }
 
+        //Deletes an item from the database
         private async void btnItemDelete_Click(object sender, EventArgs e)
         {
             var entity = itemModelBindingSource.Current as ItemModel;
@@ -136,14 +158,18 @@ namespace FormsUI
 
         }
 
+        //Updates item in the database
         private void btnItemUpdate_Click(object sender, EventArgs e)
         {
             ReadOnlyFields(false);
         }
 
+        //Cancels update operations
         private void btnItemCancel_Click(object sender, EventArgs e)
         {
             ReadOnlyFields(true);
+            itemModelBindingSource.RemoveCurrent();
         }
+
     }
 }

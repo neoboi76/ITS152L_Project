@@ -1,7 +1,15 @@
-﻿namespace FormsUI
+﻿/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+
+namespace FormsUI
 {
     partial class InventoryForm
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -57,6 +65,7 @@
             errorProvider1 = new ErrorProvider(components);
             btnItemSave = new Button();
             itemErrorProvider = new ErrorProvider(components);
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)itemModelBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)itemModelBindingSource1).BeginInit();
@@ -309,11 +318,22 @@
             // 
             itemErrorProvider.ContainerControl = this;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 301);
+            label2.Name = "label2";
+            label2.Size = new Size(379, 15);
+            label2.TabIndex = 18;
+            label2.Text = "*For Unit Price, Quantity, and Item Code, \nplease enter valid numbers.";
+            label2.Font = new Font("Segoe UI", 12, FontStyle.Italic);
+            // 
             // InventoryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(895, 450);
+            Controls.Add(label2);
             Controls.Add(btnItemSave);
             Controls.Add(btnItemCancel);
             Controls.Add(btnItemUpdate);
@@ -371,5 +391,6 @@
         private ErrorProvider errorProvider1;
         private Button btnItemSave;
         private ErrorProvider itemErrorProvider;
+        private Label label2;
     }
 }

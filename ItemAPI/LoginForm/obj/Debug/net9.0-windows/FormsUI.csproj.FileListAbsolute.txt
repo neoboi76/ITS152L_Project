@@ -18,12 +18,6 @@ G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.genr
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\ref\FormsUI.dll
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.ResetForm.resources
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.csproj.AssemblyReference.cache
-G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ITS152L-Project.deps.json
-G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ITS152L-Project.runtimeconfig.json
-G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\appsettings.Development.json
-G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\appsettings.json
-G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ITS152L-Project.staticwebassets.endpoints.json
-G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ITS152L-Project.exe
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Azure.Core.dll
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Azure.Identity.dll
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Dapper.dll
@@ -78,8 +72,6 @@ G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\uni
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ItemDataLibrary.dll
-G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ITS152L-Project.dll
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ItemDataLibrary.pdb
-G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ITS152L-Project.pdb
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.csproj.Up2Date
 G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.InventoryForm.resources

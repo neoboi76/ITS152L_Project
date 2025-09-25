@@ -3,148 +3,156 @@
   "WorkspaceRootPath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\inventoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\inventoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\resetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\resetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\resetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\resetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\implementations\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\repositories\\implementations\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\resetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\resetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\implementations\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\services\\implementations\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|G:\\Repos\\ITS152L_Project\\ItemAPI\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|G:\\Repos\\ITS152L_Project\\ItemAPI\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|G:\\Repos\\ITS152L_Project\\ItemAPI\\loginform\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\inventoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\inventoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\implementations\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\services\\implementations\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\implementations\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\services\\implementations\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\interfaces\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\services\\interfaces\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\implementations\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\repositories\\implementations\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\repositories\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\implementations\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\repositories\\implementations\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\implementations\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\services\\implementations\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\services\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\interfaces\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\repositories\\interfaces\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\implementations\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\repositories\\implementations\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\services\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\implementations\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\repositories\\implementations\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\interfaces\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\services\\interfaces\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\implementations\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\repositories\\implementations\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\repositories\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\interfaces\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\repositories\\interfaces\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|g:\\repos\\its152l_project\\itemapi\\itemdatalibrary\\models\\itemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\itemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\its152l-project.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\its152l-project.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|g:\\repos\\its152l_project\\itemapi\\itemdatalibrary\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|g:\\repos\\its152l_project\\itemapi\\itemdatalibrary\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|G:\\Repos\\ITS152L_Project\\ItemAPI\\loginform\\resetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\resetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|g:\\repos\\its152l_project\\itemapi\\itemdatalibrary\\models\\itemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\itemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\migrations\\20250924134947_models added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ITS152L-Project.csproj|solutionrelative:its152l-project\\migrations\\20250924134947_models added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\its152l-project.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\its152l-project.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|g:\\repos\\its152l_project\\itemapi\\its152l-project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4727D0F-88B1-4B90-AD11-F68573E9FDE1}|ITS152L-Project\\ItemApi.csproj|solutionrelative:its152l-project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\resetform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\resetform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|g:\\repos\\its152l_project\\itemapi\\loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA12D5E7-61BE-46D3-B992-E87741169A1C}|LoginForm\\FormsUI.csproj|solutionrelative:loginform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -154,129 +162,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\LoginService.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Implementations\\LoginService.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\LoginService.cs",
-              "RelativeToolTip": "ITS152L-Project\\Services\\Implementations\\LoginService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T03:45:32.774Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterForm.Designer.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\RegisterForm.Designer.cs",
-              "RelativeDocumentMoniker": "LoginForm\\RegisterForm.Designer.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\RegisterForm.Designer.cs",
-              "RelativeToolTip": "LoginForm\\RegisterForm.Designer.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAAAK8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T04:03:41.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InventoryForm.cs [Design]",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.cs",
-              "RelativeDocumentMoniker": "LoginForm\\InventoryForm.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.cs [Design]",
-              "RelativeToolTip": "LoginForm\\InventoryForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T11:14:14.879Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm\\LoginForm.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\LoginForm.cs [Design]",
               "RelativeToolTip": "LoginForm\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T12:25:50.504Z"
+              "WhenOpened": "2025-09-25T16:10:00.808Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InventoryForm.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.cs",
-              "RelativeDocumentMoniker": "LoginForm\\InventoryForm.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.cs",
-              "RelativeToolTip": "LoginForm\\InventoryForm.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAAAGUAAAANAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Program.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Program.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Program.cs",
+              "RelativeToolTip": "ITS152L-Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T12:32:54.495Z",
+              "WhenOpened": "2025-09-25T15:00:34.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginRepository.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\LoginRepository.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Implementations\\LoginRepository.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\LoginRepository.cs",
-              "RelativeToolTip": "ITS152L-Project\\Repositories\\Implementations\\LoginRepository.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAowDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T03:45:27.233Z"
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\appsettings.json",
+              "RelativeDocumentMoniker": "ITS152L-Project\\appsettings.json",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\appsettings.json",
+              "RelativeToolTip": "ITS152L-Project\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-25T15:00:30.583Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ResetForm.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.cs",
-              "RelativeDocumentMoniker": "LoginForm\\ResetForm.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.cs",
-              "RelativeToolTip": "LoginForm\\ResetForm.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAEAAAAAqAAAAAAAAAA==",
+              "Title": "InventoryForm.cs [Design]",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.cs",
+              "RelativeDocumentMoniker": "LoginForm\\InventoryForm.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.cs [Design]*",
+              "RelativeToolTip": "LoginForm\\InventoryForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T03:52:34.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T15:35:39.877Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\LoginController.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "ITS152L-Project\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAACcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T03:51:34.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm\\LoginForm.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\LoginForm.cs",
               "RelativeToolTip": "LoginForm\\LoginForm.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAADsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEsAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T03:52:25.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\Program.cs",
-              "RelativeDocumentMoniker": "LoginForm\\Program.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\Program.cs",
-              "RelativeToolTip": "LoginForm\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:09:37.141Z"
+              "WhenOpened": "2025-09-25T14:57:51.222Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -286,249 +235,320 @@
               "RelativeDocumentMoniker": "LoginForm\\RegisterForm.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\RegisterForm.cs",
               "RelativeToolTip": "LoginForm\\RegisterForm.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T12:51:17.047Z",
+              "WhenOpened": "2025-09-25T14:58:09.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "ResetForm.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.cs",
+              "RelativeDocumentMoniker": "LoginForm\\ResetForm.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.cs",
+              "RelativeToolTip": "LoginForm\\ResetForm.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:58:45.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InventoryForm.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.cs",
+              "RelativeDocumentMoniker": "LoginForm\\InventoryForm.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.cs*",
+              "RelativeToolTip": "LoginForm\\InventoryForm.cs*",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAgwKwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:54:17.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResetForm.cs [Design]",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.cs",
+              "RelativeDocumentMoniker": "LoginForm\\ResetForm.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.cs [Design]",
+              "RelativeToolTip": "LoginForm\\ResetForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T16:10:07.847Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InventoryForm.Designer.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.Designer.cs",
+              "RelativeDocumentMoniker": "LoginForm\\InventoryForm.Designer.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.Designer.cs",
+              "RelativeToolTip": "LoginForm\\InventoryForm.Designer.cs",
+              "ViewState": "AgIAADQBAAAAAAAAAAAAAEoBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:57:09.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\RegisterForm.cs",
               "RelativeDocumentMoniker": "LoginForm\\RegisterForm.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\RegisterForm.cs [Design]",
               "RelativeToolTip": "LoginForm\\RegisterForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T03:59:07.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "InventoryForm.Designer.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.Designer.cs",
-              "RelativeDocumentMoniker": "LoginForm\\InventoryForm.Designer.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\InventoryForm.Designer.cs",
-              "RelativeToolTip": "LoginForm\\InventoryForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T12:33:02.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Program.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Program.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Program.cs",
-              "RelativeToolTip": "ITS152L-Project\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:09:41.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Implementations\\UserService.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\UserService.cs",
-              "RelativeToolTip": "ITS152L-Project\\Services\\Implementations\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T16:26:27.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ILoginRepository.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\ILoginRepository.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Interfaces\\ILoginRepository.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\ILoginRepository.cs",
-              "RelativeToolTip": "ITS152L-Project\\Repositories\\Interfaces\\ILoginRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T04:04:40.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Interfaces\\IUserService.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "ITS152L-Project\\Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:33:41.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ILoginService.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\ILoginService.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Interfaces\\ILoginService.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\ILoginService.cs",
-              "RelativeToolTip": "ITS152L-Project\\Services\\Interfaces\\ILoginService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T04:00:18.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Implementations\\GenericRepository.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\GenericRepository.cs",
-              "RelativeToolTip": "ITS152L-Project\\Repositories\\Implementations\\GenericRepository.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:22:44.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ItemApiContext.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Data\\ItemApiContext.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Data\\ItemApiContext.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Data\\ItemApiContext.cs",
-              "RelativeToolTip": "ITS152L-Project\\Data\\ItemApiContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T13:41:54.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "20250924134947_models added.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250924134947_models added.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Migrations\\20250924134947_models added.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Migrations\\20250924134947_models added.cs",
-              "RelativeToolTip": "ITS152L-Project\\Migrations\\20250924134947_models added.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T13:49:47.433Z"
+              "WhenOpened": "2025-09-25T16:10:04.062Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\appsettings.json",
-              "RelativeDocumentMoniker": "ITS152L-Project\\appsettings.json",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\appsettings.json",
-              "RelativeToolTip": "ITS152L-Project\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-24T13:41:35.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\UserController.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ITS152L-Project\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T03:57:34.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "ItemService.cs",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\ItemService.cs",
               "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Implementations\\ItemService.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\ItemService.cs",
               "RelativeToolTip": "ITS152L-Project\\Services\\Implementations\\ItemService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:18:07.718Z"
+              "WhenOpened": "2025-09-25T15:00:04.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\ItemController.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\ItemController.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\ItemController.cs",
-              "RelativeToolTip": "ITS152L-Project\\Controllers\\ItemController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:17:44.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ItemRepository.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\ItemRepository.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Implementations\\ItemRepository.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\ItemRepository.cs",
-              "RelativeToolTip": "ITS152L-Project\\Repositories\\Implementations\\ItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:26:28.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
               "Title": "IItemService.cs",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\IItemService.cs",
               "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Interfaces\\IItemService.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\IItemService.cs",
               "RelativeToolTip": "ITS152L-Project\\Services\\Interfaces\\IItemService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T16:23:36.066Z"
+              "WhenOpened": "2025-09-25T15:00:15.247Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 17,
               "Title": "IItemRepository.cs",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\IItemRepository.cs",
               "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Interfaces\\IItemRepository.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\IItemRepository.cs",
               "RelativeToolTip": "ITS152L-Project\\Repositories\\Interfaces\\IItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:27:54.494Z"
+              "WhenOpened": "2025-09-25T14:59:36.871Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 18,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "ITS152L-Project\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:00:19.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\ILoginService.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Interfaces\\ILoginService.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Interfaces\\ILoginService.cs",
+              "RelativeToolTip": "ITS152L-Project\\Services\\Interfaces\\ILoginService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:00:19.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\LoginService.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Implementations\\LoginService.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\LoginService.cs",
+              "RelativeToolTip": "ITS152L-Project\\Services\\Implementations\\LoginService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAADAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:00:07.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\ItemController.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "ITS152L-Project\\Controllers\\ItemController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAFcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:10.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\LoginController.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ITS152L-Project\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAADkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:13.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Controllers\\UserController.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ITS152L-Project\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:16.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Implementations\\LoginRepository.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\LoginRepository.cs",
+              "RelativeToolTip": "ITS152L-Project\\Repositories\\Implementations\\LoginRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:31.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Implementations\\GenericRepository.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\GenericRepository.cs",
+              "RelativeToolTip": "ITS152L-Project\\Repositories\\Implementations\\GenericRepository.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:25.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ItemApiContext.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Data\\ItemApiContext.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Data\\ItemApiContext.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Data\\ItemApiContext.cs",
+              "RelativeToolTip": "ITS152L-Project\\Data\\ItemApiContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:19.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\UserRepository.cs",
               "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Implementations\\UserRepository.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\UserRepository.cs",
               "RelativeToolTip": "ITS152L-Project\\Repositories\\Implementations\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:27:23.638Z"
+              "WhenOpened": "2025-09-25T14:59:34.373Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 24,
+              "Title": "ItemRepository.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\ItemRepository.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Implementations\\ItemRepository.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Implementations\\ItemRepository.cs",
+              "RelativeToolTip": "ITS152L-Project\\Repositories\\Implementations\\ItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:28.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\ILoginRepository.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Interfaces\\ILoginRepository.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\ILoginRepository.cs",
+              "RelativeToolTip": "ITS152L-Project\\Repositories\\Interfaces\\ILoginRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:42.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "IRepository.cs",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Interfaces\\IRepository.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "ITS152L-Project\\Repositories\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:27:51.143Z"
+              "WhenOpened": "2025-09-25T14:59:41.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "ITS152L-Project\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:59:56.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserLogin.cs",
+              "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\UserLogin.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserLogin.cs",
+              "RelativeToolTip": "ItemDataLibrary\\Models\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:01:29.75Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "LoginForm\\LoginForm.Designer.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\LoginForm.Designer.cs",
-              "RelativeToolTip": "LoginForm\\LoginForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\UserModel.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserModel.cs",
+              "RelativeToolTip": "ItemDataLibrary\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T04:03:39.414Z"
+              "WhenOpened": "2025-09-25T15:01:32.855Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -538,56 +558,101 @@
               "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\ItemModel.cs",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\ItemModel.cs",
               "RelativeToolTip": "ItemDataLibrary\\Models\\ItemModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:03:04.742Z"
+              "WhenOpened": "2025-09-25T15:01:25.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\Program.cs",
+              "RelativeDocumentMoniker": "LoginForm\\Program.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\Program.cs",
+              "RelativeToolTip": "LoginForm\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:58:04.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "ITS152L-Project\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:00:10.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "ITS152L-Project.http",
               "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ITS152L-Project.http",
               "RelativeDocumentMoniker": "ITS152L-Project\\ITS152L-Project.http",
               "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ITS152L-Project.http",
               "RelativeToolTip": "ITS152L-Project\\ITS152L-Project.http",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-09-23T14:48:22.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "ITS152L-Project\\Repositories\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Repositories\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "ITS152L-Project\\Repositories\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:27:46.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\UserModel.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\Models\\UserModel.cs",
-              "RelativeToolTip": "ItemDataLibrary\\Models\\UserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:09:51.694Z"
+              "WhenOpened": "2025-09-25T15:00:35.818Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "ResetForm.cs [Design]",
-              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.cs",
-              "RelativeDocumentMoniker": "LoginForm\\ResetForm.cs",
-              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.cs [Design]",
-              "RelativeToolTip": "LoginForm\\ResetForm.cs [Design]",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ITS152L-Project\\Properties\\launchSettings.json",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ITS152L-Project\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-25T14:59:06.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ResetForm.Designer.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.Designer.cs",
+              "RelativeDocumentMoniker": "LoginForm\\ResetForm.Designer.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\ResetForm.Designer.cs",
+              "RelativeToolTip": "LoginForm\\ResetForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T12:26:06.359Z"
+              "WhenOpened": "2025-09-25T14:58:54.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RegisterForm.Designer.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\RegisterForm.Designer.cs",
+              "RelativeDocumentMoniker": "LoginForm\\RegisterForm.Designer.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\RegisterForm.Designer.cs",
+              "RelativeToolTip": "LoginForm\\RegisterForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:58:36.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "LoginForm\\LoginForm.Designer.cs",
+              "ToolTip": "G:\\Repos\\ITS152L_Project\\ItemAPI\\LoginForm\\LoginForm.Designer.cs",
+              "RelativeToolTip": "LoginForm\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:57:58.909Z",
+              "EditorCaption": ""
             }
           ]
         }

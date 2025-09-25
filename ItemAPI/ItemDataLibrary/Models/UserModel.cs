@@ -1,8 +1,16 @@
-﻿using System;
+﻿/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+//User Model entity (has a table in the database for users)
 
 namespace ItemDataLibrary.Models
 {

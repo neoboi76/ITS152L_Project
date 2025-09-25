@@ -1,5 +1,13 @@
 ﻿using ItemDataLibrary.Models;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//Log in Repository Interface
+
 namespace ITS152L_Project.Repositories.Interfaces
 {
     public interface ILoginRepository

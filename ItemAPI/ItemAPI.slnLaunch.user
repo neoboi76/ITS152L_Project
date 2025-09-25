@@ -3,7 +3,7 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "ITS152L-Project\\ITS152L-Project.csproj",
+        "Path": "ITS152L-Project\\ItemApi.csproj",
         "Action": "Start"
       },
       {

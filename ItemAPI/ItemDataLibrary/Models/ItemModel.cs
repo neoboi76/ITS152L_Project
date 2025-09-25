@@ -1,4 +1,13 @@
-﻿namespace ItemDataLibrary.Models
+﻿
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//Item Model entity (has a table in the database for items)
+
+namespace ItemDataLibrary.Models
 {
     public class ItemModel
     {

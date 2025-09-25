@@ -10,13 +10,21 @@ using System.Windows.Forms;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Windows.Forms;
-using ItemDataLibrary.Models; 
+using ItemDataLibrary.Models;
+
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//Register form UI
 
 namespace FormsUI
 {
     public partial class RegisterForm : Form
     {
-
+        //Facilitates http requests from front-ebd to back-end
         private readonly HttpClient _httpClient = new HttpClient
         {
             BaseAddress = new Uri("https://localhost:7173/")
@@ -26,6 +34,7 @@ namespace FormsUI
             InitializeComponent();
         }
 
+        //Facilitates register mechanism
         private async void btnRegSub_ClickAsync(object sender, EventArgs e)
         {
 

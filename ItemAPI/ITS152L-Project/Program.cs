@@ -5,6 +5,12 @@ using ITS152L_Project.Services.Implementations;
 using ITS152L_Project.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

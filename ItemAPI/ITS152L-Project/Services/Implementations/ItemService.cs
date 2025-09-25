@@ -6,10 +6,21 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
 using static Dapper.SqlMapper;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//Item service class. Handles business logic and communicates
+//with the controllers and repositories associated with items.
+
 namespace ITS152L_Project.Services.Implementations
 {
     public class ItemService : IItemService
     {
+
+        //Dependency Injection
         private readonly IItemRepository _repository;
 
         public ItemService(IItemRepository repository)
@@ -17,6 +28,8 @@ namespace ITS152L_Project.Services.Implementations
             _repository = repository;
         }
 
+
+        //Adds an item to the repository
         public Task<ItemModel> AddAsync(ItemModel entity)
         {
 
@@ -27,16 +40,19 @@ namespace ITS152L_Project.Services.Implementations
 
         }
 
+        //Deletes an item from the repository
         public Task DeleteAsync(int id)
         {
             return _repository.DeleteAsync(id);
         }
 
+        //Get all items from the repository
         public Task<IEnumerable<ItemModel>> GetAllAsync()
         {
             return _repository.GetAllAsync();
         }
 
+        //Get a specific item from the repository
         public Task<ItemModel?> GetByIdAsync(int id)
         {
 
@@ -46,6 +62,7 @@ namespace ITS152L_Project.Services.Implementations
             return _repository.GetByIdAsync(id);
         }
 
+        //Updates item information via the repository
         public Task<ItemModel> UpdateAsync(ItemModel updatedItem)
         {
             if (updatedItem?.Id == 0 || updatedItem?.Id == null)

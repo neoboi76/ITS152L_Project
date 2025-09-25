@@ -5,6 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ITS152L_Project.Services.Interfaces;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+
+//User controller
 namespace ITS152L_Project.Controllers
 {
     [Route("api/[controller]")]
@@ -12,6 +20,7 @@ namespace ITS152L_Project.Controllers
     public class UserController : ControllerBase
     {
 
+        //Dependency injection
         private readonly IUserService _service;
 
         public UserController(IUserService service)
@@ -19,12 +28,14 @@ namespace ITS152L_Project.Controllers
             _service = service;
         }
 
+        //Gets all users from the database via a GET request
         [HttpGet]
         public async Task<ActionResult<List<UserModel>>> GetAllUsers()
         {
             return Ok(await _service.GetAllAsync());
         }
 
+        //Gets a particular user from the database via a GET request
         [HttpGet("{id}")]
         public async Task<ActionResult<UserModel>> GetUserById(int id)
         {
@@ -36,6 +47,8 @@ namespace ITS152L_Project.Controllers
             return Ok(user);
         }
 
+
+        //Adds a user to the database via a POST request
         [HttpPost]
         public async Task<ActionResult<UserModel>> AddUser([FromBody] UserModel newUser)
         {
@@ -49,6 +62,15 @@ namespace ITS152L_Project.Controllers
 
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
 
+        }
+
+        //Deletes an user from the database via a DELETE request
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            await _service.DeleteAsync(id);
+
+            return NoContent();
         }
 
 

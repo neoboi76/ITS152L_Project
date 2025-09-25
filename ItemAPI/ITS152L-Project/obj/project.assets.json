@@ -5173,9 +5173,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ITS152L-Project.csproj",
-      "projectName": "ITS152L-Project",
-      "projectPath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ITS152L-Project.csproj",
+      "projectUniqueName": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ItemApi.csproj",
+      "projectName": "ItemApi",
+      "projectPath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ItemApi.csproj",
       "packagesPath": "C:\\Users\\Timbo\\.nuget\\packages\\",
       "outputPath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\obj\\",
       "projectStyle": "PackageReference",

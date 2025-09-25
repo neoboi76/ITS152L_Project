@@ -1,3 +1,9 @@
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
 namespace FormsUI
 {
     internal static class Program

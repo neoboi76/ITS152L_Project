@@ -5,6 +5,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//Log in controller
 namespace ITS152L_Project.Controllers
 {
     [Route("api/[controller]")]
@@ -12,6 +19,7 @@ namespace ITS152L_Project.Controllers
     public class LoginController : ControllerBase
     {
 
+        //Depedency injection
         private readonly ILoginService _service;
 
         public LoginController(ILoginService service)
@@ -19,6 +27,7 @@ namespace ITS152L_Project.Controllers
             _service = service;
         }
 
+        //Returns an existing user from the database via a GET request
         public async Task<ActionResult<UserModel>> GetUserById(int id)
         {
             var user = await _service.GetByIdAsync(id);
@@ -29,7 +38,9 @@ namespace ITS152L_Project.Controllers
             return Ok(user);
         }
 
-
+        //Log's a user (i.e., verifies if credentials exist in the database)
+        //via a POST request. If user does not exist, it will be added as a new
+        //User to the database.
         [HttpPost("log")]
         public async Task<ActionResult<UserLogin>> LogUser([FromBody] UserLogin realUser)
         {
@@ -44,6 +55,7 @@ namespace ITS152L_Project.Controllers
 
         }
 
+        //Reset's user password in the database via a POST request.
         [HttpPost("reset")]
         public async Task<ActionResult<UserLogin>> ResUserPass([FromBody] UserLogin existingUser)
         {

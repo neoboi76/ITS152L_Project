@@ -1,5 +1,13 @@
 ﻿using ItemDataLibrary.Models;
 
+/*
+
+Developed by: Dino Alfred T. Timbol
+
+*/
+
+//User Service Interface
+
 namespace ITS152L_Project.Services.Interfaces
 {
     public interface IUserService
