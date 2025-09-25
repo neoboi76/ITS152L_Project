@@ -1,2 +1,2 @@
 # ITS152L_Project
-Web application developed using ASP.NET Web API
+ Windows forms application using back-end Web API developed using ASP.NET Core Web API
