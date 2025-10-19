@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FormUI\\FormsUI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ItemAPI\\ItemApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

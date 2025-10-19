@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hDMe7DpKSUY=",
+  "dgSpecHash": "kerLC+qXNF0=",
   "success": true,
-  "projectFilePath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\ItemDataLibrary.csproj",
+  "projectFilePath": "E:\\THE TRUE ONEDRIVE\\OneDrive - Mapúa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ItemAPI\\ItemDataLibrary\\ItemDataLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Timbo\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\Timbo\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.9\\microsoft.entityframeworkcore.9.0.9.nupkg.sha512",

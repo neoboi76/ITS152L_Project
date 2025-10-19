@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tu963rAef4A=",
+  "dgSpecHash": "ooltnBGIB6w=",
   "success": true,
-  "projectFilePath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ITS152L-Project\\ItemApi.csproj",
+  "projectFilePath": "E:\\THE TRUE ONEDRIVE\\OneDrive - Mapúa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ItemAPI\\ITS152L-Project\\ItemApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Timbo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Timbo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

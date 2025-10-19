@@ -1,0 +1,162 @@
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\FormsUI.exe
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\FormsUI.deps.json
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\FormsUI.runtimeconfig.json
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\FormsUI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\FormsUI.pdb
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.LoginForm.resources
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.RegisterForm.resources
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.csproj.GenerateResource.cache
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.GeneratedMSBuildEditorConfig.editorconfig
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.AssemblyInfoInputs.cache
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.AssemblyInfo.cs
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.csproj.CoreCompileInputs.cache
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.sourcelink.json
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\refint\FormsUI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.pdb
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.genruntimeconfig.cache
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\ref\FormsUI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.ResetForm.resources
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.csproj.AssemblyReference.cache
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Azure.Core.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Azure.Identity.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Dapper.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.AspNetCore.OpenApi.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Data.SqlClient.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.Caching.Memory.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.DependencyInjection.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.Options.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Extensions.Primitives.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Identity.Client.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Abstractions.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Logging.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Protocols.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Tokens.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.OpenApi.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Microsoft.SqlServer.Server.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Swashbuckle.AspNetCore.Swagger.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\System.ClientModel.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\System.Data.SqlClient.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\System.Formats.Asn1.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\System.IdentityModel.Tokens.Jwt.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\System.Memory.Data.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\System.Runtime.Caching.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\System.Text.Json.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win-arm64\native\sni.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win-x64\native\sni.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win-x86\native\sni.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ItemDataLibrary.dll
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\bin\Debug\net9.0-windows\ItemDataLibrary.pdb
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.csproj.Up2Date
+G:\Repos\ITS152L_Project\ItemAPI\LoginForm\obj\Debug\net9.0-windows\FormsUI.InventoryForm.resources
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\refint\FormsUI.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.pdb
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\ItemApi.deps.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\ItemApi.runtimeconfig.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\appsettings.Development.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\appsettings.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\ItemApi.staticwebassets.endpoints.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\ItemApi.exe
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\FormsUI.exe
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\FormsUI.deps.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\FormsUI.runtimeconfig.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\FormsUI.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\FormsUI.pdb
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Azure.Core.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Azure.Identity.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Dapper.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.AspNetCore.OpenApi.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Data.SqlClient.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.Options.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Extensions.Primitives.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Identity.Client.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.OpenApi.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Microsoft.SqlServer.Server.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Swashbuckle.AspNetCore.Swagger.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\System.ClientModel.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\System.Data.SqlClient.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\System.Formats.Asn1.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\System.Memory.Data.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\System.Runtime.Caching.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\System.Text.Json.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win-arm64\native\sni.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win-x64\native\sni.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win-x86\native\sni.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\ItemApi.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\ItemDataLibrary.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\ItemApi.pdb
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\bin\Debug\net9.0-windows\ItemDataLibrary.pdb
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.csproj.AssemblyReference.cache
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.InventoryForm.resources
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.LoginForm.resources
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.RegisterForm.resources
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.ResetForm.resources
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.csproj.GenerateResource.cache
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.GeneratedMSBuildEditorConfig.editorconfig
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.AssemblyInfoInputs.cache
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.AssemblyInfo.cs
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.csproj.CoreCompileInputs.cache
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.sourcelink.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.csproj.Up2Date
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\FormsUI.genruntimeconfig.cache
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\FormUI\obj\Debug\net9.0-windows\ref\FormsUI.dll

@@ -834,11 +834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\ItemDataLibrary.csproj",
+      "projectUniqueName": "E:\\THE TRUE ONEDRIVE\\OneDrive - Mapúa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ItemAPI\\ItemDataLibrary\\ItemDataLibrary.csproj",
       "projectName": "ItemDataLibrary",
-      "projectPath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\ItemDataLibrary.csproj",
+      "projectPath": "E:\\THE TRUE ONEDRIVE\\OneDrive - Mapúa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ItemAPI\\ItemDataLibrary\\ItemDataLibrary.csproj",
       "packagesPath": "C:\\Users\\Timbo\\.nuget\\packages\\",
-      "outputPath": "G:\\Repos\\ITS152L_Project\\ItemAPI\\ItemDataLibrary\\obj\\",
+      "outputPath": "E:\\THE TRUE ONEDRIVE\\OneDrive - Mapúa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ItemAPI\\ItemDataLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

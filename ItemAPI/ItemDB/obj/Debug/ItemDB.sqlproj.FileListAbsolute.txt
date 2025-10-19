@@ -1,6 +1,0 @@
-G:\Repos\ITS152L_Project\ItemAPI\ItemDB\bin\Debug\ItemDB.dacpac
-G:\Repos\ITS152L_Project\ItemAPI\ItemDB\bin\Debug\ItemDB.dll
-G:\Repos\ITS152L_Project\ItemAPI\ItemDB\bin\Debug\ItemDB.pdb
-G:\Repos\ITS152L_Project\ItemAPI\ItemDB\obj\Debug\ItemDB.sqlproj.AssemblyReference.cache
-G:\Repos\ITS152L_Project\ItemAPI\ItemDB\obj\Debug\ItemDB.dll
-G:\Repos\ITS152L_Project\ItemAPI\ItemDB\obj\Debug\ItemDB.pdb

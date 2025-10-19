@@ -1,0 +1,26 @@
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\bin\Debug\net9.0\ItemDataLibrary.deps.json
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\bin\Debug\net9.0\ItemDataLibrary.dll
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\bin\Debug\net9.0\ItemDataLibrary.pdb
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.csproj.AssemblyReference.cache
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.GeneratedMSBuildEditorConfig.editorconfig
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.AssemblyInfoInputs.cache
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.AssemblyInfo.cs
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.csproj.CoreCompileInputs.cache
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.sourcelink.json
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.dll
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\refint\ItemDataLibrary.dll
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.pdb
+G:\Repos\ITS152L_Project\ItemAPI\ItemDataLibrary\obj\Debug\net9.0\ref\ItemDataLibrary.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\bin\Debug\net9.0\ItemDataLibrary.deps.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\bin\Debug\net9.0\ItemDataLibrary.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\bin\Debug\net9.0\ItemDataLibrary.pdb
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.csproj.AssemblyReference.cache
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.AssemblyInfoInputs.cache
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.AssemblyInfo.cs
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.csproj.CoreCompileInputs.cache
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.sourcelink.json
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\refint\ItemDataLibrary.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ItemDataLibrary.pdb
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemDataLibrary\obj\Debug\net9.0\ref\ItemDataLibrary.dll
