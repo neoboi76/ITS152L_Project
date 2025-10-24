@@ -8,7 +8,13 @@ using ITS152L_Project.Services.Interfaces;
 
 /*
 
-Developed by: Dino Alfred T. Timbol
+Developed by: 
+
+    Ken Aliling
+    Carl Norbi Felonia
+    Cedrick Miguel Kaneko
+    Amar Jacob Pajarito
+    Dino Alfred Timbol
 
 */
 

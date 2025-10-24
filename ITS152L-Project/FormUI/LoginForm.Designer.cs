@@ -1,6 +1,12 @@
 ﻿/*
 
-Developed by: Dino Alfred T. Timbol
+Developed by: 
+
+    Ken Aliling
+    Carl Norbi Felonia
+    Cedrick Miguel Kaneko
+    Amar Jacob Pajarito
+    Dino Alfred Timbol
 
 */
 
@@ -50,9 +56,9 @@ namespace FormsUI
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label1.Location = new Point(231, 36);
             label1.Name = "label1";
-            label1.Size = new Size(329, 32);
+            label1.Size = new Size(328, 32);
             label1.TabIndex = 0;
-            label1.Text = "Multiplex Inventory System";
+            label1.Text = "Teleoplex Inventory System";
             // 
             // label2
             // 
