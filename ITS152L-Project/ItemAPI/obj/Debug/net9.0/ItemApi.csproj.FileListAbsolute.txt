@@ -358,3 +358,4 @@ E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS1
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\ItemApi.pdb
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\ItemApi.genruntimeconfig.cache
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\ref\ItemApi.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\BCrypt.Net-Next.dll

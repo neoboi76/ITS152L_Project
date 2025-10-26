@@ -44,6 +44,8 @@ namespace ITS152L_Project.Data
         //Adds models as tables in the database
         public DbSet<ItemModel> Items { get; set; }
         public DbSet<UserModel> Users { get; set; }
+        public DbSet<AuditLog> AuditLogs { get; set; }
+
 
     }
 }

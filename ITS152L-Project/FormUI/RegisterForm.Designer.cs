@@ -14,195 +14,256 @@ namespace FormsUI
 {
     partial class RegisterForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            this.SuspendLayout();
+
+            // === Base Form ===
+            this.AutoScaleDimensions = new SizeF(7F, 15F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(900, 650); // increased height
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.BackColor = Color.FromArgb(240, 244, 248);
+            this.Name = "RegisterForm";
+            this.Text = "Teleoplex Inventory System - Register";
+
+            // === Left Panel ===
+            Panel leftPanel = new Panel();
+            leftPanel.BackColor = Color.FromArgb(37, 99, 235);
+            leftPanel.Dock = DockStyle.Left;
+            leftPanel.Width = 350;
+
+            Label brandLabel = new Label();
+            brandLabel.Text = "TELEOPLEX";
+            brandLabel.Font = new Font("Segoe UI", 32, FontStyle.Bold);
+            brandLabel.ForeColor = Color.White;
+            brandLabel.AutoSize = false;
+            brandLabel.Size = new Size(300, 60);
+            brandLabel.Location = new Point(25, 150);
+            brandLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+            Label taglineLabel = new Label();
+            taglineLabel.Text = "Inventory Management System";
+            taglineLabel.Font = new Font("Segoe UI", 12);
+            taglineLabel.ForeColor = Color.FromArgb(191, 219, 254);
+            taglineLabel.AutoSize = false;
+            taglineLabel.Size = new Size(300, 30);
+            taglineLabel.Location = new Point(25, 220);
+            taglineLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+            leftPanel.Controls.Add(brandLabel);
+            leftPanel.Controls.Add(taglineLabel);
+
+            // === Right Panel ===
+            Panel rightPanel = new Panel();
+            rightPanel.Dock = DockStyle.Fill;
+            rightPanel.BackColor = Color.White;
+            rightPanel.Padding = new Padding(60, 60, 60, 60);
+
+            int startX = 90;
+            int startY = 40; // moved everything slightly higher
+            int fieldWidth = 350;
+            int spacing = 65;
+
+            // === Title ===
+            Label lblTitle = new Label();
+            lblTitle.Text = "Create Account";
+            lblTitle.Font = new Font("Segoe UI", 24, FontStyle.Bold);
+            lblTitle.ForeColor = Color.FromArgb(15, 23, 42);
+            lblTitle.AutoSize = true;
+            lblTitle.Location = new Point(startX, startY);
+
+            Label lblSubtitle = new Label();
+            lblSubtitle.Text = "Fill in your details to register";
+            lblSubtitle.Font = new Font("Segoe UI", 11);
+            lblSubtitle.ForeColor = Color.FromArgb(100, 116, 139);
+            lblSubtitle.AutoSize = true;
+            lblSubtitle.Location = new Point(startX, startY + 45);
+
+            int y = startY + 100;
+
+            // === Username ===
+            Label lblUsername = new Label();
+            lblUsername.Text = "Username";
+            lblUsername.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblUsername.ForeColor = Color.FromArgb(51, 65, 85);
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(startX, y);
+
             txtRegUser = new TextBox();
+            txtRegUser.Font = new Font("Segoe UI", 12);
+            txtRegUser.Location = new Point(startX, y + 25);
+            txtRegUser.Size = new Size(fieldWidth, 32);
+            txtRegUser.BorderStyle = BorderStyle.FixedSingle;
+
+            y += spacing;
+
+            // === First Name ===
+            Label lblFirst = new Label();
+            lblFirst.Text = "First Name";
+            lblFirst.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblFirst.ForeColor = Color.FromArgb(51, 65, 85);
+            lblFirst.AutoSize = true;
+            lblFirst.Location = new Point(startX, y);
+
             txtRegFirst = new TextBox();
+            txtRegFirst.Font = new Font("Segoe UI", 12);
+            txtRegFirst.Location = new Point(startX, y + 25);
+            txtRegFirst.Size = new Size(fieldWidth, 32);
+            txtRegFirst.BorderStyle = BorderStyle.FixedSingle;
+
+            y += spacing;
+
+            // === Last Name ===
+            Label lblLast = new Label();
+            lblLast.Text = "Last Name";
+            lblLast.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblLast.ForeColor = Color.FromArgb(51, 65, 85);
+            lblLast.AutoSize = true;
+            lblLast.Location = new Point(startX, y);
+
             txtRegLast = new TextBox();
+            txtRegLast.Font = new Font("Segoe UI", 12);
+            txtRegLast.Location = new Point(startX, y + 25);
+            txtRegLast.Size = new Size(fieldWidth, 32);
+            txtRegLast.BorderStyle = BorderStyle.FixedSingle;
+
+            y += spacing;
+
+            // === Password ===
+            Label lblPass = new Label();
+            lblPass.Text = "Password";
+            lblPass.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblPass.ForeColor = Color.FromArgb(51, 65, 85);
+            lblPass.AutoSize = true;
+            lblPass.Location = new Point(startX, y);
+
             txtRegNewPass = new TextBox();
-            txtRegConfirm = new TextBox();
-            btnRegSub = new Button();
-            SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label1.Location = new Point(241, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(328, 32);
-            label1.TabIndex = 1;
-            label1.Text = "Teleoplex Inventory System";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(225, 104);
-            label2.Name = "label2";
-            label2.Size = new Size(81, 21);
-            label2.TabIndex = 2;
-            label2.Text = "Username";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F);
-            label3.Location = new Point(225, 159);
-            label3.Name = "label3";
-            label3.Size = new Size(86, 21);
-            label3.TabIndex = 3;
-            label3.Text = "First Name";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F);
-            label4.Location = new Point(227, 210);
-            label4.Name = "label4";
-            label4.Size = new Size(84, 21);
-            label4.TabIndex = 4;
-            label4.Text = "Last Name";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F);
-            label5.Location = new Point(181, 258);
-            label5.Name = "label5";
-            label5.Size = new Size(125, 21);
-            label5.TabIndex = 5;
-            label5.Text = "Create Password";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F);
-            label6.Location = new Point(169, 311);
-            label6.Name = "label6";
-            label6.Size = new Size(137, 21);
-            label6.TabIndex = 6;
-            label6.Text = "Confirm Password";
-            // 
-            // txtRegUser
-            // 
-            txtRegUser.Font = new Font("Segoe UI", 12F);
-            txtRegUser.Location = new Point(312, 104);
-            txtRegUser.Name = "txtRegUser";
-            txtRegUser.Size = new Size(243, 29);
-            txtRegUser.TabIndex = 7;
-            // 
-            // txtRegFirst
-            // 
-            txtRegFirst.Font = new Font("Segoe UI", 12F);
-            txtRegFirst.Location = new Point(312, 159);
-            txtRegFirst.Name = "txtRegFirst";
-            txtRegFirst.Size = new Size(243, 29);
-            txtRegFirst.TabIndex = 8;
-            // 
-            // txtRegLast
-            // 
-            txtRegLast.Font = new Font("Segoe UI", 12F);
-            txtRegLast.Location = new Point(312, 207);
-            txtRegLast.Name = "txtRegLast";
-            txtRegLast.Size = new Size(243, 29);
-            txtRegLast.TabIndex = 9;
-            // 
-            // txtRegNewPass
-            // 
-            txtRegNewPass.Font = new Font("Segoe UI", 12F);
-            txtRegNewPass.Location = new Point(312, 258);
-            txtRegNewPass.Name = "txtRegNewPass";
-            txtRegNewPass.Size = new Size(243, 29);
-            txtRegNewPass.TabIndex = 10;
+            txtRegNewPass.Font = new Font("Segoe UI", 12);
+            txtRegNewPass.Location = new Point(startX, y + 25);
+            txtRegNewPass.Size = new Size(fieldWidth, 32);
+            txtRegNewPass.BorderStyle = BorderStyle.FixedSingle;
             txtRegNewPass.UseSystemPasswordChar = true;
-            // 
-            // txtRegConfirm
-            // 
-            txtRegConfirm.Font = new Font("Segoe UI", 12F);
-            txtRegConfirm.Location = new Point(312, 303);
-            txtRegConfirm.Name = "txtRegConfirm";
-            txtRegConfirm.Size = new Size(243, 29);
-            txtRegConfirm.TabIndex = 11;
+            txtRegNewPass.TextChanged += (s, e) => UpdatePasswordStrength();
+
+
+            // === Password Strength ===
+            lblPasswordStrength = new Label();
+            lblPasswordStrength.Text = "Password Strength:";
+            lblPasswordStrength.Font = new Font("Segoe UI", 9);
+            lblPasswordStrength.Location = new Point(startX, y + 65);
+            lblPasswordStrength.AutoSize = true;
+            lblPasswordStrength.ForeColor = Color.FromArgb(100, 116, 139);
+
+            pbPasswordStrength = new ProgressBar();
+            pbPasswordStrength.Location = new Point(startX + 150, y + 70);
+            pbPasswordStrength.Size = new Size(200, 10);
+            pbPasswordStrength.Style = ProgressBarStyle.Continuous;
+
+            y += spacing + 40;
+
+            // === Confirm Password ===
+            Label lblConfirm = new Label();
+            lblConfirm.Text = "Confirm Password";
+            lblConfirm.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblConfirm.ForeColor = Color.FromArgb(51, 65, 85);
+            lblConfirm.AutoSize = true;
+            lblConfirm.Location = new Point(startX, y);
+
+            txtRegConfirm = new TextBox();
+            txtRegConfirm.Font = new Font("Segoe UI", 12);
+            txtRegConfirm.Location = new Point(startX, y + 25);
+            txtRegConfirm.Size = new Size(fieldWidth, 32);
+            txtRegConfirm.BorderStyle = BorderStyle.FixedSingle;
             txtRegConfirm.UseSystemPasswordChar = true;
-            // 
-            // btnRegSub
-            // 
-            btnRegSub.Font = new Font("Segoe UI", 12F);
-            btnRegSub.Location = new Point(367, 352);
-            btnRegSub.Name = "btnRegSub";
-            btnRegSub.Size = new Size(131, 31);
-            btnRegSub.TabIndex = 12;
-            btnRegSub.Text = "Submit";
-            btnRegSub.UseVisualStyleBackColor = true;
+
+            y += spacing;
+
+            // === Role Dropdown ===
+            Label lblRole = new Label();
+            lblRole.Text = "Role";
+            lblRole.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblRole.ForeColor = Color.FromArgb(51, 65, 85);
+            lblRole.AutoSize = true;
+            lblRole.Location = new Point(startX, y);
+
+            cmbRole = new ComboBox();
+            cmbRole.Font = new Font("Segoe UI", 12);
+            cmbRole.Location = new Point(startX, y + 25);
+            cmbRole.Size = new Size(fieldWidth, 32);
+            cmbRole.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbRole.Items.AddRange(new object[] { "User", "Admin" });
+            cmbRole.SelectedIndex = 0;
+
+            y += spacing + 20;
+
+            // === Register Button ===
+            btnRegSub = new Button();
+            btnRegSub.Text = "Sign Up";
+            btnRegSub.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btnRegSub.Location = new Point(startX, y - 10);
+            btnRegSub.Size = new Size(fieldWidth, 45);
+            btnRegSub.BackColor = Color.FromArgb(37, 99, 235);
+            btnRegSub.ForeColor = Color.White;
+            btnRegSub.FlatStyle = FlatStyle.Flat;
+            btnRegSub.FlatAppearance.BorderSize = 0;
+            btnRegSub.Cursor = Cursors.Hand;
             btnRegSub.Click += btnRegSub_ClickAsync;
-            // 
-            // RegisterForm
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnRegSub);
-            Controls.Add(txtRegConfirm);
-            Controls.Add(txtRegNewPass);
-            Controls.Add(txtRegLast);
-            Controls.Add(txtRegFirst);
-            Controls.Add(txtRegUser);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "RegisterForm";
-            Text = "Create Account";
-            ResumeLayout(false);
-            PerformLayout();
+
+            btnRegSub.MouseEnter += (s, e) => btnRegSub.BackColor = Color.FromArgb(29, 78, 216);
+            btnRegSub.MouseLeave += (s, e) => btnRegSub.BackColor = Color.FromArgb(37, 99, 235);
+
+            // === "Already have an account?" link ===
+            LinkLabel backToLogin = new LinkLabel();
+            backToLogin.Text = "Already have an account? Sign in";
+            backToLogin.Font = new Font("Segoe UI", 9);
+            backToLogin.LinkColor = Color.FromArgb(37, 99, 235);
+            backToLogin.AutoSize = true;
+            backToLogin.Location = new Point(startX, y + 75);
+            backToLogin.LinkClicked += (s, e) => { this.Hide(); new LoginForm().Show(); };
+
+            // === Add Controls ===
+            rightPanel.Controls.AddRange(new Control[] {
+                lblTitle, lblSubtitle,
+                lblUsername, txtRegUser,
+                lblFirst, txtRegFirst,
+                lblLast, txtRegLast,
+                lblPass, txtRegNewPass,
+                lblPasswordStrength, pbPasswordStrength,
+                lblConfirm, txtRegConfirm,
+                lblRole, cmbRole,
+                btnRegSub, backToLogin
+            });
+
+            this.Controls.Add(rightPanel);
+            this.Controls.Add(leftPanel);
+
+            this.ResumeLayout(false);
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
         private TextBox txtRegUser;
         private TextBox txtRegFirst;
         private TextBox txtRegLast;
         private TextBox txtRegNewPass;
         private TextBox txtRegConfirm;
+        private ComboBox cmbRole;
         private Button btnRegSub;
+        private Label lblPasswordStrength;
+        private ProgressBar pbPasswordStrength;
     }
 }

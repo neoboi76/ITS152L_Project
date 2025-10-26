@@ -1,6 +1,7 @@
 ﻿using ItemDataLibrary.Models;
 using ITS152L_Project.Repositories.Interfaces;
 using ITS152L_Project.Services.Interfaces;
+using ItemDataLibrary.Security;
 
 /*
 
@@ -22,8 +23,6 @@ namespace ITS152L_Project.Services.Implementations
 {
     public class UserService : IUserService
     {
-        
-        //Dependency Injection
         private readonly IUserRepository _repository;
 
         public UserService(IUserRepository repository)
@@ -31,34 +30,38 @@ namespace ITS152L_Project.Services.Implementations
             _repository = repository;
         }
 
-        //Adds a user to the repository
-        public Task<UserModel> AddAsync(UserModel user)
+        public async Task<UserModel> AddAsync(UserModel user)
         {
-            return _repository.AddAsync(user);
+            // Hash the password before storing
+            user.Password = PasswordHasher.HashPassword(user.Password);
+            return await _repository.AddAsync(user);
         }
 
-        //Deletes a user from the repository
         public Task DeleteAsync(int id)
         {
             return _repository.DeleteAsync(id);
         }
 
-        //Gets all users from the repository
         public Task<IEnumerable<UserModel>> GetAllAsync()
         {
             return _repository.GetAllAsync();
         }
 
-        //Gets a specific user via the repository
         public Task<UserModel?> GetByIdAsync(int id)
         {
             return _repository.GetByIdAsync(id);
         }
 
-        //Modifies information about a user through the repository
-        public Task UpdateAsync(UserModel user)
+        public async Task UpdateAsync(UserModel user)
         {
-            return _repository.UpdateAsync(user);
+            // If password is being updated, hash it
+            if (!string.IsNullOrWhiteSpace(user.Password))
+            {
+                user.Password = PasswordHasher.HashPassword(user.Password);
+            }
+            await _repository.UpdateAsync(user);
         }
     }
+
 }
+

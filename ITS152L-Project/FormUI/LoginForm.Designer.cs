@@ -40,113 +40,143 @@ namespace FormsUI
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            this.SuspendLayout();
+
+            // Form properties
+            this.AutoScaleDimensions = new SizeF(7F, 15F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(900, 550);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.BackColor = Color.FromArgb(240, 244, 248);
+            this.Name = "LoginForm";
+            this.Text = "Teleoplex Inventory System - Login";
+
+            // Left Panel (Branding/Image)
+            Panel leftPanel = new Panel();
+            leftPanel.BackColor = Color.FromArgb(37, 99, 235); // Blue
+            leftPanel.Dock = DockStyle.Left;
+            leftPanel.Width = 350;
+
+            Label brandLabel = new Label();
+            brandLabel.Text = "TELEOPLEX";
+            brandLabel.Font = new Font("Segoe UI", 32, FontStyle.Bold);
+            brandLabel.ForeColor = Color.White;
+            brandLabel.AutoSize = false;
+            brandLabel.Size = new Size(300, 60);
+            brandLabel.Location = new Point(25, 150);
+            brandLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+            Label taglineLabel = new Label();
+            taglineLabel.Text = "Inventory Management System";
+            taglineLabel.Font = new Font("Segoe UI", 12);
+            taglineLabel.ForeColor = Color.FromArgb(191, 219, 254);
+            taglineLabel.AutoSize = false;
+            taglineLabel.Size = new Size(300, 30);
+            taglineLabel.Location = new Point(25, 220);
+            taglineLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+            leftPanel.Controls.Add(brandLabel);
+            leftPanel.Controls.Add(taglineLabel);
+
+            // Right Panel (Login Form)
+            Panel rightPanel = new Panel();
+            rightPanel.Dock = DockStyle.Fill;
+            rightPanel.BackColor = Color.White;
+            rightPanel.Padding = new Padding(60, 80, 60, 80);
+
+            // Title
+            Label lblTitle = new Label();
+            lblTitle.Text = "Welcome Back";
+            lblTitle.Font = new Font("Segoe UI", 24, FontStyle.Bold);
+            lblTitle.ForeColor = Color.FromArgb(15, 23, 42);
+            lblTitle.AutoSize = true;
+            lblTitle.Location = new Point(90, 100);
+
+            Label lblSubtitle = new Label();
+            lblSubtitle.Text = "Please sign in to continue";
+            lblSubtitle.Font = new Font("Segoe UI", 11);
+            lblSubtitle.ForeColor = Color.FromArgb(100, 116, 139);
+            lblSubtitle.AutoSize = true;
+            lblSubtitle.Location = new Point(90, 140);
+
+            // Username
+            Label lblUsername = new Label();
+            lblUsername.Text = "Username";
+            lblUsername.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblUsername.ForeColor = Color.FromArgb(51, 65, 85);
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(90, 200);
+
             txtLogName = new TextBox();
+            txtLogName.Font = new Font("Segoe UI", 12);
+            txtLogName.Location = new Point(90, 225);
+            txtLogName.Size = new Size(350, 32);
+            txtLogName.BorderStyle = BorderStyle.FixedSingle;
+
+            // Password
+            Label lblPassword = new Label();
+            lblPassword.Text = "Password";
+            lblPassword.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblPassword.ForeColor = Color.FromArgb(51, 65, 85);
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(90, 280);
+
             txtLogPass = new TextBox();
-            btnLogSub = new Button();
-            forgotPass = new LinkLabel();
-            createAccount = new LinkLabel();
-            SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label1.Location = new Point(231, 36);
-            label1.Name = "label1";
-            label1.Size = new Size(328, 32);
-            label1.TabIndex = 0;
-            label1.Text = "Teleoplex Inventory System";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(244, 121);
-            label2.Name = "label2";
-            label2.Size = new Size(81, 21);
-            label2.TabIndex = 1;
-            label2.Text = "Username";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F);
-            label3.Location = new Point(244, 183);
-            label3.Name = "label3";
-            label3.Size = new Size(76, 21);
-            label3.TabIndex = 2;
-            label3.Text = "Password";
-            // 
-            // txtLogName
-            // 
-            txtLogName.Font = new Font("Segoe UI", 12F);
-            txtLogName.Location = new Point(331, 118);
-            txtLogName.Name = "txtLogName";
-            txtLogName.Size = new Size(205, 29);
-            txtLogName.TabIndex = 3;
-            // 
-            // txtLogPass
-            // 
-            txtLogPass.Font = new Font("Segoe UI", 12F);
-            txtLogPass.Location = new Point(331, 180);
-            txtLogPass.Name = "txtLogPass";
-            txtLogPass.Size = new Size(205, 29);
-            txtLogPass.TabIndex = 4;
+            txtLogPass.Font = new Font("Segoe UI", 12);
+            txtLogPass.Location = new Point(90, 305);
+            txtLogPass.Size = new Size(350, 32);
             txtLogPass.UseSystemPasswordChar = true;
-            // 
-            // btnLogSub
-            // 
-            btnLogSub.Font = new Font("Segoe UI", 12F);
-            btnLogSub.Location = new Point(244, 245);
-            btnLogSub.Name = "btnLogSub";
-            btnLogSub.Size = new Size(131, 31);
-            btnLogSub.TabIndex = 5;
-            btnLogSub.Text = "Submit";
-            btnLogSub.UseVisualStyleBackColor = true;
-            btnLogSub.Click += btnLogSub_ClickAsync;
-            // 
-            // forgotPass
-            // 
-            forgotPass.AutoSize = true;
-            forgotPass.Location = new Point(436, 219);
-            forgotPass.Name = "forgotPass";
-            forgotPass.Size = new Size(100, 15);
-            forgotPass.TabIndex = 6;
-            forgotPass.TabStop = true;
+            txtLogPass.BorderStyle = BorderStyle.FixedSingle;
+
+            // Links
+            forgotPass = new LinkLabel();
             forgotPass.Text = "Forgot password?";
+            forgotPass.Font = new Font("Segoe UI", 9);
+            forgotPass.LinkColor = Color.FromArgb(37, 99, 235);
+            forgotPass.AutoSize = true;
+            forgotPass.Location = new Point(350, 350);
             forgotPass.LinkClicked += linkLabel1_LinkClicked;
-            // 
-            // createAccount
-            // 
+
+            createAccount = new LinkLabel();
+            createAccount.Text = "Create new account";
+            createAccount.Font = new Font("Segoe UI", 9);
+            createAccount.LinkColor = Color.FromArgb(37, 99, 235);
             createAccount.AutoSize = true;
-            createAccount.Location = new Point(328, 219);
-            createAccount.Name = "createAccount";
-            createAccount.Size = new Size(102, 15);
-            createAccount.TabIndex = 7;
-            createAccount.TabStop = true;
-            createAccount.Text = "New to Multiplex?";
+            createAccount.Location = new Point(90, 350);
             createAccount.LinkClicked += linkLabel2_LinkClicked;
-            // 
-            // LoginForm
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(createAccount);
-            Controls.Add(forgotPass);
-            Controls.Add(btnLogSub);
-            Controls.Add(txtLogPass);
-            Controls.Add(txtLogName);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "LoginForm";
-            Text = "Login";
-            ResumeLayout(false);
-            PerformLayout();
+
+            // Submit Button
+            btnLogSub = new Button();
+            btnLogSub.Text = "Sign In";
+            btnLogSub.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btnLogSub.Location = new Point(90, 390);
+            btnLogSub.Size = new Size(350, 45);
+            btnLogSub.BackColor = Color.FromArgb(37, 99, 235);
+            btnLogSub.ForeColor = Color.White;
+            btnLogSub.FlatStyle = FlatStyle.Flat;
+            btnLogSub.FlatAppearance.BorderSize = 0;
+            btnLogSub.Cursor = Cursors.Hand;
+            btnLogSub.Click += btnLogSub_ClickAsync;
+
+            // Add hover effect
+            btnLogSub.MouseEnter += (s, e) => {
+                btnLogSub.BackColor = Color.FromArgb(29, 78, 216);
+            };
+            btnLogSub.MouseLeave += (s, e) => {
+                btnLogSub.BackColor = Color.FromArgb(37, 99, 235);
+            };
+
+            rightPanel.Controls.AddRange(new Control[] {
+                lblTitle, lblSubtitle, lblUsername, txtLogName,
+                lblPassword, txtLogPass, forgotPass, createAccount, btnLogSub
+            });
+
+            this.Controls.Add(rightPanel);
+            this.Controls.Add(leftPanel);
+
+            this.ResumeLayout(false);
         }
 
         #endregion

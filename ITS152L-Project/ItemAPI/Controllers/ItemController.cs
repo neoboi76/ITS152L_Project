@@ -1,24 +1,6 @@
-﻿using ITS152L_Project.Data;
-using ItemDataLibrary.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using ItemDataLibrary.Models;
 using ITS152L_Project.Services.Interfaces;
-
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Item REST controller
+using Microsoft.AspNetCore.Mvc;
 
 namespace ITS152L_Project.Controllers
 {
@@ -26,22 +8,98 @@ namespace ITS152L_Project.Controllers
     [ApiController]
     public class ItemController : ControllerBase
     {
-        //Depdendency Injection
         private readonly IItemService _service;
+        private readonly IAuditLogService _auditService;
 
-        public ItemController(IItemService service)
+        public ItemController(IItemService service, IAuditLogService auditService)
         {
             _service = service;
+            _auditService = auditService;
         }
 
-        //Returns all items in the database via GET request
+        [HttpPost("add")]
+        public async Task<ActionResult<ItemModel>> AddItem([FromBody] ItemModel newItem,
+            [FromQuery] string userName)
+        {
+            if (newItem == null)
+            {
+                return BadRequest();
+            }
+
+            await _service.AddAsync(newItem);
+
+            // Log the action
+            await _auditService.LogActionAsync(
+                userName,
+                "Added",
+                "Item",
+                newItem.Id,
+                $"Added {newItem.Quantity} units of {newItem.Name} (Code: {newItem.Code})"
+            );
+
+            return CreatedAtAction(nameof(GetItemById), new { id = newItem.Id }, newItem);
+        }
+
+        [HttpPut("update/{id}")]
+        public async Task<IActionResult> UpdateItem([FromBody] ItemModel updatedItem,
+            [FromQuery] string userName)
+        {
+            var existingItem = await _service.GetByIdAsync(updatedItem.Id);
+            if (existingItem == null)
+            {
+                return NotFound();
+            }
+
+            await _service.UpdateAsync(updatedItem);
+
+            // Log the changes
+            var changes = new List<string>();
+            if (existingItem.Quantity != updatedItem.Quantity)
+                changes.Add($"Quantity: {existingItem.Quantity} → {updatedItem.Quantity}");
+            if (existingItem.UnitPrice != updatedItem.UnitPrice)
+                changes.Add($"Price: {existingItem.UnitPrice} → {updatedItem.UnitPrice}");
+            if (existingItem.Name != updatedItem.Name)
+                changes.Add($"Name: {existingItem.Name} → {updatedItem.Name}");
+
+            await _auditService.LogActionAsync(
+                userName,
+                "Updated",
+                "Item",
+                updatedItem.Id,
+                $"Updated {updatedItem.Name}: {string.Join(", ", changes)}"
+            );
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteItem(int id, [FromQuery] string userName)
+        {
+            var item = await _service.GetByIdAsync(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            await _service.DeleteAsync(id);
+
+            await _auditService.LogActionAsync(
+                userName,
+                "Deleted",
+                "Item",
+                id,
+                $"Deleted {item.Name} (Code: {item.Code})"
+            );
+
+            return NoContent();
+        }
+
         [HttpGet("getAll")]
         public async Task<ActionResult<List<ItemModel>>> GetAllItems()
         {
             return Ok(await _service.GetAllAsync());
         }
 
-        //Returns a specific item from the database via a GET request
         [HttpGet("{id}")]
         public async Task<ActionResult<ItemModel>> GetItemById(int id)
         {
@@ -52,63 +110,5 @@ namespace ITS152L_Project.Controllers
             }
             return Ok(item);
         }
-
-
-        //Adds an item to the database via a POST request
-        [HttpPost("add")]
-        public async Task<ActionResult<ItemModel>> AddItem(ItemModel newItem)
-        {
-            if (newItem == null)
-            {
-                return BadRequest();
-            }
-
-            await _service.AddAsync(newItem);
-
-            return CreatedAtAction(nameof(GetItemById), new { id = newItem.Id }, newItem);
-
-        }
-
-
-        //Modifies an item in the database via a PUT request
-        [HttpPut("update/{id}")]
-        public async  Task<IActionResult> UpdateItem(ItemModel updatedItem)
-        {
-            var item = await _service.UpdateAsync(updatedItem);
-            if (item == null)
-            {
-                return NotFound();
-            }
-
-            return NoContent();
-
-        }
-
-        //Deletes an item from the database via a DELETE request
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteItem(int id)
-        {
-            await _service.DeleteAsync(id);
-
-            return NoContent();
-        }
-
-        /*
-        [HttpDelete]
-        public async Task<IActionResult> DeleteAll(int id)
-        {
-            var allItems = _context.Items.ToList();
-            if (allItems == null)
-            {
-                return NotFound();
-            }
-
-            _context.Items.RemoveRange(allItems);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }*/
-
-    } 
-
+    }
 }
