@@ -5,42 +5,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ITS152L_Project.Services.Interfaces;
 
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-*/
-
-
-//User controller
 namespace ITS152L_Project.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
-
-        //Dependency injection
         private readonly IUserService _service;
+        private readonly ItemApiContext _context;
 
-        public UserController(IUserService service)
+        public UserController(IUserService service, ItemApiContext context)
         {
             _service = service;
+            _context = context;
         }
 
-        //Gets all users from the database via a GET request
         [HttpGet]
         public async Task<ActionResult<List<UserModel>>> GetAllUsers()
         {
             return Ok(await _service.GetAllAsync());
         }
 
-        //Gets a particular user from the database via a GET request
         [HttpGet("{id}")]
         public async Task<ActionResult<UserModel>> GetUserById(int id)
         {
@@ -52,8 +37,19 @@ namespace ITS152L_Project.Controllers
             return Ok(user);
         }
 
+        [HttpGet("check-email/{email}")]
+        public async Task<ActionResult> CheckEmailExists(string email)
+        {
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.UserName == email);
 
-        //Adds a user to the database via a POST request
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok();
+        }
+
         [HttpPost]
         public async Task<ActionResult<UserModel>> AddUser([FromBody] UserModel newUser)
         {
@@ -64,20 +60,34 @@ namespace ITS152L_Project.Controllers
 
             await _service.AddAsync(newUser);
 
-
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
-
         }
 
-        //Deletes an user from the database via a DELETE request
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
+        [HttpPut("{id}/role")]
+        public async Task<IActionResult> UpdateUserRole(int id, [FromBody] UserModel user)
         {
-            await _service.DeleteAsync(id);
+            if (id != user.Id)
+            {
+                return BadRequest();
+            }
+
+            var existingUser = await _service.GetByIdAsync(id);
+            if (existingUser == null)
+            {
+                return NotFound();
+            }
+
+            existingUser.Role = user.Role;
+            await _service.UpdateAsync(existingUser);
 
             return NoContent();
         }
 
-
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            await _service.DeleteAsync(id);
+            return NoContent();
+        }
     }
 }

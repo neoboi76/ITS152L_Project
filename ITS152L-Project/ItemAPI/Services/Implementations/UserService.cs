@@ -3,22 +3,6 @@ using ITS152L_Project.Repositories.Interfaces;
 using ITS152L_Project.Services.Interfaces;
 using ItemDataLibrary.Security;
 
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//User service class. Handles business logic and communicates
-//with the controllers and repositories associated with users.
-
-
 namespace ITS152L_Project.Services.Implementations
 {
     public class UserService : IUserService
@@ -32,7 +16,15 @@ namespace ITS152L_Project.Services.Implementations
 
         public async Task<UserModel> AddAsync(UserModel user)
         {
-            // Hash the password before storing
+            if (user.UserName.ToLower() == "admin")
+            {
+                user.Role = "Admin";
+            }
+            else
+            {
+                user.Role = "User";
+            }
+
             user.Password = PasswordHasher.HashPassword(user.Password);
             return await _repository.AddAsync(user);
         }
@@ -54,7 +46,6 @@ namespace ITS152L_Project.Services.Implementations
 
         public async Task UpdateAsync(UserModel user)
         {
-            // If password is being updated, hash it
             if (!string.IsNullOrWhiteSpace(user.Password))
             {
                 user.Password = PasswordHasher.HashPassword(user.Password);
@@ -62,6 +53,4 @@ namespace ITS152L_Project.Services.Implementations
             await _repository.UpdateAsync(user);
         }
     }
-
 }
-

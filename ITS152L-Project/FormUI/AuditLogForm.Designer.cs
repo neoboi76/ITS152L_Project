@@ -1,176 +1,14 @@
-﻿using ItemDataLibrary.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+using ItemDataLibrary.Models;
 
 namespace FormsUI
 {
     partial class AuditLogForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            lblTitle = new Label();
-            lblFilter = new Label();
-            cmbFilterType = new ComboBox();
-            lblFrom = new Label();
-            dtpFrom = new DateTimePicker();
-            lblTo = new Label();
-            dtpTo = new DateTimePicker();
-            btnFilter = new Button();
-            btnClear = new Button();
-            dgvAuditLog = new DataGridView();
-            btnExport = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgvAuditLog).BeginInit();
-            SuspendLayout();
-            // 
-            // lblTitle
-            // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblTitle.Location = new Point(20, 20);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(133, 32);
-            lblTitle.TabIndex = 0;
-            lblTitle.Text = "Audit Trail";
-            // 
-            // lblFilter
-            // 
-            lblFilter.AutoSize = true;
-            lblFilter.Font = new Font("Segoe UI", 10F);
-            lblFilter.Location = new Point(20, 65);
-            lblFilter.Name = "lblFilter";
-            lblFilter.Size = new Size(61, 19);
-            lblFilter.TabIndex = 1;
-            lblFilter.Text = "Filter by:";
-            // 
-            // cmbFilterType
-            // 
-            cmbFilterType.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbFilterType.Items.AddRange(new object[] { "All Actions", "Added Only", "Updated Only", "Deleted Only" });
-            cmbFilterType.Location = new Point(90, 63);
-            cmbFilterType.Name = "cmbFilterType";
-            cmbFilterType.Size = new Size(150, 23);
-            cmbFilterType.TabIndex = 2;
-
-            lblFrom.AutoSize = true;
-            lblFrom.Font = new Font("Segoe UI", 10F);
-            lblFrom.Location = new Point(260, 65);
-            lblFrom.Name = "lblFrom";
-            lblFrom.Size = new Size(44, 19);
-            lblFrom.TabIndex = 3;
-            lblFrom.Text = "From:";
-
-            dtpFrom.Location = new Point(310, 63);
-            dtpFrom.Name = "dtpFrom";
-            dtpFrom.Size = new Size(120, 23);
-            dtpFrom.TabIndex = 4;
-            dtpFrom.Format = DateTimePickerFormat.Custom;
-            dtpFrom.CustomFormat = "MM/dd/yyyy";  
-
-            lblTo.AutoSize = true;
-            lblTo.Font = new Font("Segoe UI", 10F);
-            lblTo.Location = new Point(450, 65);
-            lblTo.Name = "lblTo";
-            lblTo.Size = new Size(26, 19);
-            lblTo.TabIndex = 5;
-            lblTo.Text = "To:";
-
-            dtpTo.Location = new Point(480, 63);
-            dtpTo.Name = "dtpTo";
-            dtpTo.Size = new Size(120, 23);
-            dtpTo.TabIndex = 6;
-            dtpTo.Format = DateTimePickerFormat.Custom;
-            dtpTo.CustomFormat = "MM/dd/yyyy";  
-
-            // === Add Controls to Form ===
-            this.Controls.Add(lblFrom);
-            this.Controls.Add(dtpFrom);
-            this.Controls.Add(lblTo);
-            this.Controls.Add(dtpTo);
-
-
-            // 
-            // btnFilter
-            // 
-            btnFilter.Location = new Point(780, 62);
-            btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(100, 27);
-            btnFilter.TabIndex = 7;
-            btnFilter.Text = "Apply Filter";
-            btnFilter.Click += BtnFilter_Click;
-            // 
-            // btnClear
-            // 
-            btnClear.Location = new Point(890, 62);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(80, 27);
-            btnClear.TabIndex = 8;
-            btnClear.Text = "Clear";
-            btnClear.Click += BtnClear_Click;
-            // 
-            // dgvAuditLog
-            // 
-            dgvAuditLog.AllowUserToAddRows = false;
-            dgvAuditLog.AllowUserToDeleteRows = false;
-            dgvAuditLog.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvAuditLog.Location = new Point(20, 110);
-            dgvAuditLog.Name = "dgvAuditLog";
-            dgvAuditLog.ReadOnly = true;
-            dgvAuditLog.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvAuditLog.Size = new Size(1040, 430);
-            dgvAuditLog.TabIndex = 9;
-            // 
-            // btnExport
-            // 
-            btnExport.Location = new Point(20, 560);
-            btnExport.Name = "btnExport";
-            btnExport.Size = new Size(120, 30);
-            btnExport.TabIndex = 10;
-            btnExport.Text = "Export to CSV";
-            btnExport.Click += BtnExport_Click;
-            // 
-            // AuditLogForm
-            // 
-            ClientSize = new Size(1200, 589);
-            Controls.Add(lblTitle);
-            Controls.Add(lblFilter);
-            Controls.Add(cmbFilterType);
-            Controls.Add(lblFrom);
-            Controls.Add(dtpFrom);
-            Controls.Add(lblTo);
-            Controls.Add(dtpTo);
-            Controls.Add(btnFilter);
-            Controls.Add(btnClear);
-            Controls.Add(dgvAuditLog);
-            Controls.Add(btnExport);
-            Name = "AuditLogForm";
-            Load += AuditLogForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvAuditLog).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
-        }
-
         private string _currentUserName;
         private DataGridView dgvAuditLog;
         private ComboBox cmbFilterType;
@@ -184,6 +22,200 @@ namespace FormsUI
         private Label lblTo;
         private Label lblFilter;
         private List<AuditLog> _allLogs = new List<AuditLog>();
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+                components.Dispose();
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+
+            this.AutoScaleDimensions = new SizeF(7F, 15F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(1200, 700);
+            this.BackColor = Color.FromArgb(248, 250, 252);
+            this.Name = "AuditLogForm";
+            this.Text = "Audit Trail";
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Load += AuditLogForm_Load;
+
+            Panel headerPanel = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 100,
+                BackColor = Color.White,
+                Padding = new Padding(30, 20, 30, 20)
+            };
+
+            lblTitle = new Label
+            {
+                Text = "Audit Trail",
+                Font = new Font("Segoe UI", 24, FontStyle.Bold),
+                ForeColor = Color.FromArgb(15, 23, 42),
+                AutoSize = true,
+                Location = new Point(30, 20)
+            };
+
+            headerPanel.Controls.Add(lblTitle);
+
+            Panel filterPanel = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 80,
+                BackColor = Color.White,
+                Padding = new Padding(20)
+            };
+
+            lblFilter = new Label
+            {
+                Text = "Filter:",
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(51, 65, 85),
+                Location = new Point(20, 20),
+                AutoSize = true
+            };
+
+            cmbFilterType = new ComboBox
+            {
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                Font = new Font("Segoe UI", 10),
+                Location = new Point(80, 17),
+                Size = new Size(150, 25)
+            };
+            cmbFilterType.Items.AddRange(new object[] { "All Actions", "Added Only", "Updated Only", "Deleted Only" });
+            cmbFilterType.SelectedIndex = 0;
+
+            lblFrom = new Label
+            {
+                Text = "From:",
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(51, 65, 85),
+                Location = new Point(250, 20),
+                AutoSize = true
+            };
+
+            dtpFrom = new DateTimePicker
+            {
+                Location = new Point(300, 17),
+                Size = new Size(130, 25),
+                Format = DateTimePickerFormat.Custom,
+                CustomFormat = "MM/dd/yyyy"
+            };
+
+            lblTo = new Label
+            {
+                Text = "To:",
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(51, 65, 85),
+                Location = new Point(450, 20),
+                AutoSize = true
+            };
+
+            dtpTo = new DateTimePicker
+            {
+                Location = new Point(485, 17),
+                Size = new Size(130, 25),
+                Format = DateTimePickerFormat.Custom,
+                CustomFormat = "MM/dd/yyyy"
+            };
+
+            btnFilter = new Button
+            {
+                Text = "Apply Filter",
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Location = new Point(630, 15),
+                Size = new Size(110, 30),
+                BackColor = Color.FromArgb(59, 130, 246),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Cursor = Cursors.Hand
+            };
+            btnFilter.FlatAppearance.BorderSize = 0;
+            btnFilter.Click += BtnFilter_Click;
+
+            btnClear = new Button
+            {
+                Text = "Clear",
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Location = new Point(750, 15),
+                Size = new Size(90, 30),
+                BackColor = Color.FromArgb(148, 163, 184),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Cursor = Cursors.Hand
+            };
+            btnClear.FlatAppearance.BorderSize = 0;
+            btnClear.Click += BtnClear_Click;
+
+            filterPanel.Controls.AddRange(new Control[] {
+                lblFilter, cmbFilterType, lblFrom, dtpFrom, lblTo, dtpTo, btnFilter, btnClear
+            });
+
+            Panel gridPanel = new Panel
+            {
+                Dock = DockStyle.Fill,
+                BackColor = Color.White,
+                Padding = new Padding(20)
+            };
+
+            dgvAuditLog = new DataGridView
+            {
+                Dock = DockStyle.Fill,
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                AllowUserToDeleteRows = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                BackgroundColor = Color.White,
+                BorderStyle = BorderStyle.None,
+                EnableHeadersVisualStyles = false,
+                SelectionMode = DataGridViewSelectionMode.FullRowSelect
+            };
+            dgvAuditLog.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(241, 245, 249);
+            dgvAuditLog.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(51, 65, 85);
+            dgvAuditLog.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvAuditLog.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 234, 254);
+            dgvAuditLog.DefaultCellStyle.SelectionForeColor = Color.FromArgb(30, 64, 175);
+            dgvAuditLog.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 250, 252);
+
+            gridPanel.Controls.Add(dgvAuditLog);
+
+            Panel actionPanel = new Panel
+            {
+                Dock = DockStyle.Bottom,
+                Height = 80,
+                BackColor = Color.White,
+                Padding = new Padding(20, 10, 20, 10)
+            };
+
+            btnExport = new Button
+            {
+                Text = "📄 Export to CSV",
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Location = new Point(20, 15),
+                Size = new Size(160, 40),
+                BackColor = Color.FromArgb(34, 197, 94),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Cursor = Cursors.Hand
+            };
+            btnExport.FlatAppearance.BorderSize = 0;
+            btnExport.Click += BtnExport_Click;
+
+            actionPanel.Controls.Add(btnExport);
+
+            this.Controls.AddRange(new Control[] {
+                gridPanel, actionPanel, filterPanel, headerPanel
+            });
+
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
 
         #endregion
     }

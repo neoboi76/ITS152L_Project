@@ -1,16 +1,4 @@
-﻿/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-namespace FormsUI
+﻿namespace FormsUI
 {
     partial class RegisterForm
     {
@@ -29,10 +17,9 @@ namespace FormsUI
         {
             this.SuspendLayout();
 
-            // === Base Form ===
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(900, 650); // increased height
+            this.ClientSize = new Size(900, 600);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -40,7 +27,6 @@ namespace FormsUI
             this.Name = "RegisterForm";
             this.Text = "Teleoplex Inventory System - Register";
 
-            // === Left Panel ===
             Panel leftPanel = new Panel();
             leftPanel.BackColor = Color.FromArgb(37, 99, 235);
             leftPanel.Dock = DockStyle.Left;
@@ -67,18 +53,16 @@ namespace FormsUI
             leftPanel.Controls.Add(brandLabel);
             leftPanel.Controls.Add(taglineLabel);
 
-            // === Right Panel ===
             Panel rightPanel = new Panel();
             rightPanel.Dock = DockStyle.Fill;
             rightPanel.BackColor = Color.White;
             rightPanel.Padding = new Padding(60, 60, 60, 60);
 
             int startX = 90;
-            int startY = 40; // moved everything slightly higher
+            int startY = 40;
             int fieldWidth = 350;
             int spacing = 65;
 
-            // === Title ===
             Label lblTitle = new Label();
             lblTitle.Text = "Create Account";
             lblTitle.Font = new Font("Segoe UI", 24, FontStyle.Bold);
@@ -95,23 +79,22 @@ namespace FormsUI
 
             int y = startY + 100;
 
-            // === Username ===
-            Label lblUsername = new Label();
-            lblUsername.Text = "Username";
-            lblUsername.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            lblUsername.ForeColor = Color.FromArgb(51, 65, 85);
-            lblUsername.AutoSize = true;
-            lblUsername.Location = new Point(startX, y);
+            Label lblEmail = new Label();
+            lblEmail.Text = "Email Address";
+            lblEmail.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblEmail.ForeColor = Color.FromArgb(51, 65, 85);
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(startX, y);
 
             txtRegUser = new TextBox();
             txtRegUser.Font = new Font("Segoe UI", 12);
             txtRegUser.Location = new Point(startX, y + 25);
             txtRegUser.Size = new Size(fieldWidth, 32);
             txtRegUser.BorderStyle = BorderStyle.FixedSingle;
+            txtRegUser.PlaceholderText = "example@email.com";
 
             y += spacing;
 
-            // === First Name ===
             Label lblFirst = new Label();
             lblFirst.Text = "First Name";
             lblFirst.Font = new Font("Segoe UI", 10, FontStyle.Bold);
@@ -127,7 +110,6 @@ namespace FormsUI
 
             y += spacing;
 
-            // === Last Name ===
             Label lblLast = new Label();
             lblLast.Text = "Last Name";
             lblLast.Font = new Font("Segoe UI", 10, FontStyle.Bold);
@@ -143,7 +125,6 @@ namespace FormsUI
 
             y += spacing;
 
-            // === Password ===
             Label lblPass = new Label();
             lblPass.Text = "Password";
             lblPass.Font = new Font("Segoe UI", 10, FontStyle.Bold);
@@ -159,8 +140,6 @@ namespace FormsUI
             txtRegNewPass.UseSystemPasswordChar = true;
             txtRegNewPass.TextChanged += (s, e) => UpdatePasswordStrength();
 
-
-            // === Password Strength ===
             lblPasswordStrength = new Label();
             lblPasswordStrength.Text = "Password Strength:";
             lblPasswordStrength.Font = new Font("Segoe UI", 9);
@@ -175,7 +154,6 @@ namespace FormsUI
 
             y += spacing + 40;
 
-            // === Confirm Password ===
             Label lblConfirm = new Label();
             lblConfirm.Text = "Confirm Password";
             lblConfirm.Font = new Font("Segoe UI", 10, FontStyle.Bold);
@@ -190,27 +168,8 @@ namespace FormsUI
             txtRegConfirm.BorderStyle = BorderStyle.FixedSingle;
             txtRegConfirm.UseSystemPasswordChar = true;
 
-            y += spacing;
-
-            // === Role Dropdown ===
-            Label lblRole = new Label();
-            lblRole.Text = "Role";
-            lblRole.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            lblRole.ForeColor = Color.FromArgb(51, 65, 85);
-            lblRole.AutoSize = true;
-            lblRole.Location = new Point(startX, y);
-
-            cmbRole = new ComboBox();
-            cmbRole.Font = new Font("Segoe UI", 12);
-            cmbRole.Location = new Point(startX, y + 25);
-            cmbRole.Size = new Size(fieldWidth, 32);
-            cmbRole.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbRole.Items.AddRange(new object[] { "User", "Admin" });
-            cmbRole.SelectedIndex = 0;
-
             y += spacing + 20;
 
-            // === Register Button ===
             btnRegSub = new Button();
             btnRegSub.Text = "Sign Up";
             btnRegSub.Font = new Font("Segoe UI", 11, FontStyle.Bold);
@@ -226,25 +185,22 @@ namespace FormsUI
             btnRegSub.MouseEnter += (s, e) => btnRegSub.BackColor = Color.FromArgb(29, 78, 216);
             btnRegSub.MouseLeave += (s, e) => btnRegSub.BackColor = Color.FromArgb(37, 99, 235);
 
-            // === "Already have an account?" link ===
             LinkLabel backToLogin = new LinkLabel();
             backToLogin.Text = "Already have an account? Sign in";
             backToLogin.Font = new Font("Segoe UI", 9);
             backToLogin.LinkColor = Color.FromArgb(37, 99, 235);
             backToLogin.AutoSize = true;
-            backToLogin.Location = new Point(startX, y + 75);
+            backToLogin.Location = new Point(startX, y + 55);
             backToLogin.LinkClicked += (s, e) => { this.Hide(); new LoginForm().Show(); };
 
-            // === Add Controls ===
             rightPanel.Controls.AddRange(new Control[] {
                 lblTitle, lblSubtitle,
-                lblUsername, txtRegUser,
+                lblEmail, txtRegUser,
                 lblFirst, txtRegFirst,
                 lblLast, txtRegLast,
                 lblPass, txtRegNewPass,
                 lblPasswordStrength, pbPasswordStrength,
                 lblConfirm, txtRegConfirm,
-                lblRole, cmbRole,
                 btnRegSub, backToLogin
             });
 
@@ -261,7 +217,6 @@ namespace FormsUI
         private TextBox txtRegLast;
         private TextBox txtRegNewPass;
         private TextBox txtRegConfirm;
-        private ComboBox cmbRole;
         private Button btnRegSub;
         private Label lblPasswordStrength;
         private ProgressBar pbPasswordStrength;

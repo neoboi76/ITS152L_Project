@@ -19,5 +19,8 @@
     <Compile Update="ResetForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

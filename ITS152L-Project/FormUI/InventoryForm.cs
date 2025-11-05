@@ -337,22 +337,27 @@ namespace FormsUI
             }
         }
 
+        private void UserManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var userManagementForm = new UserManagementForm(_currentUserName);
+            userManagementForm.ShowDialog();
+        }
+
         private void ApplySearchAndSort()
         {
             var filteredItems = _allItems.AsEnumerable();
 
-            // Apply search filter
             if (!string.IsNullOrWhiteSpace(txtSearch?.Text))
             {
                 string searchTerm = txtSearch.Text.ToLowerInvariant();
                 filteredItems = filteredItems.Where(item =>
                     (item.Name ?? string.Empty).ToLowerInvariant().Contains(searchTerm) ||
                     (item.Brand ?? string.Empty).ToLowerInvariant().Contains(searchTerm) ||
-                    item.Code.ToString().Contains(searchTerm)
+                    item.Code.ToString().Contains(searchTerm) ||
+                    item.Id.ToString().Contains(searchTerm)
                 );
             }
 
-            // Apply sorting
             if (cmbSortBy != null && cmbSortBy.SelectedIndex >= 0)
             {
                 var sel = cmbSortBy.SelectedItem?.ToString() ?? string.Empty;
@@ -360,12 +365,16 @@ namespace FormsUI
                 {
                     "Name (A-Z)" => filteredItems.OrderBy(i => i.Name),
                     "Name (Z-A)" => filteredItems.OrderByDescending(i => i.Name),
+                    "ID (Low-High)" => filteredItems.OrderBy(i => i.Id),
+                    "ID (High-Low)" => filteredItems.OrderByDescending(i => i.Id),
+                    "Code (Low-High)" => filteredItems.OrderBy(i => i.Code),
+                    "Code (High-Low)" => filteredItems.OrderByDescending(i => i.Code),
+                    "Brand (A-Z)" => filteredItems.OrderBy(i => i.Brand),
+                    "Brand (Z-A)" => filteredItems.OrderByDescending(i => i.Brand),
                     "Price (Low-High)" => filteredItems.OrderBy(i => i.UnitPrice),
                     "Price (High-Low)" => filteredItems.OrderByDescending(i => i.UnitPrice),
                     "Quantity (Low-High)" => filteredItems.OrderBy(i => i.Quantity),
                     "Quantity (High-Low)" => filteredItems.OrderByDescending(i => i.Quantity),
-                    "Brand (A-Z)" => filteredItems.OrderBy(i => i.Brand),
-                    "Code" => filteredItems.OrderBy(i => i.Code),
                     _ => filteredItems
                 };
             }
@@ -373,6 +382,7 @@ namespace FormsUI
             if (itemModelBindingSource != null)
                 itemModelBindingSource.DataSource = filteredItems.ToList();
         }
+
 
         // Deletes an item from the database
         private async void btnItemDelete_Click(object sender, EventArgs e)
@@ -604,5 +614,8 @@ namespace FormsUI
             var dataSource = itemModelBindingSource?.DataSource as List<ItemModel>;
             return dataSource ?? new List<ItemModel>();
         }
+
+
+
     }
 }

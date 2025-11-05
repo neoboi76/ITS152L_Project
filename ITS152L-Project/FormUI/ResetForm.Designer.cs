@@ -1,16 +1,4 @@
-﻿/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-namespace FormsUI
+﻿namespace FormsUI
 {
     partial class ResetForm
     {
@@ -29,7 +17,6 @@ namespace FormsUI
         {
             this.SuspendLayout();
 
-            // ===== FORM PROPERTIES =====
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new Size(900, 550);
@@ -40,7 +27,6 @@ namespace FormsUI
             this.Name = "ResetForm";
             this.Text = "Teleoplex Inventory System - Reset Password";
 
-            // ===== LEFT PANEL =====
             Panel leftPanel = new Panel();
             leftPanel.BackColor = Color.FromArgb(37, 99, 235);
             leftPanel.Dock = DockStyle.Left;
@@ -67,92 +53,151 @@ namespace FormsUI
             leftPanel.Controls.Add(brandLabel);
             leftPanel.Controls.Add(taglineLabel);
 
-            // ===== RIGHT PANEL =====
             Panel rightPanel = new Panel();
             rightPanel.Dock = DockStyle.Fill;
             rightPanel.BackColor = Color.White;
             rightPanel.Padding = new Padding(60, 80, 60, 80);
 
-            // ===== TITLES =====
             Label lblTitle = new Label();
             lblTitle.Text = "Reset Password";
             lblTitle.Font = new Font("Segoe UI", 24, FontStyle.Bold);
             lblTitle.ForeColor = Color.FromArgb(15, 23, 42);
             lblTitle.AutoSize = true;
-            lblTitle.Location = new Point(90, 100);
+            lblTitle.Location = new Point(90, 80);
 
             Label lblSubtitle = new Label();
-            lblSubtitle.Text = "Please enter your username and new password";
+            lblSubtitle.Text = "Enter your email to receive a verification code";
             lblSubtitle.Font = new Font("Segoe UI", 11);
             lblSubtitle.ForeColor = Color.FromArgb(100, 116, 139);
             lblSubtitle.AutoSize = true;
-            lblSubtitle.Location = new Point(90, 140);
+            lblSubtitle.Location = new Point(90, 120);
 
-            // ===== USERNAME =====
-            Label lblUsername = new Label();
-            lblUsername.Text = "Username";
-            lblUsername.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            lblUsername.ForeColor = Color.FromArgb(51, 65, 85);
-            lblUsername.AutoSize = true;
-            lblUsername.Location = new Point(90, 200);
+            pnlEmailEntry = new Panel();
+            pnlEmailEntry.Location = new Point(90, 170);
+            pnlEmailEntry.Size = new Size(400, 100);
+            pnlEmailEntry.BackColor = Color.White;
 
-            txtResUser = new TextBox();
-            txtResUser.Font = new Font("Segoe UI", 12);
-            txtResUser.Location = new Point(90, 225);
-            txtResUser.Size = new Size(350, 32);
-            txtResUser.BorderStyle = BorderStyle.FixedSingle;
+            Label lblEmail = new Label();
+            lblEmail.Text = "Email Address";
+            lblEmail.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblEmail.ForeColor = Color.FromArgb(51, 65, 85);
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(0, 0);
 
-            // ===== NEW PASSWORD =====
+            txtEmail = new TextBox();
+            txtEmail.Font = new Font("Segoe UI", 12);
+            txtEmail.Location = new Point(0, 25);
+            txtEmail.Size = new Size(350, 32);
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.PlaceholderText = "example@email.com";
+
+            btnSendCode = new Button();
+            btnSendCode.Text = "Send Code";
+            btnSendCode.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btnSendCode.Location = new Point(0, 65);
+            btnSendCode.Size = new Size(350, 40);
+            btnSendCode.BackColor = Color.FromArgb(37, 99, 235);
+            btnSendCode.ForeColor = Color.White;
+            btnSendCode.FlatStyle = FlatStyle.Flat;
+            btnSendCode.FlatAppearance.BorderSize = 0;
+            btnSendCode.Cursor = Cursors.Hand;
+            btnSendCode.Click += btnSendCode_Click;
+            btnSendCode.MouseEnter += (s, e) => btnSendCode.BackColor = Color.FromArgb(29, 78, 216);
+            btnSendCode.MouseLeave += (s, e) => btnSendCode.BackColor = Color.FromArgb(37, 99, 235);
+
+            pnlEmailEntry.Controls.AddRange(new Control[] { lblEmail, txtEmail, btnSendCode });
+
+            pnlVerification = new Panel();
+            pnlVerification.Location = new Point(90, 280);
+            pnlVerification.Size = new Size(400, 100);
+            pnlVerification.BackColor = Color.White;
+            pnlVerification.Visible = false;
+
+            Label lblCode = new Label();
+            lblCode.Text = "Verification Code";
+            lblCode.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblCode.ForeColor = Color.FromArgb(51, 65, 85);
+            lblCode.AutoSize = true;
+            lblCode.Location = new Point(0, 0);
+
+            txtVerificationCode = new TextBox();
+            txtVerificationCode.Font = new Font("Segoe UI", 12);
+            txtVerificationCode.Location = new Point(0, 25);
+            txtVerificationCode.Size = new Size(350, 32);
+            txtVerificationCode.BorderStyle = BorderStyle.FixedSingle;
+            txtVerificationCode.PlaceholderText = "Enter 6-digit code";
+            txtVerificationCode.MaxLength = 6;
+
+            btnVerifyCode = new Button();
+            btnVerifyCode.Text = "Verify Code";
+            btnVerifyCode.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btnVerifyCode.Location = new Point(0, 65);
+            btnVerifyCode.Size = new Size(350, 40);
+            btnVerifyCode.BackColor = Color.FromArgb(34, 197, 94);
+            btnVerifyCode.ForeColor = Color.White;
+            btnVerifyCode.FlatStyle = FlatStyle.Flat;
+            btnVerifyCode.FlatAppearance.BorderSize = 0;
+            btnVerifyCode.Cursor = Cursors.Hand;
+            btnVerifyCode.Click += btnVerifyCode_Click;
+            btnVerifyCode.MouseEnter += (s, e) => btnVerifyCode.BackColor = Color.FromArgb(22, 163, 74);
+            btnVerifyCode.MouseLeave += (s, e) => btnVerifyCode.BackColor = Color.FromArgb(34, 197, 94);
+
+            pnlVerification.Controls.AddRange(new Control[] { lblCode, txtVerificationCode, btnVerifyCode });
+
+            pnlPasswordReset = new Panel();
+            pnlPasswordReset.Location = new Point(90, 170);
+            pnlPasswordReset.Size = new Size(400, 200);
+            pnlPasswordReset.BackColor = Color.White;
+            pnlPasswordReset.Visible = false;
+
             Label lblNewPass = new Label();
             lblNewPass.Text = "New Password";
             lblNewPass.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             lblNewPass.ForeColor = Color.FromArgb(51, 65, 85);
             lblNewPass.AutoSize = true;
-            lblNewPass.Location = new Point(90, 280);
+            lblNewPass.Location = new Point(0, 0);
 
-            txtResNewPass = new TextBox();
-            txtResNewPass.Font = new Font("Segoe UI", 12);
-            txtResNewPass.Location = new Point(90, 305);
-            txtResNewPass.Size = new Size(350, 32);
-            txtResNewPass.UseSystemPasswordChar = true;
-            txtResNewPass.BorderStyle = BorderStyle.FixedSingle;
+            txtNewPassword = new TextBox();
+            txtNewPassword.Font = new Font("Segoe UI", 12);
+            txtNewPassword.Location = new Point(0, 25);
+            txtNewPassword.Size = new Size(350, 32);
+            txtNewPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtNewPassword.UseSystemPasswordChar = true;
 
-            // ===== CONFIRM PASSWORD =====
             Label lblConfirmPass = new Label();
             lblConfirmPass.Text = "Confirm Password";
             lblConfirmPass.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             lblConfirmPass.ForeColor = Color.FromArgb(51, 65, 85);
             lblConfirmPass.AutoSize = true;
-            lblConfirmPass.Location = new Point(90, 360);
+            lblConfirmPass.Location = new Point(0, 70);
 
-            txtResConfirm = new TextBox();
-            txtResConfirm.Font = new Font("Segoe UI", 12);
-            txtResConfirm.Location = new Point(90, 385);
-            txtResConfirm.Size = new Size(350, 32);
-            txtResConfirm.UseSystemPasswordChar = true;
-            txtResConfirm.BorderStyle = BorderStyle.FixedSingle;
+            txtConfirmPassword = new TextBox();
+            txtConfirmPassword.Font = new Font("Segoe UI", 12);
+            txtConfirmPassword.Location = new Point(0, 95);
+            txtConfirmPassword.Size = new Size(350, 32);
+            txtConfirmPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtConfirmPassword.UseSystemPasswordChar = true;
 
-            // ===== SUBMIT BUTTON =====
-            btnReset = new Button();
-            btnReset.Text = "Reset Password";
-            btnReset.Font = new Font("Segoe UI", 11, FontStyle.Bold);
-            btnReset.Location = new Point(90, 440);
-            btnReset.Size = new Size(350, 45);
-            btnReset.BackColor = Color.FromArgb(37, 99, 235);
-            btnReset.ForeColor = Color.White;
-            btnReset.FlatStyle = FlatStyle.Flat;
-            btnReset.FlatAppearance.BorderSize = 0;
-            btnReset.Cursor = Cursors.Hand;
-            btnReset.Click += btnReset_Click;
+            btnResetPassword = new Button();
+            btnResetPassword.Text = "Reset Password";
+            btnResetPassword.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btnResetPassword.Location = new Point(0, 140);
+            btnResetPassword.Size = new Size(350, 45);
+            btnResetPassword.BackColor = Color.FromArgb(37, 99, 235);
+            btnResetPassword.ForeColor = Color.White;
+            btnResetPassword.FlatStyle = FlatStyle.Flat;
+            btnResetPassword.FlatAppearance.BorderSize = 0;
+            btnResetPassword.Cursor = Cursors.Hand;
+            btnResetPassword.Click += btnResetPassword_Click;
+            btnResetPassword.MouseEnter += (s, e) => btnResetPassword.BackColor = Color.FromArgb(29, 78, 216);
+            btnResetPassword.MouseLeave += (s, e) => btnResetPassword.BackColor = Color.FromArgb(37, 99, 235);
 
-            // Hover effect
-            btnReset.MouseEnter += (s, e) => btnReset.BackColor = Color.FromArgb(29, 78, 216);
-            btnReset.MouseLeave += (s, e) => btnReset.BackColor = Color.FromArgb(37, 99, 235);
+            pnlPasswordReset.Controls.AddRange(new Control[] {
+                lblNewPass, txtNewPassword, lblConfirmPass, txtConfirmPassword, btnResetPassword
+            });
 
-            // ===== ADD CONTROLS =====
             rightPanel.Controls.AddRange(new Control[] {
-                lblTitle, lblSubtitle, lblUsername, txtResUser,
-                lblNewPass, txtResNewPass, lblConfirmPass, txtResConfirm, btnReset
+                lblTitle, lblSubtitle, pnlEmailEntry, pnlVerification, pnlPasswordReset
             });
 
             this.Controls.Add(rightPanel);
@@ -163,9 +208,15 @@ namespace FormsUI
 
         #endregion
 
-        private TextBox txtResUser;
-        private TextBox txtResNewPass;
-        private TextBox txtResConfirm;
-        private Button btnReset;
+        private Panel pnlEmailEntry;
+        private Panel pnlVerification;
+        private Panel pnlPasswordReset;
+        private TextBox txtEmail;
+        private TextBox txtVerificationCode;
+        private TextBox txtNewPassword;
+        private TextBox txtConfirmPassword;
+        private Button btnSendCode;
+        private Button btnVerifyCode;
+        private Button btnResetPassword;
     }
 }

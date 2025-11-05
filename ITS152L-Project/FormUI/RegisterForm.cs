@@ -5,43 +5,28 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Http;
 using System.Net.Http.Json;
-using System.Windows.Forms;
 using ItemDataLibrary.Models;
 using ItemDataLibrary.Security;
-
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Register form UI
 
 namespace FormsUI
 {
     public partial class RegisterForm : Form
     {
-        //Facilitates http requests from front-ebd to back-end
         private readonly HttpClient _httpClient = new HttpClient
         {
             BaseAddress = new Uri("https://localhost:7173/")
         };
+
         public RegisterForm()
         {
             InitializeComponent();
         }
 
-        //Facilitates register mechanism
         private async void btnRegSub_ClickAsync(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtRegFirst.Text) ||
@@ -55,7 +40,20 @@ namespace FormsUI
                 return;
             }
 
-            // Validate password strength
+            if (txtRegUser.Text.ToLower() == "admin")
+            {
+                MessageBox.Show("This username is reserved. Please choose a different username.",
+                    "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!IsValidEmail(txtRegUser.Text))
+            {
+                MessageBox.Show("Please enter a valid email address.", "Invalid Email",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (!PasswordHasher.IsPasswordValid(txtRegNewPass.Text, out string errorMessage))
             {
                 MessageBox.Show(errorMessage, "Invalid Password",
@@ -75,8 +73,8 @@ namespace FormsUI
                 UserName = txtRegUser.Text,
                 FirstName = txtRegFirst.Text,
                 LastName = txtRegLast.Text,
-                Password = txtRegNewPass.Text, // Will be hashed in service layer
-                Role = cmbRole.SelectedItem?.ToString() ?? "User"
+                Password = txtRegNewPass.Text,
+                Role = "User"
             };
 
             var response = await _httpClient.PostAsJsonAsync("api/user", newUser);
@@ -93,6 +91,22 @@ namespace FormsUI
                 var error = await response.Content.ReadAsStringAsync();
                 MessageBox.Show($"Registration failed: {error}", "Registration failed",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                var regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+                return regex.IsMatch(email);
+            }
+            catch
+            {
+                return false;
             }
         }
 
@@ -126,7 +140,5 @@ namespace FormsUI
                 lblPasswordStrength.Text = "Password Strength: Strong";
             }
         }
-
-
     }
 }

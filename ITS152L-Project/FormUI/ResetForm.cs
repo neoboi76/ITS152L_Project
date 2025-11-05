@@ -1,89 +1,139 @@
 ﻿using ItemDataLibrary.Models;
-using Microsoft.VisualBasic.ApplicationServices;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.Http;
 using System.Net.Http;
 using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Reset password form UI
 
 namespace FormsUI
 {
     public partial class ResetForm : Form
     {
-        //Facilitates http requests from front-ebd to back-end
         private readonly HttpClient _httpClient = new HttpClient
         {
             BaseAddress = new Uri("https://localhost:7173/")
         };
+
+        private string _verifiedEmail = null;
+        private bool _emailVerified = false;
 
         public ResetForm()
         {
             InitializeComponent();
         }
 
-        //Facilitates reset password mechanism
-        private async void btnReset_Click(object sender, EventArgs e)
+        private async void btnSendCode_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtResUser.Text) ||
-               string.IsNullOrWhiteSpace(txtResNewPass.Text) || string.IsNullOrWhiteSpace(txtResConfirm.Text))
+            string email = txtEmail.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(email))
             {
-                MessageBox.Show("Username and Passwords are required.", "Reset Failed",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
+                MessageBox.Show("Please enter your email address.", "Email Required",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (txtResNewPass.Text != txtResConfirm.Text)
+            var response = await _httpClient.GetAsync($"api/user/check-email/{Uri.EscapeDataString(email)}");
+
+            if (!response.IsSuccessStatusCode)
             {
-                MessageBox.Show("Passwords do not match.", "Reset Failed",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
+                MessageBox.Show("This email is not registered in our system.", "Email Not Found",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            btnSendCode.Enabled = false;
+            btnSendCode.Text = "Sending...";
+
+            bool sent = EmailService.SendVerificationCode(email);
+
+            if (sent)
+            {
+                pnlVerification.Visible = true;
+                MessageBox.Show("A verification code has been sent to your email.", "Code Sent",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnSendCode.Text = "Resend Code";
+            }
+            else
+            {
+                MessageBox.Show("Failed to send verification code. Please try again.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnSendCode.Text = "Send Code";
+            }
+
+            btnSendCode.Enabled = true;
+        }
+
+        private void btnVerifyCode_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text.Trim();
+            string code = txtVerificationCode.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(code))
+            {
+                MessageBox.Show("Please enter the verification code.", "Code Required",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (EmailService.VerifyCode(email, code))
+            {
+                _verifiedEmail = email;
+                _emailVerified = true;
+                pnlEmailEntry.Visible = false;
+                pnlVerification.Visible = false;
+                pnlPasswordReset.Visible = true;
+                MessageBox.Show("Email verified! You can now reset your password.", "Verification Successful",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Invalid or expired verification code.", "Verification Failed",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnResetPassword_Click(object sender, EventArgs e)
+        {
+            if (!_emailVerified)
+            {
+                MessageBox.Show("Please verify your email first.", "Verification Required",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNewPassword.Text) ||
+                string.IsNullOrWhiteSpace(txtConfirmPassword.Text))
+            {
+                MessageBox.Show("Please enter and confirm your new password.", "Password Required",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (txtNewPassword.Text != txtConfirmPassword.Text)
+            {
+                MessageBox.Show("Passwords do not match.", "Password Mismatch",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             var loginDto = new UserLogin
             {
-                UserName = txtResUser.Text,
-                Password = txtResConfirm.Text
-
+                UserName = _verifiedEmail,
+                Password = txtNewPassword.Text
             };
 
             var response = await _httpClient.PostAsJsonAsync("api/login/reset", loginDto);
 
             if (response.IsSuccessStatusCode)
             {
-                var user = await response.Content.ReadFromJsonAsync<UserModel>();
-                MessageBox.Show("Your password has been reset", "Reset Successful",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+                MessageBox.Show("Your password has been reset successfully!", "Reset Successful",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
             else
             {
-                MessageBox.Show($"{txtResUser.Text} does not exist in the database", "Reset Failed",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
+                MessageBox.Show("Failed to reset password. Please try again.", "Reset Failed",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

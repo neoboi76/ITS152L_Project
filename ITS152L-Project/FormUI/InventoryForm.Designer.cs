@@ -4,36 +4,17 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-/*
-Developed by: 
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-*/
-
-// Designer partial class
 namespace FormsUI
 {
     partial class InventoryForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing)
             {
-                // unsubscribe static events defensively
                 SessionManager.SessionExpired -= OnSessionExpired;
-
                 components?.Dispose();
             }
             base.Dispose(disposing);
@@ -43,17 +24,14 @@ namespace FormsUI
 
         private void InitializeComponent()
         {
-            // ensure components container exists
             components = new Container();
 
-            // Instantiate BindingSource and ErrorProviders early to avoid null references
             itemModelBindingSource = new BindingSource(components);
             itemModelBindingSource.DataSource = typeof(ItemModel);
 
             errorProvider1 = new ErrorProvider(components);
             itemErrorProvider = new ErrorProvider(components);
 
-            // Form properties
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new Size(1200, 700);
@@ -62,7 +40,6 @@ namespace FormsUI
             this.Text = "Teleoplex Inventory System";
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // Header Panel
             Panel headerPanel = new Panel
             {
                 Dock = DockStyle.Top,
@@ -92,7 +69,6 @@ namespace FormsUI
             headerPanel.Controls.Add(lblTitle);
             headerPanel.Controls.Add(lblUserInfo);
 
-            // Left Panel (Item Details Form)
             Panel leftPanel = new Panel
             {
                 BackColor = Color.White,
@@ -110,32 +86,26 @@ namespace FormsUI
                 AutoSize = true
             };
 
-            // Item Name
             lblItemName = CreateLabel("Item Name", 20, 70);
             txtItemName = CreateTextBox(20, 95, 380);
             txtItemName.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Name", true));
 
-            // Item Code
             lblItemCode = CreateLabel("Item Code", 20, 140);
             txtItemCode = CreateTextBox(20, 165, 380);
             txtItemCode.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Code", true));
 
-            // Item Brand
             lblItemBrand = CreateLabel("Brand", 20, 210);
             txtItemBrand = CreateTextBox(20, 235, 380);
             txtItemBrand.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Brand", true));
 
-            // Unit Price
             lblItemPrice = CreateLabel("Unit Price", 20, 280);
             txtItemPrice = CreateTextBox(20, 305, 180);
             txtItemPrice.DataBindings.Add(new Binding("Text", itemModelBindingSource, "UnitPrice", true));
 
-            // Quantity
             lblItemQuantity = CreateLabel("Quantity", 220, 280);
             txtItemQuantity = CreateTextBox(220, 305, 180);
             txtItemQuantity.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Quantity", true));
 
-            // Note
             label2 = new Label
             {
                 Text = "*All fields are required.\n*Code, Price, and Quantity must be numbers.",
@@ -145,7 +115,6 @@ namespace FormsUI
                 AutoSize = true
             };
 
-            // Buttons
             btnItemNew = CreateButton("New Item", 20, 400, Color.FromArgb(37, 99, 235));
             btnItemNew.Click += btnItemNew_Click;
 
@@ -168,7 +137,6 @@ namespace FormsUI
                 btnItemNew, btnItemUpdate, btnItemDelete, btnItemSave, btnItemCancel
             });
 
-            // Right Panel (DataGridView)
             Panel rightPanel = new Panel
             {
                 BackColor = Color.White,
@@ -186,7 +154,6 @@ namespace FormsUI
                 AutoSize = true
             };
 
-            // DataGridView
             dataGridView1 = new DataGridView
             {
                 Location = new Point(20, 60),
@@ -208,7 +175,6 @@ namespace FormsUI
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.FromArgb(30, 64, 175);
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 250, 252);
 
-            // Columns
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] {
                 CreateColumn("Id", "Id", 50),
                 CreateColumn("Name", "Name", 150),
@@ -218,18 +184,14 @@ namespace FormsUI
                 CreateColumn("Quantity", "Quantity", 100)
             });
 
-            // attach DataSource after binding source was created above
             dataGridView1.DataSource = itemModelBindingSource;
 
             rightPanel.Controls.Add(lblGridTitle);
             rightPanel.Controls.Add(dataGridView1);
 
-            // Add panels to form
             this.Controls.Add(headerPanel);
             this.Controls.Add(leftPanel);
             this.Controls.Add(rightPanel);
-
-            // Note: itemModelBindingSource and error providers already created at top of this method
 
             this.ResumeLayout(false);
         }
@@ -276,7 +238,6 @@ namespace FormsUI
             };
             btn.FlatAppearance.BorderSize = 0;
 
-            // Hover effects
             Color hoverColor = ControlPaint.Light(color, 0.2f);
             btn.MouseEnter += (s, e) => btn.BackColor = hoverColor;
             btn.MouseLeave += (s, e) => btn.BackColor = color;
@@ -298,14 +259,12 @@ namespace FormsUI
 
         #endregion
 
-        #region Search / Menu initializers (designer adds these controls at runtime)
+        #region Search / Menu initializers
 
         private void InitializeSearchAndSort()
         {
-            // Prevent duplicate initialization
             if (txtSearch != null && cmbSortBy != null) return;
 
-            // Search TextBox
             lblSearch = new Label
             {
                 AutoSize = true,
@@ -322,7 +281,6 @@ namespace FormsUI
             };
             txtSearch.TextChanged += TxtSearch_TextChanged;
 
-            // Sort ComboBox
             lblSortBy = new Label
             {
                 AutoSize = true,
@@ -335,25 +293,28 @@ namespace FormsUI
             {
                 Font = new Font("Segoe UI", 10F),
                 Location = new Point(710, 10),
-                Size = new Size(150, 25),
+                Size = new Size(180, 25),
                 DropDownStyle = ComboBoxStyle.DropDownList
             };
             cmbSortBy.Items.AddRange(new object[] {
                 "Name (A-Z)",
                 "Name (Z-A)",
+                "ID (Low-High)",
+                "ID (High-Low)",
+                "Code (Low-High)",
+                "Code (High-Low)",
+                "Brand (A-Z)",
+                "Brand (Z-A)",
                 "Price (Low-High)",
                 "Price (High-Low)",
                 "Quantity (Low-High)",
-                "Quantity (High-Low)",
-                "Brand (A-Z)",
-                "Code"
+                "Quantity (High-Low)"
             });
             cmbSortBy.SelectedIndexChanged += CmbSortBy_SelectedIndexChanged;
 
-            // Refresh button
             btnRefresh = new Button
             {
-                Location = new Point(870, 10),
+                Location = new Point(900, 10),
                 Size = new Size(25, 25),
                 Text = "🔄"
             };
@@ -378,12 +339,10 @@ namespace FormsUI
 
         private void InitializeMenuStrip()
         {
-            // Prevent double-init
             if (menuStrip1 != null) return;
 
             menuStrip1 = new MenuStrip();
 
-            // File menu
             fileToolStripMenuItem = new ToolStripMenuItem
             {
                 Text = "&File"
@@ -407,7 +366,6 @@ namespace FormsUI
                 logoutToolStripMenuItem
             });
 
-            // View menu
             viewToolStripMenuItem = new ToolStripMenuItem
             {
                 Text = "&View"
@@ -426,9 +384,17 @@ namespace FormsUI
             };
             auditLogToolStripMenuItem.Click += AuditLogToolStripMenuItem_Click;
 
+            userManagementToolStripMenuItem = new ToolStripMenuItem
+            {
+                Text = "User Management",
+                Visible = string.Equals(_currentUserRole, "Admin", StringComparison.OrdinalIgnoreCase)
+            };
+            userManagementToolStripMenuItem.Click += UserManagementToolStripMenuItem_Click;
+
             viewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
                 dashboardToolStripMenuItem,
-                auditLogToolStripMenuItem
+                auditLogToolStripMenuItem,
+                userManagementToolStripMenuItem
             });
 
             menuStrip1.Items.AddRange(new ToolStripItem[] {
@@ -510,6 +476,7 @@ namespace FormsUI
         private ToolStripMenuItem logoutToolStripMenuItem;
         private ToolStripMenuItem viewToolStripMenuItem;
         private ToolStripMenuItem auditLogToolStripMenuItem;
+        private ToolStripMenuItem userManagementToolStripMenuItem;
         private ToolStripMenuItem printToolStripMenuItem;
         private ToolStripMenuItem printPreviewToolStripMenuItem;
         private ToolStripMenuItem printToPdfToolStripMenuItem;
