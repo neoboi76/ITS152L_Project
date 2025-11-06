@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>ITS152L_Project</RootNamespace>
+    <UserSecretsId>356ead2a-015f-4f12-ab93-582d26e218bb</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

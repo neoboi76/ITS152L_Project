@@ -188,6 +188,7 @@ E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS1
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\ItemApi.pdb
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\Azure.Core.dll
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\Azure.Identity.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\BCrypt.Net-Next.dll
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\Dapper.dll
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\Humanizer.dll
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -351,11 +352,10 @@ E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS1
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\staticwebassets.development.json
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\ItemApi.csproj.Up2Date
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\ItemApi.dll
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\refint\ItemApi.dll
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\ItemApi.pdb
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\ItemApi.genruntimeconfig.cache
 E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\ref\ItemApi.dll
-E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\bin\Debug\net9.0\BCrypt.Net-Next.dll
+E:\THE TRUE ONEDRIVE\OneDrive - Mapúa University\College 3rd year\1st Term\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\Project\ITS152L-Project\ItemAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

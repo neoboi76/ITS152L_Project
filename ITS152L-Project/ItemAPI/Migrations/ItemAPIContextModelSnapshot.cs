@@ -87,6 +87,45 @@ namespace ITS152L_Project.Migrations
                     b.ToTable("Items");
                 });
 
+            modelBuilder.Entity("ItemDataLibrary.Models.PasswordResetToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Expiry")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsUsed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasMaxLength(6)
+                        .HasColumnType("nvarchar(6)");
+
+                    b.Property<DateTime?>("UsedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Token");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("Token", "UserId", "IsUsed", "Expiry");
+
+                    b.ToTable("password_reset_tokens");
+                });
+
             modelBuilder.Entity("ItemDataLibrary.Models.UserLogin", b =>
                 {
                     b.Property<string>("Password")
@@ -131,6 +170,17 @@ namespace ITS152L_Project.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ItemDataLibrary.Models.PasswordResetToken", b =>
+                {
+                    b.HasOne("ItemDataLibrary.Models.UserModel", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

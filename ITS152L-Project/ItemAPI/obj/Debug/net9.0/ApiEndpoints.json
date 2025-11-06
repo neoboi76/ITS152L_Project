@@ -305,6 +305,90 @@
     ]
   },
   {
+    "ContainingType": "ITS152L_Project.Controllers.PasswordResetController",
+    "Method": "CheckEmailExists",
+    "RelativePath": "api/PasswordReset/check-email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ItemDataLibrary.Models.UserModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ITS152L_Project.Controllers.PasswordResetController",
+    "Method": "CleanupExpiredTokens",
+    "RelativePath": "api/PasswordReset/cleanup-expired",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ITS152L_Project.Controllers.PasswordResetController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/PasswordReset/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ITS152L_Project.Controllers.ResetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ITS152L_Project.Controllers.PasswordResetController",
+    "Method": "SendVerificationCode",
+    "RelativePath": "api/PasswordReset/send-code/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ITS152L_Project.Controllers.PasswordResetController",
+    "Method": "VerifyCode",
+    "RelativePath": "api/PasswordReset/verify-code",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ITS152L_Project.Controllers.VerifyCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ITS152L_Project.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/User",

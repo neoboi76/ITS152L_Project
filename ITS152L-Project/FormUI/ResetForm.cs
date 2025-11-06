@@ -1,4 +1,5 @@
 ﻿using ItemDataLibrary.Models;
+using ITS152L_Project.Services.Implementations;
 using System;
 using System.Net.Http;
 using System.Net.Http.Json;
@@ -13,7 +14,7 @@ namespace FormsUI
             BaseAddress = new Uri("https://localhost:7173/")
         };
 
-        private string _verifiedEmail = null;
+        private int _verifiedUserId = 0;
         private bool _emailVerified = false;
 
         public ResetForm()
@@ -32,40 +33,70 @@ namespace FormsUI
                 return;
             }
 
-            var response = await _httpClient.GetAsync($"api/user/check-email/{Uri.EscapeDataString(email)}");
-
-            if (!response.IsSuccessStatusCode)
+            try
             {
-                MessageBox.Show("This email is not registered in our system.", "Email Not Found",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                btnSendCode.Enabled = false;
+                btnSendCode.Text = "Sending...";
+
+                // Check if user exists and get user object
+                var response = await _httpClient.GetAsync($"api/passwordreset/check-email/{Uri.EscapeDataString(email)}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("This email is not registered in our system.", "Email Not Found",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var user = await response.Content.ReadFromJsonAsync<UserModel>();
+                if (user == null)
+                {
+                    MessageBox.Show("Unable to retrieve user information.", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Request token generation and email sending
+                var sendResponse = await _httpClient.PostAsync(
+                    $"api/passwordreset/send-code/{user.Id}", null);
+
+                if (sendResponse.IsSuccessStatusCode)
+                {
+                    _verifiedUserId = user.Id;
+                    pnlVerification.Visible = true;
+                    MessageBox.Show(
+                        "A verification code has been sent to your email.\n\n" +
+                        "⚠️ Security Notice:\n" +
+                        "• The code will expire in 10 minutes\n" +
+                        "• The code can only be used once\n" +
+                        "• Never share this code with anyone",
+                        "Code Sent",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                    btnSendCode.Text = "Resend Code";
+                }
+                else
+                {
+                    var error = await sendResponse.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Failed to send verification code: {error}", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnSendCode.Text = "Send Code";
+                }
             }
-
-            btnSendCode.Enabled = false;
-            btnSendCode.Text = "Sending...";
-
-            bool sent = EmailService.SendVerificationCode(email);
-
-            if (sent)
+            catch (Exception ex)
             {
-                pnlVerification.Visible = true;
-                MessageBox.Show("A verification code has been sent to your email.", "Code Sent",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnSendCode.Text = "Resend Code";
-            }
-            else
-            {
-                MessageBox.Show("Failed to send verification code. Please try again.", "Error",
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 btnSendCode.Text = "Send Code";
             }
-
-            btnSendCode.Enabled = true;
+            finally
+            {
+                btnSendCode.Enabled = true;
+            }
         }
 
-        private void btnVerifyCode_Click(object sender, EventArgs e)
+        private async void btnVerifyCode_Click(object sender, EventArgs e)
         {
-            string email = txtEmail.Text.Trim();
             string code = txtVerificationCode.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(code))
@@ -75,20 +106,70 @@ namespace FormsUI
                 return;
             }
 
-            if (EmailService.VerifyCode(email, code))
+            if (code.Length != 6 || !code.All(char.IsDigit))
             {
-                _verifiedEmail = email;
-                _emailVerified = true;
-                pnlEmailEntry.Visible = false;
-                pnlVerification.Visible = false;
-                pnlPasswordReset.Visible = true;
-                MessageBox.Show("Email verified! You can now reset your password.", "Verification Successful",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Verification code must be exactly 6 digits.", "Invalid Format",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            if (_verifiedUserId == 0)
             {
-                MessageBox.Show("Invalid or expired verification code.", "Verification Failed",
+                MessageBox.Show("Please request a verification code first.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                btnVerifyCode.Enabled = false;
+                btnVerifyCode.Text = "Verifying...";
+
+                var verifyRequest = new
+                {
+                    UserId = _verifiedUserId,
+                    Token = code
+                };
+
+                var response = await _httpClient.PostAsJsonAsync("api/passwordreset/verify-code", verifyRequest);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    _emailVerified = true;
+                    pnlEmailEntry.Visible = false;
+                    pnlVerification.Visible = false;
+                    pnlPasswordReset.Visible = true;
+                    MessageBox.Show(
+                        "✓ Email verified successfully!\n\n" +
+                        "You can now reset your password.\n" +
+                        "Note: The verification code has been marked as used.",
+                        "Verification Successful",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+                else
+                {
+                    var error = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show(
+                        "Verification failed. The code may be:\n\n" +
+                        "• Invalid or incorrect\n" +
+                        "• Already used\n" +
+                        "• Expired (older than 10 minutes)\n\n" +
+                        "Please request a new code if needed.",
+                        "Verification Failed",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred during verification: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnVerifyCode.Enabled = true;
+                btnVerifyCode.Text = "Verify Code";
             }
         }
 
@@ -116,24 +197,45 @@ namespace FormsUI
                 return;
             }
 
-            var loginDto = new UserLogin
+            try
             {
-                UserName = _verifiedEmail,
-                Password = txtNewPassword.Text
-            };
+                btnResetPassword.Enabled = false;
+                btnResetPassword.Text = "Resetting...";
 
-            var response = await _httpClient.PostAsJsonAsync("api/login/reset", loginDto);
+                var resetRequest = new
+                {
+                    UserId = _verifiedUserId,
+                    NewPassword = txtNewPassword.Text
+                };
 
-            if (response.IsSuccessStatusCode)
-            {
-                MessageBox.Show("Your password has been reset successfully!", "Reset Successful",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
+                var response = await _httpClient.PostAsJsonAsync("api/passwordreset/reset-password", resetRequest);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show(
+                        "✓ Your password has been reset successfully!\n\n" +
+                        "You can now login with your new password.",
+                        "Reset Successful",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    var error = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Failed to reset password: {error}", "Reset Failed",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Failed to reset password. Please try again.", "Reset Failed",
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnResetPassword.Enabled = true;
+                btnResetPassword.Text = "Reset Password";
             }
         }
     }

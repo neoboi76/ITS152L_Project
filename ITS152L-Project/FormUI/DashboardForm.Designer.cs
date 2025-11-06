@@ -32,6 +32,14 @@ namespace FormsUI
             this.Text = "Inventory Dashboard";
             this.Load += DashboardForm_Load;
 
+            Panel headerPanel = new Panel
+            {
+                Location = new Point(0, 0),
+                Size = new Size(1200, 90),
+                BackColor = Color.White,
+                Padding = new Padding(30, 20, 30, 15)
+            };
+
             Label lblTitle = new Label
             {
                 Text = "Inventory Dashboard",
@@ -41,17 +49,19 @@ namespace FormsUI
                 AutoSize = true
             };
 
+            headerPanel.Controls.Add(lblTitle);
+
             Panel statsContainer = new Panel
             {
-                Location = new Point(30, 90),
+                Location = new Point(30, 110),
                 Size = new Size(1140, 130),
                 BackColor = Color.Transparent
             };
 
-            Panel cardTotal = CreateStatCard("Total Items", "0", Color.FromArgb(59, 130, 246), 0, 0);
-            Panel cardValue = CreateStatCard("Total Inventory Value", "$0.00", Color.FromArgb(34, 197, 94), 285, 0);
-            Panel cardLowStock = CreateStatCard("Low Stock Items", "0", Color.FromArgb(234, 179, 8), 570, 0);
-            Panel cardTopItem = CreateStatCard("Top Item", "N/A", Color.FromArgb(168, 85, 247), 855, 0);
+            Panel cardTotal = CreateStatCard("Total Items", "0", Color.FromArgb(59, 130, 246), 0);
+            Panel cardValue = CreateStatCard("Total Inventory Value", "$0.00", Color.FromArgb(34, 197, 94), 285);
+            Panel cardLowStock = CreateStatCard("Low Stock Items", "0", Color.FromArgb(234, 179, 8), 570);
+            Panel cardTopItem = CreateStatCard("Top Item", "N/A", Color.FromArgb(168, 85, 247), 855);
 
             lblTotalItemsValue = (Label)cardTotal.Controls[2];
             lblTotalValueValue = (Label)cardValue.Controls[2];
@@ -65,14 +75,14 @@ namespace FormsUI
                 Text = "Recent Activity",
                 Font = new Font("Segoe UI", 16, FontStyle.Bold),
                 ForeColor = Color.FromArgb(15, 23, 42),
-                Location = new Point(30, 245),
+                Location = new Point(30, 260),
                 AutoSize = true
             };
 
             Panel auditPanel = new Panel
             {
-                Location = new Point(30, 285),
-                Size = new Size(1140, 400),
+                Location = new Point(30, 300),
+                Size = new Size(1140, 390),
                 BackColor = Color.White,
                 Padding = new Padding(15)
             };
@@ -105,7 +115,7 @@ namespace FormsUI
 
             Panel buttonPanel = new Panel
             {
-                Location = new Point(30, 705),
+                Location = new Point(30, 710),
                 Size = new Size(1140, 65),
                 BackColor = Color.White,
                 Padding = new Padding(15)
@@ -115,7 +125,7 @@ namespace FormsUI
             {
                 Text = "🔄 Refresh",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                Location = new Point(15, 10),
+                Location = new Point(15, 12),
                 Size = new Size(130, 40),
                 BackColor = Color.FromArgb(59, 130, 246),
                 ForeColor = Color.White,
@@ -131,7 +141,7 @@ namespace FormsUI
             {
                 Text = "← Back to Inventory",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                Location = new Point(160, 10),
+                Location = new Point(160, 12),
                 Size = new Size(180, 40),
                 BackColor = Color.FromArgb(100, 116, 139),
                 ForeColor = Color.White,
@@ -146,21 +156,29 @@ namespace FormsUI
             buttonPanel.Controls.AddRange(new Control[] { btnRefresh, btnBackToInventory });
 
             this.Controls.AddRange(new Control[] {
-                lblTitle, statsContainer, lblAuditTitle, auditPanel, buttonPanel
+                headerPanel, statsContainer, lblAuditTitle, auditPanel, buttonPanel
             });
 
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
-        private Panel CreateStatCard(string title, string value, Color accentColor, int x, int y)
+        private Panel CreateStatCard(string title, string value, Color accentColor, int xOffset)
         {
             Panel card = new Panel
             {
-                Location = new Point(x, y),
+                Location = new Point(xOffset, 0),
                 Size = new Size(270, 120),
                 BackColor = Color.White,
                 BorderStyle = BorderStyle.None
+            };
+
+            card.Paint += (s, e) =>
+            {
+                using (var pen = new Pen(Color.FromArgb(226, 232, 240), 1))
+                {
+                    e.Graphics.DrawRectangle(pen, 0, 0, card.Width - 1, card.Height - 1);
+                }
             };
 
             Panel accent = new Panel
@@ -176,7 +194,7 @@ namespace FormsUI
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 ForeColor = Color.FromArgb(71, 85, 105),
                 Location = new Point(15, 20),
-                Size = new Size(240, 40),
+                Size = new Size(240, 25),
                 AutoSize = false
             };
 
@@ -185,7 +203,7 @@ namespace FormsUI
                 Text = value,
                 Font = new Font("Segoe UI", 20, FontStyle.Bold),
                 ForeColor = accentColor,
-                Location = new Point(15, 60),
+                Location = new Point(15, 50),
                 AutoSize = true,
                 MaximumSize = new Size(240, 0)
             };
