@@ -22,26 +22,12 @@ namespace FormsUI
         private string _currentUserName;
         private string _currentUserRole;
 
-        // Controls
- 
         public DashboardForm(string userName, string userRole)
         {
             InitializeComponent();
             _currentUserName = userName;
             _currentUserRole = userRole;
             this.Text = "Dashboard - Teleoplex Inventory System";
-            this.Size = new Size(1000, 600);
-        }
-
-        private Label CreateStatLabel(string text, int x, int y)
-        {
-            return new Label
-            {
-                Text = text,
-                Font = new Font("Segoe UI", 12),
-                Location = new Point(x, y),
-                AutoSize = true
-            };
         }
 
         private async void DashboardForm_Load(object sender, EventArgs e)
@@ -53,26 +39,39 @@ namespace FormsUI
         {
             try
             {
-                // Load inventory statistics
                 var items = await _httpClient.GetFromJsonAsync<List<ItemModel>>("api/item/getAll");
 
                 if (items != null && items.Any())
                 {
-                    lblTotalItems.Text = $"Total Items: {items.Count}";
+                    lblTotalItemsValue.Text = items.Count.ToString();
 
                     double totalValue = items.Sum(i => i.UnitPrice * i.Quantity);
-                    lblTotalValue.Text = $"Total Inventory Value: ${totalValue:N2}";
+                    lblTotalValueValue.Text = $"${totalValue:N2}";
 
                     int lowStockCount = items.Count(i => i.Quantity < 10);
-                    lblLowStock.Text = $"Low Stock Items (< 10 units): {lowStockCount}";
+                    lblLowStockValue.Text = lowStockCount.ToString();
 
                     var topItem = items.OrderByDescending(i => i.Quantity).FirstOrDefault();
-                    lblTopItem.Text = topItem != null
-                        ? $"Top Item by Quantity: {topItem.Name} ({topItem.Quantity} units)"
-                        : "Top Item by Quantity: N/A";
+                    if (topItem != null)
+                    {
+                        string displayName = topItem.Name.Length > 20
+                            ? topItem.Name.Substring(0, 20) + "..."
+                            : topItem.Name;
+                        lblTopItemValue.Text = displayName;
+                    }
+                    else
+                    {
+                        lblTopItemValue.Text = "N/A";
+                    }
+                }
+                else
+                {
+                    lblTotalItemsValue.Text = "0";
+                    lblTotalValueValue.Text = "$0.00";
+                    lblLowStockValue.Text = "0";
+                    lblTopItemValue.Text = "N/A";
                 }
 
-                // Load recent audit logs
                 var logs = await _httpClient.GetFromJsonAsync<List<AuditLog>>("api/auditlog/recent/20");
 
                 if (logs != null)
@@ -85,8 +84,25 @@ namespace FormsUI
                         log.Details
                     }).ToList();
 
-                    dgvAuditLog.Columns["Timestamp"].DefaultCellStyle.Format = "MM/dd/yyyy HH:mm:ss";
-                    dgvAuditLog.Columns["Timestamp"].Width = 150;
+                    if (dgvAuditLog.Columns["Timestamp"] != null)
+                    {
+                        dgvAuditLog.Columns["Timestamp"].DefaultCellStyle.Format = "MM/dd/yyyy HH:mm";
+                        dgvAuditLog.Columns["Timestamp"].Width = 130;
+                        dgvAuditLog.Columns["Timestamp"].HeaderText = "Date & Time";
+                    }
+                    if (dgvAuditLog.Columns["UserName"] != null)
+                    {
+                        dgvAuditLog.Columns["UserName"].Width = 150;
+                        dgvAuditLog.Columns["UserName"].HeaderText = "User";
+                    }
+                    if (dgvAuditLog.Columns["Action"] != null)
+                    {
+                        dgvAuditLog.Columns["Action"].Width = 100;
+                    }
+                    if (dgvAuditLog.Columns["Details"] != null)
+                    {
+                        dgvAuditLog.Columns["Details"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    }
                 }
             }
             catch (Exception ex)
@@ -105,10 +121,9 @@ namespace FormsUI
 
         private void BtnBackToInventory_Click(object sender, EventArgs e)
         {
-            InventoryForm inventoryForm = new InventoryForm(_currentUserName, _currentUserRole);
+            var inventoryForm = new InventoryForm(_currentUserName, _currentUserRole);
             inventoryForm.Show();
             this.Close();
         }
     }
 }
-

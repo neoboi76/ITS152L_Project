@@ -1,28 +1,9 @@
-﻿/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-namespace FormsUI
+﻿namespace FormsUI
 {
     partial class LoginForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -34,18 +15,13 @@ namespace FormsUI
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.SuspendLayout();
 
-            // Form properties
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(900, 550);
+            this.ClientSize = new Size(950, 600);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -53,43 +29,56 @@ namespace FormsUI
             this.Name = "LoginForm";
             this.Text = "Teleoplex Inventory System - Login";
 
-            // Left Panel (Branding/Image)
             Panel leftPanel = new Panel();
-            leftPanel.BackColor = Color.FromArgb(37, 99, 235); // Blue
+            leftPanel.BackColor = Color.FromArgb(37, 99, 235);
             leftPanel.Dock = DockStyle.Left;
-            leftPanel.Width = 350;
+            leftPanel.Width = 380;
+
+            Panel gradientOverlay = new Panel
+            {
+                Dock = DockStyle.Fill,
+                BackColor = Color.Transparent
+            };
 
             Label brandLabel = new Label();
             brandLabel.Text = "TELEOPLEX";
-            brandLabel.Font = new Font("Segoe UI", 32, FontStyle.Bold);
+            brandLabel.Font = new Font("Segoe UI", 36, FontStyle.Bold);
             brandLabel.ForeColor = Color.White;
             brandLabel.AutoSize = false;
-            brandLabel.Size = new Size(300, 60);
-            brandLabel.Location = new Point(25, 150);
+            brandLabel.Size = new Size(340, 70);
+            brandLabel.Location = new Point(20, 140);
             brandLabel.TextAlign = ContentAlignment.MiddleCenter;
 
             Label taglineLabel = new Label();
             taglineLabel.Text = "Inventory Management System";
-            taglineLabel.Font = new Font("Segoe UI", 12);
+            taglineLabel.Font = new Font("Segoe UI", 13);
             taglineLabel.ForeColor = Color.FromArgb(191, 219, 254);
             taglineLabel.AutoSize = false;
-            taglineLabel.Size = new Size(300, 30);
-            taglineLabel.Location = new Point(25, 220);
+            taglineLabel.Size = new Size(340, 35);
+            taglineLabel.Location = new Point(20, 220);
             taglineLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+            Label versionLabel = new Label();
+            versionLabel.Text = "v1.0";
+            versionLabel.Font = new Font("Segoe UI", 10);
+            versionLabel.ForeColor = Color.FromArgb(147, 197, 253);
+            versionLabel.AutoSize = false;
+            versionLabel.Size = new Size(340, 30);
+            versionLabel.Location = new Point(20, 270);
+            versionLabel.TextAlign = ContentAlignment.MiddleCenter;
 
             leftPanel.Controls.Add(brandLabel);
             leftPanel.Controls.Add(taglineLabel);
+            leftPanel.Controls.Add(versionLabel);
 
-            // Right Panel (Login Form)
             Panel rightPanel = new Panel();
             rightPanel.Dock = DockStyle.Fill;
             rightPanel.BackColor = Color.White;
-            rightPanel.Padding = new Padding(60, 80, 60, 80);
+            rightPanel.Padding = new Padding(60, 90, 60, 90);
 
-            // Title
             Label lblTitle = new Label();
             lblTitle.Text = "Welcome Back";
-            lblTitle.Font = new Font("Segoe UI", 24, FontStyle.Bold);
+            lblTitle.Font = new Font("Segoe UI", 26, FontStyle.Bold);
             lblTitle.ForeColor = Color.FromArgb(15, 23, 42);
             lblTitle.AutoSize = true;
             lblTitle.Location = new Point(90, 100);
@@ -99,44 +88,41 @@ namespace FormsUI
             lblSubtitle.Font = new Font("Segoe UI", 11);
             lblSubtitle.ForeColor = Color.FromArgb(100, 116, 139);
             lblSubtitle.AutoSize = true;
-            lblSubtitle.Location = new Point(90, 140);
+            lblSubtitle.Location = new Point(90, 145);
 
-            // Username
             Label lblUsername = new Label();
             lblUsername.Text = "Username";
             lblUsername.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             lblUsername.ForeColor = Color.FromArgb(51, 65, 85);
             lblUsername.AutoSize = true;
-            lblUsername.Location = new Point(90, 200);
+            lblUsername.Location = new Point(90, 210);
 
             txtLogName = new TextBox();
             txtLogName.Font = new Font("Segoe UI", 12);
-            txtLogName.Location = new Point(90, 225);
-            txtLogName.Size = new Size(350, 32);
+            txtLogName.Location = new Point(90, 235);
+            txtLogName.Size = new Size(360, 34);
             txtLogName.BorderStyle = BorderStyle.FixedSingle;
 
-            // Password
             Label lblPassword = new Label();
             lblPassword.Text = "Password";
             lblPassword.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             lblPassword.ForeColor = Color.FromArgb(51, 65, 85);
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(90, 280);
+            lblPassword.Location = new Point(90, 295);
 
             txtLogPass = new TextBox();
             txtLogPass.Font = new Font("Segoe UI", 12);
-            txtLogPass.Location = new Point(90, 305);
-            txtLogPass.Size = new Size(350, 32);
+            txtLogPass.Location = new Point(90, 320);
+            txtLogPass.Size = new Size(360, 34);
             txtLogPass.UseSystemPasswordChar = true;
             txtLogPass.BorderStyle = BorderStyle.FixedSingle;
 
-            // Links
             forgotPass = new LinkLabel();
             forgotPass.Text = "Forgot password?";
             forgotPass.Font = new Font("Segoe UI", 9);
             forgotPass.LinkColor = Color.FromArgb(37, 99, 235);
             forgotPass.AutoSize = true;
-            forgotPass.Location = new Point(350, 350);
+            forgotPass.Location = new Point(350, 370);
             forgotPass.LinkClicked += linkLabel1_LinkClicked;
 
             createAccount = new LinkLabel();
@@ -144,15 +130,14 @@ namespace FormsUI
             createAccount.Font = new Font("Segoe UI", 9);
             createAccount.LinkColor = Color.FromArgb(37, 99, 235);
             createAccount.AutoSize = true;
-            createAccount.Location = new Point(90, 350);
+            createAccount.Location = new Point(90, 370);
             createAccount.LinkClicked += linkLabel2_LinkClicked;
 
-            // Submit Button
             btnLogSub = new Button();
             btnLogSub.Text = "Sign In";
-            btnLogSub.Font = new Font("Segoe UI", 11, FontStyle.Bold);
-            btnLogSub.Location = new Point(90, 390);
-            btnLogSub.Size = new Size(350, 45);
+            btnLogSub.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            btnLogSub.Location = new Point(90, 410);
+            btnLogSub.Size = new Size(360, 48);
             btnLogSub.BackColor = Color.FromArgb(37, 99, 235);
             btnLogSub.ForeColor = Color.White;
             btnLogSub.FlatStyle = FlatStyle.Flat;
@@ -160,7 +145,6 @@ namespace FormsUI
             btnLogSub.Cursor = Cursors.Hand;
             btnLogSub.Click += btnLogSub_ClickAsync;
 
-            // Add hover effect
             btnLogSub.MouseEnter += (s, e) => {
                 btnLogSub.BackColor = Color.FromArgb(29, 78, 216);
             };

@@ -10,21 +10,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-/*
-Developed by: 
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-*/
-
-// Inventory form code-behind
 namespace FormsUI
 {
     public partial class InventoryForm : Form
     {
-        // Facilitates http requests from front-end to back-end
         private readonly HttpClient _httpClient = new HttpClient
         {
             BaseAddress = new Uri("https://localhost:7173/")
@@ -37,19 +26,16 @@ namespace FormsUI
 
         public InventoryForm(string userName, string userRole)
         {
-            // assign user info BEFORE InitializeComponent so labels/data-binding that use them are safe
             _currentUserName = userName ?? string.Empty;
             _currentUserRole = userRole ?? string.Empty;
 
             InitializeComponent();
 
-            // Wire events that the designer might not have wired
-            this.Load += InventoryForm_LoadAsync; // async void handler already present in your code
+            this.Load += InventoryForm_LoadAsync;
             this.FormClosed += InventoryForm_FormClosed;
 
             var activityTracker = new ActivityTracker(this);
 
-            // Subscribe to session expired
             SessionManager.SessionExpired += OnSessionExpired;
 
             InitializeMenuStrip();
@@ -57,13 +43,11 @@ namespace FormsUI
 
         private void InventoryForm_FormClosed(object? sender, FormClosedEventArgs e)
         {
-            // Unsubscribe from static events to avoid handlers running after disposal
             SessionManager.SessionExpired -= OnSessionExpired;
         }
 
         private void OnSessionExpired(object? sender, EventArgs e)
         {
-            // Protect against disposed form
             if (this.IsDisposed || this.Disposing) return;
 
             if (this.InvokeRequired)
@@ -74,7 +58,6 @@ namespace FormsUI
                 }
                 catch (ObjectDisposedException)
                 {
-                    // form is being disposed, ignore
                 }
                 return;
             }
@@ -82,7 +65,6 @@ namespace FormsUI
             MessageBox.Show("Your session has expired due to inactivity. Please login again.",
                 "Session Expired", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-            // Close other forms safely and show login form
             try
             {
                 foreach (Form open in Application.OpenForms.Cast<Form>().ToList())
@@ -93,7 +75,6 @@ namespace FormsUI
             }
             catch
             {
-                // swallow exceptions from closing forms to avoid crashing in session expiration path
             }
 
             var loginForm = new LoginForm();
@@ -104,32 +85,34 @@ namespace FormsUI
             }
             catch
             {
-                // ignore closing exceptions
             }
         }
 
-        // Update logout
         private void LogoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to logout?", "Confirm Logout",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                SessionManager.SessionExpired -= OnSessionExpired;
                 SessionManager.EndSession();
+
+                foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
+                {
+                    if (form != this && !(form is LoginForm))
+                    {
+                        form.Close();
+                    }
+                }
 
                 var loginForm = new LoginForm();
                 loginForm.Show();
-
-                // Unsubscribe before closing
-                SessionManager.SessionExpired -= OnSessionExpired;
 
                 this.Close();
             }
         }
 
-        // Creates new item
         private void btnItemNew_Click(object sender, EventArgs e)
         {
-            // Ensure binding source exists
             if (itemModelBindingSource == null)
             {
                 itemModelBindingSource = new BindingSource(components);
@@ -154,7 +137,6 @@ namespace FormsUI
             if (btnItemSave != null) btnItemSave.Enabled = !readOnly;
         }
 
-        // Saves new item in the database
         private async void btnItemSave_Click(object sender, EventArgs e)
         {
             ValidateFields();
@@ -187,14 +169,12 @@ namespace FormsUI
                 return;
             }
 
-            // Update entity
             entity.Name = txtItemName.Text;
             entity.Brand = txtItemBrand.Text;
             entity.Code = code;
             entity.UnitPrice = price;
             entity.Quantity = quantity;
 
-            // Pass username as query parameter for audit trail
             var userQuery = Uri.EscapeDataString(_currentUserName ?? string.Empty);
             HttpResponseMessage response;
             try
@@ -218,7 +198,6 @@ namespace FormsUI
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ReadOnlyFields(true);
 
-                    // Refresh list
                     await LoadItemsAsync();
                 }
             }
@@ -231,7 +210,6 @@ namespace FormsUI
 
         private void ValidateFields()
         {
-            // ensure itemErrorProvider is instantiated
             if (itemErrorProvider == null)
             {
                 itemErrorProvider = new ErrorProvider(components);
@@ -248,24 +226,49 @@ namespace FormsUI
         {
             bool isAdmin = string.Equals(_currentUserRole, "ADMIN", StringComparison.OrdinalIgnoreCase);
 
-            // Show/hide buttons based on role
+            if (pnlLeftSide != null)
+            {
+                if (!isAdmin)
+                {
+                    pnlLeftSide.Visible = false;
+
+                    foreach (Control ctrl in this.Controls)
+                    {
+                        if (ctrl != menuStrip1 && ctrl.Left > 100)
+                        {
+                            ctrl.Location = new Point(20, ctrl.Location.Y);
+                            if (ctrl is Panel panel)
+                            {
+                                panel.Size = new Size(1360, panel.Height);
+
+                                foreach (Control innerCtrl in panel.Controls)
+                                {
+                                    if (innerCtrl is DataGridView dgv)
+                                    {
+                                        dgv.Size = new Size(1320, dgv.Height);
+                                    }
+                                    else if (innerCtrl is Panel searchPanel && searchPanel.Top < 100)
+                                    {
+                                        searchPanel.Size = new Size(1320, searchPanel.Height);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    pnlLeftSide.Visible = true;
+                }
+            }
+
             if (btnItemNew != null) btnItemNew.Visible = isAdmin;
             if (btnItemUpdate != null) btnItemUpdate.Visible = isAdmin;
             if (btnItemDelete != null) btnItemDelete.Visible = isAdmin;
             if (btnItemSave != null) btnItemSave.Visible = isAdmin;
             if (btnItemCancel != null) btnItemCancel.Visible = isAdmin;
+            if (btnQuickPrint != null) btnQuickPrint.Visible = isAdmin;
 
-            // Always readonly for users
-            if (!isAdmin)
-            {
-                if (txtItemName != null) txtItemName.ReadOnly = true;
-                if (txtItemCode != null) txtItemCode.ReadOnly = true;
-                if (txtItemBrand != null) txtItemBrand.ReadOnly = true;
-                if (txtItemPrice != null) txtItemPrice.ReadOnly = true;
-                if (txtItemQuantity != null) txtItemQuantity.ReadOnly = true;
-            }
-
-            // Update title to show role
             this.Text = $"Teleoplex Inventory System - {_currentUserName} ({_currentUserRole})";
         }
 
@@ -284,16 +287,6 @@ namespace FormsUI
             }
 
             ApplyRolePermissions();
-
-            // initialize search/sort UI elements (only if not already added)
-            try
-            {
-                InitializeSearchAndSort();
-            }
-            catch
-            {
-                // ignore if already initialized
-            }
         }
 
         private async Task LoadItemsAsync()
@@ -307,7 +300,6 @@ namespace FormsUI
             }
             catch (Exception ex)
             {
-                // bubble up so caller can show message
                 throw new InvalidOperationException("Error fetching items from API", ex);
             }
         }
@@ -383,8 +375,6 @@ namespace FormsUI
                 itemModelBindingSource.DataSource = filteredItems.ToList();
         }
 
-
-        // Deletes an item from the database
         private async void btnItemDelete_Click(object sender, EventArgs e)
         {
             var entity = itemModelBindingSource?.Current as ItemModel;
@@ -412,7 +402,7 @@ namespace FormsUI
                     {
                         itemModelBindingSource.RemoveCurrent();
                     }
-                    catch { /* ignore */ }
+                    catch { }
 
                     MessageBox.Show("Item deleted successfully.", "Success",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -425,25 +415,21 @@ namespace FormsUI
             }
         }
 
-        // Updates item in the database (makes fields editable)
         private void btnItemUpdate_Click(object sender, EventArgs e)
         {
             ReadOnlyFields(false);
         }
 
-        // Cancels update operations
         private void btnItemCancel_Click(object sender, EventArgs e)
         {
             ReadOnlyFields(true);
 
-            // If new item was being added, cancel the add
             try
             {
                 itemModelBindingSource?.CancelEdit();
             }
             catch
             {
-                // ignore
             }
         }
 
@@ -487,10 +473,8 @@ namespace FormsUI
         {
             var sb = new StringBuilder();
 
-            // Add headers
             sb.AppendLine("Id,Name,Code,Brand,Unit Price,Quantity");
 
-            // Get current filtered/sorted items from DataGridView
             var items = itemModelBindingSource?.DataSource as List<ItemModel>;
 
             if (items != null)
@@ -513,7 +497,7 @@ namespace FormsUI
         {
             var dashboardForm = new DashboardForm(_currentUserName, _currentUserRole);
             dashboardForm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void AuditLogToolStripMenuItem_Click(object sender, EventArgs e)
@@ -608,14 +592,10 @@ namespace FormsUI
             }
         }
 
-        // Helper method to get current filtered/sorted items
         private List<ItemModel> GetCurrentItems()
         {
             var dataSource = itemModelBindingSource?.DataSource as List<ItemModel>;
             return dataSource ?? new List<ItemModel>();
         }
-
-
-
     }
 }

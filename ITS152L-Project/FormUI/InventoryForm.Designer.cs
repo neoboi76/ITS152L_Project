@@ -34,7 +34,7 @@ namespace FormsUI
 
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(1200, 700);
+            this.ClientSize = new Size(1400, 800);
             this.BackColor = Color.FromArgb(248, 250, 252);
             this.Name = "InventoryForm";
             this.Text = "Teleoplex Inventory System";
@@ -43,8 +43,8 @@ namespace FormsUI
             Panel headerPanel = new Panel
             {
                 Dock = DockStyle.Top,
-                Height = 120,
-                Padding = new Padding(20, 40, 20, 0),
+                Height = 100,
+                Padding = new Padding(20, 15, 20, 0),
                 BackColor = Color.White
             };
 
@@ -54,7 +54,7 @@ namespace FormsUI
                 Font = new Font("Segoe UI", 20, FontStyle.Bold),
                 ForeColor = Color.FromArgb(15, 23, 42),
                 AutoSize = true,
-                Location = new Point(20, 20)
+                Location = new Point(20, 15)
             };
 
             Label lblUserInfo = new Label
@@ -63,17 +63,17 @@ namespace FormsUI
                 Font = new Font("Segoe UI", 9),
                 ForeColor = Color.FromArgb(100, 116, 139),
                 AutoSize = true,
-                Location = new Point(30, 60)
+                Location = new Point(20, 50)
             };
 
             headerPanel.Controls.Add(lblTitle);
             headerPanel.Controls.Add(lblUserInfo);
 
-            Panel leftPanel = new Panel
+            pnlLeftSide = new Panel
             {
                 BackColor = Color.White,
-                Location = new Point(20, 100),
-                Size = new Size(420, 550),
+                Location = new Point(20, 120),
+                Size = new Size(440, 640),
                 Padding = new Padding(20)
             };
 
@@ -87,23 +87,23 @@ namespace FormsUI
             };
 
             lblItemName = CreateLabel("Item Name", 20, 70);
-            txtItemName = CreateTextBox(20, 95, 380);
+            txtItemName = CreateTextBox(20, 95, 400);
             txtItemName.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Name", true));
 
             lblItemCode = CreateLabel("Item Code", 20, 140);
-            txtItemCode = CreateTextBox(20, 165, 380);
+            txtItemCode = CreateTextBox(20, 165, 400);
             txtItemCode.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Code", true));
 
             lblItemBrand = CreateLabel("Brand", 20, 210);
-            txtItemBrand = CreateTextBox(20, 235, 380);
+            txtItemBrand = CreateTextBox(20, 235, 400);
             txtItemBrand.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Brand", true));
 
             lblItemPrice = CreateLabel("Unit Price", 20, 280);
-            txtItemPrice = CreateTextBox(20, 305, 180);
+            txtItemPrice = CreateTextBox(20, 305, 190);
             txtItemPrice.DataBindings.Add(new Binding("Text", itemModelBindingSource, "UnitPrice", true));
 
-            lblItemQuantity = CreateLabel("Quantity", 220, 280);
-            txtItemQuantity = CreateTextBox(220, 305, 180);
+            lblItemQuantity = CreateLabel("Quantity", 230, 280);
+            txtItemQuantity = CreateTextBox(230, 305, 190);
             txtItemQuantity.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Quantity", true));
 
             label2 = new Label
@@ -111,37 +111,40 @@ namespace FormsUI
                 Text = "*All fields are required.\n*Code, Price, and Quantity must be numbers.",
                 Font = new Font("Segoe UI", 9, FontStyle.Italic),
                 ForeColor = Color.FromArgb(100, 116, 139),
-                Location = new Point(20, 350),
+                Location = new Point(20, 360),
                 AutoSize = true
             };
 
-            btnItemNew = CreateButton("New Item", 20, 400, Color.FromArgb(37, 99, 235));
+            btnItemNew = CreateButton("New Item", 20, 410, Color.FromArgb(37, 99, 235));
             btnItemNew.Click += btnItemNew_Click;
 
-            btnItemUpdate = CreateButton("Update", 140, 400, Color.FromArgb(59, 130, 246));
+            btnItemUpdate = CreateButton("Update", 145, 410, Color.FromArgb(59, 130, 246));
             btnItemUpdate.Click += btnItemUpdate_Click;
 
-            btnItemDelete = CreateButton("Delete", 260, 400, Color.FromArgb(239, 68, 68));
+            btnItemDelete = CreateButton("Delete", 270, 410, Color.FromArgb(239, 68, 68));
             btnItemDelete.Click += btnItemDelete_Click;
 
-            btnItemSave = CreateButton("Save", 20, 450, Color.FromArgb(34, 197, 94));
+            btnItemSave = CreateButton("Save", 20, 465, Color.FromArgb(34, 197, 94));
             btnItemSave.Click += btnItemSave_Click;
 
-            btnItemCancel = CreateButton("Cancel", 140, 450, Color.FromArgb(148, 163, 184));
+            btnItemCancel = CreateButton("Cancel", 145, 465, Color.FromArgb(148, 163, 184));
             btnItemCancel.Click += btnItemCancel_Click;
 
-            leftPanel.Controls.AddRange(new Control[] {
+            btnQuickPrint = CreateButton("🖨 Print", 270, 465, Color.FromArgb(168, 85, 247));
+            btnQuickPrint.Click += (s, e) => PrintPreviewToolStripMenuItem_Click(s, e);
+
+            pnlLeftSide.Controls.AddRange(new Control[] {
                 lblFormTitle, lblItemName, txtItemName, lblItemCode, txtItemCode,
                 lblItemBrand, txtItemBrand, lblItemPrice, txtItemPrice,
                 lblItemQuantity, txtItemQuantity, label2,
-                btnItemNew, btnItemUpdate, btnItemDelete, btnItemSave, btnItemCancel
+                btnItemNew, btnItemUpdate, btnItemDelete, btnItemSave, btnItemCancel, btnQuickPrint
             });
 
             Panel rightPanel = new Panel
             {
                 BackColor = Color.White,
-                Location = new Point(460, 100),
-                Size = new Size(720, 550),
+                Location = new Point(480, 120),
+                Size = new Size(900, 640),
                 Padding = new Padding(20)
             };
 
@@ -154,10 +157,100 @@ namespace FormsUI
                 AutoSize = true
             };
 
+            Panel searchPanel = new Panel
+            {
+                Location = new Point(20, 55),
+                Size = new Size(860, 40),
+                BackColor = Color.FromArgb(248, 250, 252),
+                Padding = new Padding(10, 8, 10, 8)
+            };
+
+            lblSearch = new Label
+            {
+                Text = "Search:",
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(51, 65, 85),
+                Location = new Point(10, 10),
+                AutoSize = true
+            };
+
+            txtSearch = new TextBox
+            {
+                Font = new Font("Segoe UI", 10),
+                Location = new Point(75, 8),
+                Size = new Size(250, 25),
+                BorderStyle = BorderStyle.FixedSingle
+            };
+            txtSearch.TextChanged += TxtSearch_TextChanged;
+
+            lblSortBy = new Label
+            {
+                Text = "Sort By:",
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(51, 65, 85),
+                Location = new Point(345, 10),
+                AutoSize = true
+            };
+
+            cmbSortBy = new ComboBox
+            {
+                Font = new Font("Segoe UI", 10),
+                Location = new Point(410, 8),
+                Size = new Size(200, 25),
+                DropDownStyle = ComboBoxStyle.DropDownList
+            };
+            cmbSortBy.Items.AddRange(new object[] {
+                "Name (A-Z)",
+                "Name (Z-A)",
+                "ID (Low-High)",
+                "ID (High-Low)",
+                "Code (Low-High)",
+                "Code (High-Low)",
+                "Brand (A-Z)",
+                "Brand (Z-A)",
+                "Price (Low-High)",
+                "Price (High-Low)",
+                "Quantity (Low-High)",
+                "Quantity (High-Low)"
+            });
+            cmbSortBy.SelectedIndexChanged += CmbSortBy_SelectedIndexChanged;
+
+            btnRefresh = new Button
+            {
+                Text = "🔄",
+                Font = new Font("Segoe UI", 12),
+                Location = new Point(630, 6),
+                Size = new Size(40, 30),
+                BackColor = Color.FromArgb(59, 130, 246),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Cursor = Cursors.Hand
+            };
+            btnRefresh.FlatAppearance.BorderSize = 0;
+            btnRefresh.Click += BtnRefresh_Click;
+
+            btnExportCsv = new Button
+            {
+                Text = "📄 Export",
+                Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                Location = new Point(685, 6),
+                Size = new Size(90, 30),
+                BackColor = Color.FromArgb(34, 197, 94),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Cursor = Cursors.Hand
+            };
+            btnExportCsv.FlatAppearance.BorderSize = 0;
+            btnExportCsv.Click += BtnExportCsv_Click;
+
+            searchPanel.Controls.AddRange(new Control[] {
+                lblSearch, txtSearch, lblSortBy, cmbSortBy, btnRefresh, btnExportCsv
+            });
+
             dataGridView1 = new DataGridView
             {
-                Location = new Point(20, 60),
-                Size = new Size(680, 470),
+                Location = new Point(20, 105),
+                Size = new Size(860, 510),
                 AllowUserToAddRows = false,
                 AllowUserToDeleteRows = false,
                 ReadOnly = true,
@@ -165,32 +258,39 @@ namespace FormsUI
                 BackgroundColor = Color.White,
                 BorderStyle = BorderStyle.None,
                 ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize,
-                EnableHeadersVisualStyles = false
+                EnableHeadersVisualStyles = false,
+                SelectionMode = DataGridViewSelectionMode.FullRowSelect,
+                RowHeadersVisible = false
             };
 
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(241, 245, 249);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(51, 65, 85);
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dataGridView1.ColumnHeadersDefaultCellStyle.Padding = new Padding(8);
+            dataGridView1.ColumnHeadersHeight = 40;
             dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 234, 254);
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.FromArgb(30, 64, 175);
+            dataGridView1.DefaultCellStyle.Padding = new Padding(8, 4, 8, 4);
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 250, 252);
+            dataGridView1.RowTemplate.Height = 36;
 
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] {
-                CreateColumn("Id", "Id", 50),
-                CreateColumn("Name", "Name", 150),
-                CreateColumn("Code", "Code", 80),
-                CreateColumn("Brand", "Brand", 120),
-                CreateColumn("UnitPrice", "Unit Price", 100),
+                CreateColumn("Id", "ID", 60),
+                CreateColumn("Name", "Name", 200),
+                CreateColumn("Code", "Code", 100),
+                CreateColumn("Brand", "Brand", 150),
+                CreateColumn("UnitPrice", "Unit Price", 120),
                 CreateColumn("Quantity", "Quantity", 100)
             });
 
             dataGridView1.DataSource = itemModelBindingSource;
 
             rightPanel.Controls.Add(lblGridTitle);
+            rightPanel.Controls.Add(searchPanel);
             rightPanel.Controls.Add(dataGridView1);
 
             this.Controls.Add(headerPanel);
-            this.Controls.Add(leftPanel);
+            this.Controls.Add(pnlLeftSide);
             this.Controls.Add(rightPanel);
 
             this.ResumeLayout(false);
@@ -230,7 +330,7 @@ namespace FormsUI
                 Text = text,
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 Location = new Point(x, y),
-                Size = new Size(110, 38),
+                Size = new Size(115, 40),
                 BackColor = color,
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
@@ -259,83 +359,7 @@ namespace FormsUI
 
         #endregion
 
-        #region Search / Menu initializers
-
-        private void InitializeSearchAndSort()
-        {
-            if (txtSearch != null && cmbSortBy != null) return;
-
-            lblSearch = new Label
-            {
-                AutoSize = true,
-                Font = new Font("Segoe UI", 10F),
-                Location = new Point(380, 12),
-                Text = "Search:"
-            };
-
-            txtSearch = new TextBox
-            {
-                Font = new Font("Segoe UI", 10F),
-                Location = new Point(440, 10),
-                Size = new Size(200, 25)
-            };
-            txtSearch.TextChanged += TxtSearch_TextChanged;
-
-            lblSortBy = new Label
-            {
-                AutoSize = true,
-                Font = new Font("Segoe UI", 10F),
-                Location = new Point(650, 12),
-                Text = "Sort By:"
-            };
-
-            cmbSortBy = new ComboBox
-            {
-                Font = new Font("Segoe UI", 10F),
-                Location = new Point(710, 10),
-                Size = new Size(180, 25),
-                DropDownStyle = ComboBoxStyle.DropDownList
-            };
-            cmbSortBy.Items.AddRange(new object[] {
-                "Name (A-Z)",
-                "Name (Z-A)",
-                "ID (Low-High)",
-                "ID (High-Low)",
-                "Code (Low-High)",
-                "Code (High-Low)",
-                "Brand (A-Z)",
-                "Brand (Z-A)",
-                "Price (Low-High)",
-                "Price (High-Low)",
-                "Quantity (Low-High)",
-                "Quantity (High-Low)"
-            });
-            cmbSortBy.SelectedIndexChanged += CmbSortBy_SelectedIndexChanged;
-
-            btnRefresh = new Button
-            {
-                Location = new Point(900, 10),
-                Size = new Size(25, 25),
-                Text = "🔄"
-            };
-            btnRefresh.Click += BtnRefresh_Click;
-
-            btnQuickPrint = new Button
-            {
-                Text = "🖨 Print",
-                Location = new Point(324, 387),
-                Size = new Size(98, 33)
-            };
-            UITheme.StyleSecondaryButton(btnQuickPrint);
-            btnQuickPrint.Click += (s, e) => PrintPreviewToolStripMenuItem_Click(s, e);
-            this.Controls.Add(btnQuickPrint);
-
-            this.Controls.Add(lblSearch);
-            this.Controls.Add(txtSearch);
-            this.Controls.Add(lblSortBy);
-            this.Controls.Add(cmbSortBy);
-            this.Controls.Add(btnRefresh);
-        }
+        #region Menu initializers
 
         private void InitializeMenuStrip()
         {
@@ -481,6 +505,7 @@ namespace FormsUI
         private ToolStripMenuItem printPreviewToolStripMenuItem;
         private ToolStripMenuItem printToPdfToolStripMenuItem;
         private Button btnQuickPrint;
+        private Panel pnlLeftSide;
 
         #endregion
     }

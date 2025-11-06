@@ -32,7 +32,7 @@ namespace FormsUI
 
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(1200, 700);
+            this.ClientSize = new Size(1300, 750);
             this.BackColor = Color.FromArgb(248, 250, 252);
             this.Name = "UserManagementForm";
             this.Text = "User Management";
@@ -42,9 +42,9 @@ namespace FormsUI
             Panel headerPanel = new Panel
             {
                 Dock = DockStyle.Top,
-                Height = 120,
+                Height = 110,
                 BackColor = Color.White,
-                Padding = new Padding(30, 20, 30, 20)
+                Padding = new Padding(30, 20, 30, 15)
             };
 
             Label lblTitle = new Label
@@ -79,15 +79,15 @@ namespace FormsUI
             Panel filterPanel = new Panel
             {
                 Dock = DockStyle.Top,
-                Height = 80,
+                Height = 75,
                 BackColor = Color.White,
-                Padding = new Padding(20)
+                Padding = new Padding(20, 12, 20, 12)
             };
 
             Label lblSearch = new Label
             {
                 Text = "Search:",
-                Font = new Font("Segoe UI", 10),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 ForeColor = Color.FromArgb(51, 65, 85),
                 Location = new Point(20, 20),
                 AutoSize = true
@@ -96,8 +96,8 @@ namespace FormsUI
             txtSearch = new TextBox
             {
                 Font = new Font("Segoe UI", 10),
-                Location = new Point(85, 17),
-                Size = new Size(250, 25),
+                Location = new Point(90, 17),
+                Size = new Size(280, 25),
                 BorderStyle = BorderStyle.FixedSingle
             };
             txtSearch.TextChanged += TxtSearch_TextChanged;
@@ -105,17 +105,17 @@ namespace FormsUI
             Label lblRoleFilter = new Label
             {
                 Text = "Role:",
-                Font = new Font("Segoe UI", 10),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 ForeColor = Color.FromArgb(51, 65, 85),
-                Location = new Point(360, 20),
+                Location = new Point(390, 20),
                 AutoSize = true
             };
 
             cmbRoleFilter = new ComboBox
             {
                 Font = new Font("Segoe UI", 10),
-                Location = new Point(410, 17),
-                Size = new Size(120, 25),
+                Location = new Point(440, 17),
+                Size = new Size(130, 25),
                 DropDownStyle = ComboBoxStyle.DropDownList
             };
             cmbRoleFilter.Items.AddRange(new object[] { "All", "User", "Admin" });
@@ -125,9 +125,9 @@ namespace FormsUI
             btnRefresh = new Button
             {
                 Text = "🔄 Refresh",
-                Font = new Font("Segoe UI", 10),
-                Location = new Point(550, 15),
-                Size = new Size(100, 30),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Location = new Point(590, 15),
+                Size = new Size(120, 32),
                 BackColor = Color.FromArgb(59, 130, 246),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
@@ -135,6 +135,8 @@ namespace FormsUI
             };
             btnRefresh.FlatAppearance.BorderSize = 0;
             btnRefresh.Click += BtnRefresh_Click;
+            btnRefresh.MouseEnter += (s, e) => btnRefresh.BackColor = Color.FromArgb(37, 99, 235);
+            btnRefresh.MouseLeave += (s, e) => btnRefresh.BackColor = Color.FromArgb(59, 130, 246);
 
             filterPanel.Controls.AddRange(new Control[] {
                 lblSearch, txtSearch, lblRoleFilter, cmbRoleFilter, btnRefresh
@@ -158,32 +160,37 @@ namespace FormsUI
                 BackgroundColor = Color.White,
                 BorderStyle = BorderStyle.None,
                 ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize,
-                EnableHeadersVisualStyles = false
+                EnableHeadersVisualStyles = false,
+                RowHeadersVisible = false
             };
 
             dgvUsers.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(241, 245, 249);
             dgvUsers.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(51, 65, 85);
             dgvUsers.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvUsers.ColumnHeadersDefaultCellStyle.Padding = new Padding(8);
+            dgvUsers.ColumnHeadersHeight = 40;
             dgvUsers.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 234, 254);
             dgvUsers.DefaultCellStyle.SelectionForeColor = Color.FromArgb(30, 64, 175);
+            dgvUsers.DefaultCellStyle.Padding = new Padding(8, 4, 8, 4);
             dgvUsers.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 250, 252);
+            dgvUsers.RowTemplate.Height = 36;
 
             contentPanel.Controls.Add(dgvUsers);
 
             Panel actionPanel = new Panel
             {
                 Dock = DockStyle.Bottom,
-                Height = 80,
+                Height = 75,
                 BackColor = Color.White,
-                Padding = new Padding(20, 5, 20, 20)
+                Padding = new Padding(20, 15, 20, 15)
             };
 
             btnDeleteUser = new Button
             {
                 Text = "Delete User",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                Location = new Point(20, 10),
-                Size = new Size(120, 50),
+                Location = new Point(20, 15),
+                Size = new Size(130, 40),
                 BackColor = Color.FromArgb(239, 68, 68),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
@@ -191,13 +198,15 @@ namespace FormsUI
             };
             btnDeleteUser.FlatAppearance.BorderSize = 0;
             btnDeleteUser.Click += BtnDeleteUser_Click;
+            btnDeleteUser.MouseEnter += (s, e) => btnDeleteUser.BackColor = Color.FromArgb(220, 38, 38);
+            btnDeleteUser.MouseLeave += (s, e) => btnDeleteUser.BackColor = Color.FromArgb(239, 68, 68);
 
             btnToggleAdmin = new Button
             {
                 Text = "Toggle Admin",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                Location = new Point(150, 10),
-                Size = new Size(130, 50),
+                Location = new Point(165, 15),
+                Size = new Size(140, 40),
                 BackColor = Color.FromArgb(234, 179, 8),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
@@ -205,13 +214,15 @@ namespace FormsUI
             };
             btnToggleAdmin.FlatAppearance.BorderSize = 0;
             btnToggleAdmin.Click += BtnToggleAdmin_Click;
+            btnToggleAdmin.MouseEnter += (s, e) => btnToggleAdmin.BackColor = Color.FromArgb(202, 138, 4);
+            btnToggleAdmin.MouseLeave += (s, e) => btnToggleAdmin.BackColor = Color.FromArgb(234, 179, 8);
 
             btnViewAuditLog = new Button
             {
                 Text = "View Audit Log",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                Location = new Point(290, 10),
-                Size = new Size(140, 50),
+                Location = new Point(320, 15),
+                Size = new Size(150, 40),
                 BackColor = Color.FromArgb(59, 130, 246),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
@@ -219,6 +230,8 @@ namespace FormsUI
             };
             btnViewAuditLog.FlatAppearance.BorderSize = 0;
             btnViewAuditLog.Click += BtnViewAuditLog_Click;
+            btnViewAuditLog.MouseEnter += (s, e) => btnViewAuditLog.BackColor = Color.FromArgb(37, 99, 235);
+            btnViewAuditLog.MouseLeave += (s, e) => btnViewAuditLog.BackColor = Color.FromArgb(59, 130, 246);
 
             actionPanel.Controls.AddRange(new Control[] {
                 btnDeleteUser, btnToggleAdmin, btnViewAuditLog

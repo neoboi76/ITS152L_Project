@@ -38,7 +38,7 @@ namespace FormsUI
 
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(1200, 700);
+            this.ClientSize = new Size(1300, 750);
             this.BackColor = Color.FromArgb(248, 250, 252);
             this.Name = "AuditLogForm";
             this.Text = "Audit Trail";
@@ -48,9 +48,9 @@ namespace FormsUI
             Panel headerPanel = new Panel
             {
                 Dock = DockStyle.Top,
-                Height = 100,
+                Height = 90,
                 BackColor = Color.White,
-                Padding = new Padding(30, 20, 30, 20)
+                Padding = new Padding(30, 20, 30, 15)
             };
 
             lblTitle = new Label
@@ -67,15 +67,15 @@ namespace FormsUI
             Panel filterPanel = new Panel
             {
                 Dock = DockStyle.Top,
-                Height = 80,
+                Height = 75,
                 BackColor = Color.White,
-                Padding = new Padding(20)
+                Padding = new Padding(20, 12, 20, 12)
             };
 
             lblFilter = new Label
             {
                 Text = "Filter:",
-                Font = new Font("Segoe UI", 10),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 ForeColor = Color.FromArgb(51, 65, 85),
                 Location = new Point(20, 20),
                 AutoSize = true
@@ -85,8 +85,8 @@ namespace FormsUI
             {
                 DropDownStyle = ComboBoxStyle.DropDownList,
                 Font = new Font("Segoe UI", 10),
-                Location = new Point(80, 17),
-                Size = new Size(150, 25)
+                Location = new Point(75, 17),
+                Size = new Size(160, 25)
             };
             cmbFilterType.Items.AddRange(new object[] { "All Actions", "Added Only", "Updated Only", "Deleted Only" });
             cmbFilterType.SelectedIndex = 0;
@@ -94,16 +94,16 @@ namespace FormsUI
             lblFrom = new Label
             {
                 Text = "From:",
-                Font = new Font("Segoe UI", 10),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 ForeColor = Color.FromArgb(51, 65, 85),
-                Location = new Point(250, 20),
+                Location = new Point(255, 20),
                 AutoSize = true
             };
 
             dtpFrom = new DateTimePicker
             {
-                Location = new Point(300, 17),
-                Size = new Size(130, 25),
+                Location = new Point(310, 17),
+                Size = new Size(140, 25),
                 Format = DateTimePickerFormat.Custom,
                 CustomFormat = "MM/dd/yyyy"
             };
@@ -111,16 +111,16 @@ namespace FormsUI
             lblTo = new Label
             {
                 Text = "To:",
-                Font = new Font("Segoe UI", 10),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 ForeColor = Color.FromArgb(51, 65, 85),
-                Location = new Point(450, 20),
+                Location = new Point(470, 20),
                 AutoSize = true
             };
 
             dtpTo = new DateTimePicker
             {
-                Location = new Point(485, 17),
-                Size = new Size(130, 25),
+                Location = new Point(505, 17),
+                Size = new Size(140, 25),
                 Format = DateTimePickerFormat.Custom,
                 CustomFormat = "MM/dd/yyyy"
             };
@@ -129,8 +129,8 @@ namespace FormsUI
             {
                 Text = "Apply Filter",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                Location = new Point(630, 15),
-                Size = new Size(110, 30),
+                Location = new Point(665, 15),
+                Size = new Size(120, 32),
                 BackColor = Color.FromArgb(59, 130, 246),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
@@ -138,13 +138,15 @@ namespace FormsUI
             };
             btnFilter.FlatAppearance.BorderSize = 0;
             btnFilter.Click += BtnFilter_Click;
+            btnFilter.MouseEnter += (s, e) => btnFilter.BackColor = Color.FromArgb(37, 99, 235);
+            btnFilter.MouseLeave += (s, e) => btnFilter.BackColor = Color.FromArgb(59, 130, 246);
 
             btnClear = new Button
             {
                 Text = "Clear",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                Location = new Point(750, 15),
-                Size = new Size(90, 30),
+                Location = new Point(800, 15),
+                Size = new Size(100, 32),
                 BackColor = Color.FromArgb(148, 163, 184),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
@@ -152,6 +154,8 @@ namespace FormsUI
             };
             btnClear.FlatAppearance.BorderSize = 0;
             btnClear.Click += BtnClear_Click;
+            btnClear.MouseEnter += (s, e) => btnClear.BackColor = Color.FromArgb(100, 116, 139);
+            btnClear.MouseLeave += (s, e) => btnClear.BackColor = Color.FromArgb(148, 163, 184);
 
             filterPanel.Controls.AddRange(new Control[] {
                 lblFilter, cmbFilterType, lblFrom, dtpFrom, lblTo, dtpTo, btnFilter, btnClear
@@ -174,23 +178,28 @@ namespace FormsUI
                 BackgroundColor = Color.White,
                 BorderStyle = BorderStyle.None,
                 EnableHeadersVisualStyles = false,
-                SelectionMode = DataGridViewSelectionMode.FullRowSelect
+                SelectionMode = DataGridViewSelectionMode.FullRowSelect,
+                RowHeadersVisible = false
             };
             dgvAuditLog.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(241, 245, 249);
             dgvAuditLog.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(51, 65, 85);
             dgvAuditLog.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvAuditLog.ColumnHeadersDefaultCellStyle.Padding = new Padding(8);
+            dgvAuditLog.ColumnHeadersHeight = 40;
             dgvAuditLog.DefaultCellStyle.SelectionBackColor = Color.FromArgb(219, 234, 254);
             dgvAuditLog.DefaultCellStyle.SelectionForeColor = Color.FromArgb(30, 64, 175);
+            dgvAuditLog.DefaultCellStyle.Padding = new Padding(8, 4, 8, 4);
             dgvAuditLog.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 250, 252);
+            dgvAuditLog.RowTemplate.Height = 36;
 
             gridPanel.Controls.Add(dgvAuditLog);
 
             Panel actionPanel = new Panel
             {
                 Dock = DockStyle.Bottom,
-                Height = 80,
+                Height = 75,
                 BackColor = Color.White,
-                Padding = new Padding(20, 10, 20, 10)
+                Padding = new Padding(20, 15, 20, 15)
             };
 
             btnExport = new Button
@@ -198,7 +207,7 @@ namespace FormsUI
                 Text = "📄 Export to CSV",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 Location = new Point(20, 15),
-                Size = new Size(160, 40),
+                Size = new Size(170, 40),
                 BackColor = Color.FromArgb(34, 197, 94),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
@@ -206,6 +215,8 @@ namespace FormsUI
             };
             btnExport.FlatAppearance.BorderSize = 0;
             btnExport.Click += BtnExport_Click;
+            btnExport.MouseEnter += (s, e) => btnExport.BackColor = Color.FromArgb(22, 163, 74);
+            btnExport.MouseLeave += (s, e) => btnExport.BackColor = Color.FromArgb(34, 197, 94);
 
             actionPanel.Controls.Add(btnExport);
 
