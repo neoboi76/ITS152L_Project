@@ -3,12 +3,64 @@
   "WorkspaceRootPath": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemdatalibrary\\security\\securetokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\security\\securetokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\inventoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\inventoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\formui\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\migrations\\20251106092149_adduniqueemailconstraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\migrations\\20251106092149_adduniqueemailconstraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\repositories\\implementations\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\repositories\\implementations\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\services\\implementations\\secureemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\services\\implementations\\secureemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemdatalibrary\\models\\passwordresettoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\passwordresettoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemdatalibrary\\security\\securetokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\security\\securetokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\repositories\\implementations\\passwordresettokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,32 +71,12 @@
       "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\repositories\\interfaces\\ipasswordresettokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\services\\implementations\\secureemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\services\\implementations\\secureemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Migrations\\20251106074456_AddPasswordResetTokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ItemAPI\\Migrations\\20251106074456_AddPasswordResetTokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\data\\itemapicontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\data\\itemapicontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\data\\itemapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\auditlogform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,10 +105,6 @@
       "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\controllers\\passwordresetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemdatalibrary\\models\\passwordresettoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\models\\passwordresettoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemdatalibrary\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1669E208-1522-4CC8-8332-103608656F20}|ItemDataLibrary\\ItemDataLibrary.csproj|solutionrelative:itemdatalibrary\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,16 +117,8 @@
       "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\inventoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\inventoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\usermanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,10 +137,6 @@
       "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\resetform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\formui\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\auditlogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\auditlogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -133,20 +149,12 @@
       "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\registerform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -167,6 +175,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\formui\\inventoryform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{743EF279-B5A1-FC55-92AC-8452C8C46C1B}|FormUI\\FormsUI.csproj|solutionrelative:formui\\inventoryform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|e:\\the true onedrive\\onedrive - map\u00FAa university\\college 3rd year\\1st term\\its152l - systems integration and architecture 2 laboratory\\project\\its152l-project\\itemapi\\migrations\\20251106074456_addpasswordresettokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{024BEDDB-1E78-DDA3-6E0B-6C8A6C55FEEC}|ItemAPI\\ItemApi.csproj|solutionrelative:itemapi\\migrations\\20251106074456_addpasswordresettokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -176,63 +188,125 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SecureEmailService.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\SecureEmailService.cs",
-              "RelativeDocumentMoniker": "ItemAPI\\Services\\Implementations\\SecureEmailService.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\SecureEmailService.cs",
-              "RelativeToolTip": "ItemAPI\\Services\\Implementations\\SecureEmailService.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAYwIgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\LoginForm.cs",
+              "RelativeDocumentMoniker": "FormUI\\LoginForm.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\LoginForm.cs [Design]",
+              "RelativeToolTip": "FormUI\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:55:57.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T09:29:30.837Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SecureTokenService.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Security\\SecureTokenService.cs",
-              "RelativeDocumentMoniker": "ItemDataLibrary\\Security\\SecureTokenService.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Security\\SecureTokenService.cs",
-              "RelativeToolTip": "ItemDataLibrary\\Security\\SecureTokenService.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAIwF0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "20251106092149_AddUniqueEmailConstraint.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Migrations\\20251106092149_AddUniqueEmailConstraint.cs",
+              "RelativeDocumentMoniker": "ItemAPI\\Migrations\\20251106092149_AddUniqueEmailConstraint.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Migrations\\20251106092149_AddUniqueEmailConstraint.cs",
+              "RelativeToolTip": "ItemAPI\\Migrations\\20251106092149_AddUniqueEmailConstraint.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwD4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:51:26.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IPasswordResetTokenRepository.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Interfaces\\IPasswordResetTokenRepository.cs",
-              "RelativeDocumentMoniker": "ItemAPI\\Repositories\\Interfaces\\IPasswordResetTokenRepository.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Interfaces\\IPasswordResetTokenRepository.cs",
-              "RelativeToolTip": "ItemAPI\\Repositories\\Interfaces\\IPasswordResetTokenRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:52:21.83Z",
+              "WhenOpened": "2025-11-06T09:21:50.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ItemAPIContext.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Data\\ItemAPIContext.cs",
-              "RelativeDocumentMoniker": "ItemAPI\\Data\\ItemAPIContext.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Data\\ItemAPIContext.cs",
-              "RelativeToolTip": "ItemAPI\\Data\\ItemAPIContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwC8AAAABAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "ItemAPI\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "ItemAPI\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAIwJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:53:48.052Z",
+              "WhenOpened": "2025-11-05T13:49:26.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "InventoryForm.cs [Design]",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.cs",
+              "RelativeDocumentMoniker": "FormUI\\InventoryForm.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.cs [Design]",
+              "RelativeToolTip": "FormUI\\InventoryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T15:41:05.525Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryForm.Designer.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.Designer.cs",
+              "RelativeDocumentMoniker": "FormUI\\InventoryForm.Designer.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.Designer.cs",
+              "RelativeToolTip": "FormUI\\InventoryForm.Designer.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAAALYBAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:00:34.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "FormUI\\LoginForm.Designer.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\LoginForm.Designer.cs",
+              "RelativeToolTip": "FormUI\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAIwLAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T15:57:41.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ItemAPI\\Program.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Program.cs",
+              "RelativeToolTip": "ItemAPI\\Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T03:57:55.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PasswordResetToken.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Models\\PasswordResetToken.cs",
+              "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\PasswordResetToken.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Models\\PasswordResetToken.cs",
+              "RelativeToolTip": "ItemDataLibrary\\Models\\PasswordResetToken.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwDgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T03:51:05.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Implementations\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "ItemAPI\\Repositories\\Implementations\\LoginRepository.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Implementations\\LoginRepository.cs",
+              "RelativeToolTip": "ItemAPI\\Repositories\\Implementations\\LoginRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T08:09:00.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "PasswordResetTokenRepository.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Implementations\\PasswordResetTokenRepository.cs",
               "RelativeDocumentMoniker": "ItemAPI\\Repositories\\Implementations\\PasswordResetTokenRepository.cs",
@@ -240,38 +314,11 @@
               "RelativeToolTip": "ItemAPI\\Repositories\\Implementations\\PasswordResetTokenRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:52:41.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginRepository.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Implementations\\LoginRepository.cs",
-              "RelativeDocumentMoniker": "ItemAPI\\Repositories\\Implementations\\LoginRepository.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Implementations\\LoginRepository.cs",
-              "RelativeToolTip": "ItemAPI\\Repositories\\Implementations\\LoginRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T08:09:00.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T03:52:41.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Program.cs",
-              "RelativeDocumentMoniker": "ItemAPI\\Program.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Program.cs",
-              "RelativeToolTip": "ItemAPI\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAIwE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:57:55.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "DashboardForm.Designer.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\DashboardForm.Designer.cs",
               "RelativeDocumentMoniker": "FormUI\\DashboardForm.Designer.cs",
@@ -285,6 +332,82 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ItemAPIContext.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Data\\ItemAPIContext.cs",
+              "RelativeDocumentMoniker": "ItemAPI\\Data\\ItemAPIContext.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Data\\ItemAPIContext.cs",
+              "RelativeToolTip": "ItemAPI\\Data\\ItemAPIContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T03:53:48.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "ItemAPI\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "ItemAPI\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:16:06.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SecureTokenService.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Security\\SecureTokenService.cs",
+              "RelativeDocumentMoniker": "ItemDataLibrary\\Security\\SecureTokenService.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Security\\SecureTokenService.cs",
+              "RelativeToolTip": "ItemDataLibrary\\Security\\SecureTokenService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T03:51:26.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SecureEmailService.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\SecureEmailService.cs",
+              "RelativeDocumentMoniker": "ItemAPI\\Services\\Implementations\\SecureEmailService.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\SecureEmailService.cs",
+              "RelativeToolTip": "ItemAPI\\Services\\Implementations\\SecureEmailService.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAuwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T03:55:57.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "FormUI\\RegisterForm.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\RegisterForm.cs",
+              "RelativeToolTip": "FormUI\\RegisterForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:25:23.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IPasswordResetTokenRepository.cs",
+              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Interfaces\\IPasswordResetTokenRepository.cs",
+              "RelativeDocumentMoniker": "ItemAPI\\Repositories\\Interfaces\\IPasswordResetTokenRepository.cs",
+              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Repositories\\Interfaces\\IPasswordResetTokenRepository.cs",
+              "RelativeToolTip": "ItemAPI\\Repositories\\Interfaces\\IPasswordResetTokenRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T03:52:21.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\appsettings.json",
               "RelativeDocumentMoniker": "ItemAPI\\appsettings.json",
@@ -292,23 +415,21 @@
               "RelativeToolTip": "ItemAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-06T04:00:37.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T04:00:37.741Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Timbo\\AppData\\Local\\SourceServer\\d0d75e7a79dac82a94060dda36419049efa03b06398288034763546bc2619995\\ITS152L-Project\\ItemAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Timbo\\AppData\\Local\\SourceServer\\d0d75e7a79dac82a94060dda36419049efa03b06398288034763546bc2619995\\ITS152L-Project\\ItemAPI\\Program.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAnwDQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T07:26:13.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T07:26:13.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "ItemApiContextFactory.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Data\\ItemApiContextFactory.cs",
               "RelativeDocumentMoniker": "ItemAPI\\Data\\ItemApiContextFactory.cs",
@@ -316,12 +437,11 @@
               "RelativeToolTip": "ItemAPI\\Data\\ItemApiContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T07:44:37.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T07:44:37.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 44,
               "Title": "20251106074456_AddPasswordResetTokens.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Migrations\\20251106074456_AddPasswordResetTokens.cs",
               "RelativeDocumentMoniker": "ItemAPI\\Migrations\\20251106074456_AddPasswordResetTokens.cs",
@@ -329,12 +449,11 @@
               "RelativeToolTip": "ItemAPI\\Migrations\\20251106074456_AddPasswordResetTokens.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T07:44:56.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T07:44:56.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "EmailConfiguration.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Configuration\\EmailConfiguration.cs",
               "RelativeDocumentMoniker": "ItemDataLibrary\\Configuration\\EmailConfiguration.cs",
@@ -342,23 +461,21 @@
               "RelativeToolTip": "ItemDataLibrary\\Configuration\\EmailConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:55:21.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T03:55:21.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\Timbo\\AppData\\Roaming\\Microsoft\\UserSecrets\\ba2b58d7-4fa1-431a-8a0a-5f164ca5b747\\secrets.json",
               "ToolTip": "C:\\Users\\Timbo\\AppData\\Roaming\\Microsoft\\UserSecrets\\ba2b58d7-4fa1-431a-8a0a-5f164ca5b747\\secrets.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-06T04:05:19.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T04:05:19.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "AuditLogForm.Designer.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\AuditLogForm.Designer.cs",
               "RelativeDocumentMoniker": "FormUI\\AuditLogForm.Designer.cs",
@@ -366,12 +483,11 @@
               "RelativeToolTip": "FormUI\\AuditLogForm.Designer.cs",
               "ViewState": "AgIAAMcAAAAAAAAAAAAIwOgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T16:46:39.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T16:46:39.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "PasswordResetController.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Controllers\\PasswordResetController.cs",
               "RelativeDocumentMoniker": "ItemAPI\\Controllers\\PasswordResetController.cs",
@@ -379,12 +495,11 @@
               "RelativeToolTip": "ItemAPI\\Controllers\\PasswordResetController.cs",
               "ViewState": "AgIAAIQAAAAAAAAAAAAIwKUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:57:07.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T03:57:07.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "LoginService.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\LoginService.cs",
               "RelativeDocumentMoniker": "ItemAPI\\Services\\Implementations\\LoginService.cs",
@@ -392,12 +507,11 @@
               "RelativeToolTip": "ItemAPI\\Services\\Implementations\\LoginService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T04:07:12.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T04:07:12.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "ResetForm.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\ResetForm.cs",
               "RelativeDocumentMoniker": "FormUI\\ResetForm.cs",
@@ -405,25 +519,11 @@
               "RelativeToolTip": "FormUI\\ResetForm.cs",
               "ViewState": "AgIAANAAAAAAAAAAAAAIwOAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T13:39:48.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T13:39:48.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PasswordResetToken.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Models\\PasswordResetToken.cs",
-              "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\PasswordResetToken.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Models\\PasswordResetToken.cs",
-              "RelativeToolTip": "ItemDataLibrary\\Models\\PasswordResetToken.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwDgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T03:51:05.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "UserManagementForm.Designer.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\UserManagementForm.Designer.cs",
               "RelativeDocumentMoniker": "FormUI\\UserManagementForm.Designer.cs",
@@ -435,19 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "FormUI\\LoginForm.Designer.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\LoginForm.Designer.cs",
-              "RelativeToolTip": "FormUI\\LoginForm.Designer.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAYwLAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T15:57:41.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "DashboardForm.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\DashboardForm.cs",
               "RelativeDocumentMoniker": "FormUI\\DashboardForm.cs",
@@ -459,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\LoginForm.cs",
               "RelativeDocumentMoniker": "FormUI\\LoginForm.cs",
@@ -472,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Security\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "ItemDataLibrary\\Security\\PasswordHasher.cs",
@@ -480,12 +568,11 @@
               "RelativeToolTip": "ItemDataLibrary\\Security\\PasswordHasher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T17:00:51.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T17:00:51.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "InventoryForm.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.cs",
               "RelativeDocumentMoniker": "FormUI\\InventoryForm.cs",
@@ -498,19 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "InventoryForm.Designer.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.Designer.cs",
-              "RelativeDocumentMoniker": "FormUI\\InventoryForm.Designer.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.Designer.cs",
-              "RelativeToolTip": "FormUI\\InventoryForm.Designer.cs",
-              "ViewState": "AgIAAN4BAAAAAAAAAAAIwOwBAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T16:00:34.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "LoginController.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "ItemAPI\\Controllers\\LoginController.cs",
@@ -522,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "ResetForm.Designer.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\ResetForm.Designer.cs",
               "RelativeDocumentMoniker": "FormUI\\ResetForm.Designer.cs",
@@ -534,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "AuditLogForm.cs [Design]",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\AuditLogForm.cs",
               "RelativeDocumentMoniker": "FormUI\\AuditLogForm.cs",
@@ -545,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "FormsUI.csproj",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\FormsUI.csproj",
               "RelativeDocumentMoniker": "FormUI\\FormsUI.csproj",
@@ -557,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "AuditLogForm.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\AuditLogForm.cs",
               "RelativeDocumentMoniker": "FormUI\\AuditLogForm.cs",
@@ -569,31 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "InventoryForm.cs [Design]",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.cs",
-              "RelativeDocumentMoniker": "FormUI\\InventoryForm.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.cs [Design]",
-              "RelativeToolTip": "FormUI\\InventoryForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T15:41:05.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "RegisterForm.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "FormUI\\RegisterForm.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\RegisterForm.cs",
-              "RelativeToolTip": "FormUI\\RegisterForm.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T16:25:23.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "RegisterForm.Designer.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\RegisterForm.Designer.cs",
               "RelativeDocumentMoniker": "FormUI\\RegisterForm.Designer.cs",
@@ -605,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "RegisterForm.resx",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\RegisterForm.resx",
               "RelativeDocumentMoniker": "FormUI\\RegisterForm.resx",
@@ -616,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "UserManagementForm.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\UserManagementForm.cs",
               "RelativeDocumentMoniker": "FormUI\\UserManagementForm.cs",
@@ -629,19 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "ItemAPI\\Services\\Implementations\\UserService.cs",
-              "ToolTip": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Services\\Implementations\\UserService.cs",
-              "RelativeToolTip": "ItemAPI\\Services\\Implementations\\UserService.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T13:49:26.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ItemAPI\\Controllers\\UserController.cs",
@@ -653,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "UserManagementForm.cs [Design]",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\UserManagementForm.cs",
               "RelativeDocumentMoniker": "FormUI\\UserManagementForm.cs",
@@ -664,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "AuditLog.cs",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\ItemDataLibrary\\Models\\AuditLog.cs",
               "RelativeDocumentMoniker": "ItemDataLibrary\\Models\\AuditLog.cs",
@@ -676,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\RegisterForm.cs",
               "RelativeDocumentMoniker": "FormUI\\RegisterForm.cs",
@@ -687,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "InventoryForm.resx",
               "DocumentMoniker": "E:\\THE TRUE ONEDRIVE\\OneDrive - Map\u00FAa University\\College 3rd year\\1st Term\\ITS152L - SYSTEMS INTEGRATION AND ARCHITECTURE 2 LABORATORY\\Project\\ITS152L-Project\\FormUI\\InventoryForm.resx",
               "RelativeDocumentMoniker": "FormUI\\InventoryForm.resx",

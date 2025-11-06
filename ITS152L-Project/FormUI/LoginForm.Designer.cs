@@ -59,7 +59,7 @@
             taglineLabel.TextAlign = ContentAlignment.MiddleCenter;
 
             Label versionLabel = new Label();
-            versionLabel.Text = "v1.0";
+            versionLabel.Text = "Bringing the future into the present";
             versionLabel.Font = new Font("Segoe UI", 10);
             versionLabel.ForeColor = Color.FromArgb(147, 197, 253);
             versionLabel.AutoSize = false;

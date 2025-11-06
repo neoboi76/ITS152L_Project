@@ -29,68 +29,144 @@ namespace FormsUI
 
         private async void btnRegSub_ClickAsync(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtRegFirst.Text) ||
-                string.IsNullOrWhiteSpace(txtRegLast.Text) ||
-                string.IsNullOrWhiteSpace(txtRegUser.Text) ||
-                string.IsNullOrWhiteSpace(txtRegNewPass.Text) ||
-                string.IsNullOrWhiteSpace(txtRegConfirm.Text))
+            btnRegSub.Enabled = false;
+            btnRegSub.Text = "Creating Account...";
+
+            try
             {
-                MessageBox.Show("All fields are required.", "Registration failed",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                if (string.IsNullOrWhiteSpace(txtRegFirst.Text) ||
+                    string.IsNullOrWhiteSpace(txtRegLast.Text) ||
+                    string.IsNullOrWhiteSpace(txtRegUser.Text) ||
+                    string.IsNullOrWhiteSpace(txtRegNewPass.Text) ||
+                    string.IsNullOrWhiteSpace(txtRegConfirm.Text))
+                {
+                    MessageBox.Show("All fields are required.", "Registration Failed",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                string email = txtRegUser.Text.Trim().ToLowerInvariant();
+
+                if (email == "admin" || email == "administrator" || email == "root")
+                {
+                    MessageBox.Show("This username is reserved. Please choose a different username.",
+                        "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!IsValidEmail(email))
+                {
+                    MessageBox.Show("Please enter a valid email address.", "Invalid Email",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                bool emailExists = await CheckEmailExists(email);
+                if (emailExists)
+                {
+                    MessageBox.Show(
+                        $"An account with the email '{email}' already exists.\n\n" +
+                        "Please use a different email address or try logging in.",
+                        "Email Already Registered",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!PasswordHasher.IsPasswordValid(txtRegNewPass.Text, out string errorMessage))
+                {
+                    MessageBox.Show(errorMessage, "Invalid Password",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (txtRegNewPass.Text != txtRegConfirm.Text)
+                {
+                    MessageBox.Show("Passwords do not match.", "Registration Failed",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var newUser = new UserModel
+                {
+                    UserName = email,
+                    FirstName = txtRegFirst.Text.Trim(),
+                    LastName = txtRegLast.Text.Trim(),
+                    Password = txtRegNewPass.Text,
+                    Role = "User"
+                };
+
+                var response = await _httpClient.PostAsJsonAsync("api/user", newUser);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var user = await response.Content.ReadFromJsonAsync<UserModel>();
+                    MessageBox.Show(
+                        $"✓ Account created successfully for {user.UserName}!\n\n" +
+                        "You can now log in with your credentials.",
+                        "Registration Successful",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    var error = await response.Content.ReadAsStringAsync();
+
+                    if (error.Contains("duplicate") || error.Contains("already exists"))
+                    {
+                        MessageBox.Show(
+                            "This email address is already registered.\n\n" +
+                            "Please use a different email or try logging in.",
+                            "Email Already Exists",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            $"Registration failed: {error}\n\n" +
+                            "Please try again or contact support if the problem persists.",
+                            "Registration Failed",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                }
             }
-
-            if (txtRegUser.Text.ToLower() == "admin")
+            catch (HttpRequestException)
             {
-                MessageBox.Show("This username is reserved. Please choose a different username.",
-                    "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show(
+                    "Unable to connect to the server.\n\n" +
+                    "Please check your internet connection and try again.",
+                    "Connection Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
-
-            if (!IsValidEmail(txtRegUser.Text))
+            catch (Exception ex)
             {
-                MessageBox.Show("Please enter a valid email address.", "Invalid Email",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show(
+                    $"An unexpected error occurred: {ex.Message}",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
-
-            if (!PasswordHasher.IsPasswordValid(txtRegNewPass.Text, out string errorMessage))
+            finally
             {
-                MessageBox.Show(errorMessage, "Invalid Password",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                btnRegSub.Enabled = true;
+                btnRegSub.Text = "Sign Up";
             }
+        }
 
-            if (txtRegNewPass.Text != txtRegConfirm.Text)
+        private async Task<bool> CheckEmailExists(string email)
+        {
+            try
             {
-                MessageBox.Show("Passwords do not match.", "Registration failed",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                var response = await _httpClient.GetAsync($"api/user/check-email/{Uri.EscapeDataString(email)}");
+                return response.IsSuccessStatusCode;
             }
-
-            var newUser = new UserModel
+            catch
             {
-                UserName = txtRegUser.Text,
-                FirstName = txtRegFirst.Text,
-                LastName = txtRegLast.Text,
-                Password = txtRegNewPass.Text,
-                Role = "User"
-            };
-
-            var response = await _httpClient.PostAsJsonAsync("api/user", newUser);
-
-            if (response.IsSuccessStatusCode)
-            {
-                var user = await response.Content.ReadFromJsonAsync<UserModel>();
-                MessageBox.Show($"Account created for {user.UserName}!", "Registration Successful",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            else
-            {
-                var error = await response.Content.ReadAsStringAsync();
-                MessageBox.Show($"Registration failed: {error}", "Registration failed",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
 
@@ -101,7 +177,9 @@ namespace FormsUI
 
             try
             {
-                var regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+                var regex = new Regex(
+                    @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$",
+                    RegexOptions.IgnoreCase);
                 return regex.IsMatch(email);
             }
             catch
@@ -127,17 +205,20 @@ namespace FormsUI
             if (strength < 50)
             {
                 pbPasswordStrength.ForeColor = Color.Red;
-                lblPasswordStrength.Text = "Password Strength: Weak";
+                lblPasswordStrength.Text = "Password Strength: Weak ⚠️";
+                lblPasswordStrength.ForeColor = Color.FromArgb(220, 38, 38);
             }
             else if (strength < 80)
             {
                 pbPasswordStrength.ForeColor = Color.Orange;
-                lblPasswordStrength.Text = "Password Strength: Medium";
+                lblPasswordStrength.Text = "Password Strength: Medium ⚡";
+                lblPasswordStrength.ForeColor = Color.FromArgb(234, 179, 8);
             }
             else
             {
                 pbPasswordStrength.ForeColor = Color.Green;
-                lblPasswordStrength.Text = "Password Strength: Strong";
+                lblPasswordStrength.Text = "Password Strength: Strong ✓";
+                lblPasswordStrength.ForeColor = Color.FromArgb(34, 197, 94);
             }
         }
     }
