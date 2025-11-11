@@ -611,27 +611,15 @@ For questions, suggestions, or collaboration opportunities:
 
 ---
 
-<div style="max-width:720px;margin:1.5rem auto;text-align:center;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;">
-  <dl style="margin:0;">
-    <dt style="font-size:1.4rem;font-weight:700;">
-      Te·le·o·plexy
-      <span style="display:block;font-size:0.8rem;font-weight:600;margin-top:0.25rem;">Teleoplexy</span>
-    </dt>
-
-    <dd style="margin:0.75rem 0 0; font-style:normal; color:#222;">
-      <span style="font-style:italic;">
-        (noun) — (self-reinforcing) cybernetic intensification;
-      </span>
-      describes the wave-length of machines, escaping in the direction of extreme ultra-violet among the cosmic rays.
-    </dd>
-
-    <dd style="margin-top:0.75rem;font-size:0.85rem;color:#555;">
-      <strong>Also known as:</strong> self-reinforcing cybernetic intensification
-    </dd>
-
-    <dd style="margin-top:1rem;font-size:0.85rem;color:#666;">
-      <small>Made by Group 9</small>
-    </dd>
-  </dl>
-</div>
+<dl>
+  <dt><strong>Te·le·o·plexy</strong></dt>
+  <dd>
+    <em>(noun) — (self-reinforcing) cybernetic intensification;</em><br>
+    describes the wave-length of machines, escaping in the direction of extreme ultra-violet among the cosmic rays.
+  </dd>
+  <dd>
+    <strong>Also known as:</strong> self-reinforcing cybernetic intensification
+  </dd>
+  <dd><small>Made by Group 9</small></dd>
+</dl>
 
