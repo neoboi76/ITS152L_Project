@@ -36,7 +36,6 @@ Teleoplex Inventory System is an enterprise-grade inventory management platform 
 **Key Capabilities:**
 
 - Comprehensive item management with detailed tracking
-- Multi-layered user authentication with JWT security
 - Role-based access control (Admin and User roles)
 - Complete audit trail logging for compliance
 - Session management with automatic timeout
@@ -72,7 +71,6 @@ Teleoplex Inventory System is an enterprise-grade inventory management platform 
 - **SQL Server 2019+** (Database)
 - **BCrypt.Net** (Password Hashing)
 - **System.Net.Mail** (Email Integration)
-- **JWT Authentication** (Token-based Security)
 
 ### Frontend
 
@@ -511,16 +509,16 @@ The Teleoplex Inventory System follows a multi-tier architecture:
    - Secure password reset with time-limited tokens
 
 2. **Authentication**
-   - JWT token-based authentication ready
+   - Reset Password with Secure Token
    - Session management with activity tracking
    - Automatic timeout after inactivity
 
-3. **Authorization**
+4. **Authorization**
    - Role-based access control (RBAC)
    - Admin-only endpoints protected
    - User-specific data isolation
 
-4. **Audit Trail**
+5. **Audit Trail**
    - All CRUD operations logged
    - User attribution for all actions
    - Timestamp tracking for compliance
