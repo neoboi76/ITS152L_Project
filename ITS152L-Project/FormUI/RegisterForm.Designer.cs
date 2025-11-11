@@ -1,4 +1,16 @@
-﻿using System.Runtime.InteropServices;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * InventoryForm Designer class. Contains the design parameters for
+ * the aforementioned form
+ **/
+
+using System.Runtime.InteropServices;
 
 namespace FormsUI
 {
@@ -54,6 +66,15 @@ namespace FormsUI
 
             leftPanel.Controls.Add(brandLabel);
             leftPanel.Controls.Add(taglineLabel);
+
+            Label versionLabel = new Label();
+            versionLabel.Text = "Bringing the future into the present, for itself, by itself";
+            versionLabel.Font = new Font("Segoe UI", 10);
+            versionLabel.ForeColor = Color.FromArgb(147, 197, 253);
+            versionLabel.AutoSize = false;
+            versionLabel.Size = new Size(340, 30);
+            versionLabel.Location = new Point(20, 270);
+            versionLabel.TextAlign = ContentAlignment.MiddleCenter;
 
             Panel rightPanel = new Panel();
             rightPanel.Dock = DockStyle.Fill;

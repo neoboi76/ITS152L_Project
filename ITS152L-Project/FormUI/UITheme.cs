@@ -1,4 +1,15 @@
-﻿using System;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * UITheme Utility Class. Used extensively in the UI.
+ **/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -165,7 +176,7 @@ namespace FormsUI
 
             if (addShadow)
             {
-                // Note: WinForms doesn't have built-in shadow support
+                // Note: WinForms doesnt have built-in shadow support
                 // You can use custom painting or third-party libraries for shadows
             }
         }

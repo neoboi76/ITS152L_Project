@@ -1,4 +1,17 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * (admin) AuditLogForm class. Main class for dealing with
+ * AuditLogForm related operations
+ **/
+
+
+using ItemDataLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,13 +84,11 @@ namespace FormsUI
         {
             var filteredLogs = _allLogs.AsEnumerable();
 
-            // Filter by date range
             filteredLogs = filteredLogs.Where(log =>
                 log.Timestamp.Date >= dtpFrom.Value.Date &&
                 log.Timestamp.Date <= dtpTo.Value.Date
             );
 
-            // Filter by action type
             string selectedFilter = cmbFilterType.SelectedItem?.ToString() ?? "All Actions";
             filteredLogs = selectedFilter switch
             {

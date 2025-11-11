@@ -1,4 +1,16 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Interface for the IPasswordResetTokenRepository. Promotes dependency injection
+ * and loosely coupled relationships
+ **/
+
+using ItemDataLibrary.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

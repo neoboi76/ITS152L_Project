@@ -1,4 +1,16 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * UserService class. Deals with user authentication operations
+ * and admin user management operation
+ **/
+
+using ItemDataLibrary.Models;
 using ITS152L_Project.Repositories.Interfaces;
 using ITS152L_Project.Services.Interfaces;
 using ITS152L_Project.Data;
@@ -22,6 +34,7 @@ namespace ITS152L_Project.Services.Implementations
             _context = context;
         }
 
+        //Registers a user
         public async Task<UserModel> AddAsync(UserModel user)
         {
             user.UserName = user.UserName.Trim().ToLowerInvariant();
@@ -60,21 +73,25 @@ namespace ITS152L_Project.Services.Implementations
             }
         }
 
+        //Deletes a user
         public Task DeleteAsync(int id)
         {
             return _repository.DeleteAsync(id);
         }
 
+        //Retrieves all registered users
         public Task<IEnumerable<UserModel>> GetAllAsync()
         {
             return _repository.GetAllAsync();
         }
 
+        //Retrieves a particular user by id
         public Task<UserModel?> GetByIdAsync(int id)
         {
             return _repository.GetByIdAsync(id);
         }
 
+        //Retrieves a particular user by email
         public async Task<UserModel?> GetByEmailAsync(string email)
         {
             string normalizedEmail = email.Trim().ToLowerInvariant();
@@ -82,6 +99,7 @@ namespace ITS152L_Project.Services.Implementations
                 .FirstOrDefaultAsync(u => u.UserName.ToLower() == normalizedEmail);
         }
 
+        //Updates user information (e.g. Resetting password)
         public async Task UpdateAsync(UserModel user)
         {
             user.UserName = user.UserName.Trim().ToLowerInvariant();
@@ -116,6 +134,7 @@ namespace ITS152L_Project.Services.Implementations
             }
         }
 
+        //Checks if email format is valid or not
         private bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))

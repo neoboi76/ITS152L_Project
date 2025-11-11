@@ -4,6 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Audit log model entity (table), 
+ * representing the internal model representation of the audit logs
+ **/
+
 namespace ItemDataLibrary.Models
 {
     public class AuditLog

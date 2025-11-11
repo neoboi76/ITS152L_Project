@@ -1,4 +1,16 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * InventoryForm Designer class. Contains the design parameters for
+ * the aforementioned form
+ **/
+
+using ItemDataLibrary.Models;
 using System;
 using System.ComponentModel;
 using System.Drawing;

@@ -1,4 +1,17 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Item service class. Handles business logic and communicates
+ * with the controllers and repositories associated with items.
+ **/
+
+
+using ItemDataLibrary.Models;
 using ITS152L_Project.Repositories.Implementations;
 using ITS152L_Project.Repositories.Interfaces;
 using ITS152L_Project.Services.Interfaces;
@@ -6,20 +19,6 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
 using static Dapper.SqlMapper;
 
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Item service class. Handles business logic and communicates
-//with the controllers and repositories associated with items.
 
 namespace ITS152L_Project.Services.Implementations
 {

@@ -1,4 +1,16 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * LoginRepository class. Deals with login related
+ * database operations
+ **/
+
+using ItemDataLibrary.Models;
 using ITS152L_Project.Data;
 using ITS152L_Project.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;

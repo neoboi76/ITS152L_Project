@@ -1,9 +1,18 @@
-﻿namespace ItemDataLibrary.Configuration
+﻿/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Model/Configuration class for email instances
+ **/
+
+
+namespace ItemDataLibrary.Configuration
 {
-    /// <summary>
-    /// Email service configuration settings
-    /// Values loaded from User Secrets or environment variables
-    /// </summary>
+  
     public class EmailConfiguration
     {
         public string SenderEmail { get; set; } = null!;

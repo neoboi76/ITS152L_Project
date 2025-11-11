@@ -1,4 +1,16 @@
-﻿using System;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * SessionManager service class. Handles session and imposes
+ * timeouts after extended period of user inactivity
+ **/
+
+using System;
 using System.Windows.Forms;
 
 namespace FormsUI

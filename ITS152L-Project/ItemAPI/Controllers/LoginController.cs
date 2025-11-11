@@ -1,23 +1,22 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Login Controller class. Deals with login related
+ * http requeests
+ **/
+
+
+using ItemDataLibrary.Models;
 using ITS152L_Project.Data;
 using ITS152L_Project.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Log in controller
 namespace ITS152L_Project.Controllers
 {
     [Route("api/[controller]")]

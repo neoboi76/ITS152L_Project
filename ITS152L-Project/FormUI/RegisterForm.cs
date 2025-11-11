@@ -1,4 +1,17 @@
-﻿using System;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * RegisterForm class. Main class for dealing with
+ * RegisterForm related operations
+ **/
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

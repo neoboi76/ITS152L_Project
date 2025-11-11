@@ -1,4 +1,14 @@
-﻿using System;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ **/
+
+
+using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable

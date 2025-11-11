@@ -1,4 +1,17 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * ItemController class. Deals with item related
+ * http requeests
+ **/
+
+
+using ItemDataLibrary.Models;
 using ITS152L_Project.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,6 +30,7 @@ namespace ITS152L_Project.Controllers
             _auditService = auditService;
         }
 
+        //Adds an item
         [HttpPost("add")]
         public async Task<ActionResult<ItemModel>> AddItem([FromBody] ItemModel newItem,
             [FromQuery] string userName)
@@ -28,7 +42,7 @@ namespace ITS152L_Project.Controllers
 
             await _service.AddAsync(newItem);
 
-            // Log the action
+            // Logs the action
             await _auditService.LogActionAsync(
                 userName,
                 "Added",
@@ -40,6 +54,7 @@ namespace ITS152L_Project.Controllers
             return CreatedAtAction(nameof(GetItemById), new { id = newItem.Id }, newItem);
         }
 
+        //Updates an item
         [HttpPut("update/{id}")]
         public async Task<IActionResult> UpdateItem([FromBody] ItemModel updatedItem,
             [FromQuery] string userName)
@@ -72,6 +87,7 @@ namespace ITS152L_Project.Controllers
             return NoContent();
         }
 
+        //Deletes an item
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(int id, [FromQuery] string userName)
         {
@@ -83,6 +99,7 @@ namespace ITS152L_Project.Controllers
 
             await _service.DeleteAsync(id);
 
+            //Logs the action
             await _auditService.LogActionAsync(
                 userName,
                 "Deleted",
@@ -94,12 +111,14 @@ namespace ITS152L_Project.Controllers
             return NoContent();
         }
 
+        //Retrieves all items
         [HttpGet("getAll")]
         public async Task<ActionResult<List<ItemModel>>> GetAllItems()
         {
             return Ok(await _service.GetAllAsync());
         }
 
+        //Retrieves a particular item by id
         [HttpGet("{id}")]
         public async Task<ActionResult<ItemModel>> GetItemById(int id)
         {

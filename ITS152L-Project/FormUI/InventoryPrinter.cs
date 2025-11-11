@@ -1,4 +1,16 @@
-﻿using FormsUI;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * InventoryPrinter utility class. Provides print to pdf functionality
+ * for the various data (inventory proper, audit logs, users, etc.).
+ **/
+
+using FormsUI;
 using ItemDataLibrary.Models;
 using System;
 using System.Collections.Generic;

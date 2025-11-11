@@ -1,18 +1,15 @@
 ﻿
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-
-*/
-
-//Item Model entity (has a table in the database for items)
+/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Item Model entity (table), 
+ * representing the internal model representation of the items
+ **/
 
 namespace ItemDataLibrary.Models
 {

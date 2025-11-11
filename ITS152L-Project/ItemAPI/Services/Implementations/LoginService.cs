@@ -1,23 +1,21 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Log in service class. Handles business logic and communicates
+ * with the controllers and repositories associated with the log in functionality
+ **/
+
+
+using ItemDataLibrary.Models;
 using ITS152L_Project.Repositories.Interfaces;
 using ITS152L_Project.Services;
 using ITS152L_Project.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
-
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Log in service class. Handles business logic and communicates
-//with the controllers and repositories associated with the log in functionality.
 
 namespace ITS152L_Project.Services.Implementations
 {

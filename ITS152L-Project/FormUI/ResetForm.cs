@@ -1,4 +1,17 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * ResetForm class. Main class for dealing with
+ * ResetForm related operations
+ **/
+
+
+using ItemDataLibrary.Models;
 using ITS152L_Project.Services.Implementations;
 using System;
 using System.Net.Http;
@@ -38,7 +51,6 @@ namespace FormsUI
                 btnSendCode.Enabled = false;
                 btnSendCode.Text = "Sending...";
 
-                // Check if user exists and get user object
                 var response = await _httpClient.GetAsync($"api/passwordreset/check-email/{Uri.EscapeDataString(email)}");
 
                 if (!response.IsSuccessStatusCode)
@@ -56,7 +68,7 @@ namespace FormsUI
                     return;
                 }
 
-                // Request token generation and email sending
+ 
                 var sendResponse = await _httpClient.PostAsync(
                     $"api/passwordreset/send-code/{user.Id}", null);
 

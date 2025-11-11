@@ -1,4 +1,18 @@
-﻿using ItemDataLibrary.Configuration;
+﻿/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * SecureEmailService class. Deals with operations related to
+ * sending reset password verification code via user email
+ * Doesn't implement an interface
+ **/
+
+
+using ItemDataLibrary.Configuration;
 using ItemDataLibrary.Models;
 using ItemDataLibrary.Security;
 using ITS152L_Project.Data;
@@ -18,6 +32,7 @@ namespace ITS152L_Project.Services.Implementations
         private readonly IPasswordResetTokenRepository _tokenRepository;
         private readonly ItemApiContext _context;
 
+        //Validates secrets
         public SecureEmailService(
             IOptions<EmailConfiguration> emailConfig,
             IPasswordResetTokenRepository tokenRepository,
@@ -33,6 +48,7 @@ namespace ITS152L_Project.Services.Implementations
                 throw new InvalidOperationException("Email app password not configured");
         }
 
+        //Sends verification to registered user email
         public async Task<bool> SendVerificationCodeAsync(UserModel user)
         {
             try
@@ -64,6 +80,7 @@ namespace ITS152L_Project.Services.Implementations
             }
         }
 
+        //Verifies verification code
         public async Task<bool> VerifyCodeAsync(int userId, string code)
         {
             if (!SecureTokenService.IsValidTokenFormat(code))
@@ -84,6 +101,7 @@ namespace ITS152L_Project.Services.Implementations
             await _tokenRepository.DeleteExpiredTokensAsync();
         }
 
+        //Generates email message
         private string GenerateEmailBody(string firstName, string token)
         {
             return $@"
@@ -110,7 +128,7 @@ namespace ITS152L_Project.Services.Implementations
                             <p>We received a request to reset your password. Use the verification code below to proceed:</p>
                             <div class='token'>{token}</div>
                             <div class='warning'>
-                                <strong>⚠️ Security Notice:</strong>
+                                <strong>Security Notice:</strong>
                                 <ul style='margin: 10px 0; padding-left: 20px;'>
                                     <li>This code will expire in <strong>10 minutes</strong></li>
                                     <li>The code can only be used <strong>once</strong></li>

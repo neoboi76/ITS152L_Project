@@ -1,4 +1,16 @@
-﻿using System;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * PasswordResetTokenRepository class. Deals with password reset token related
+ * database operations
+ **/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,6 +30,7 @@ namespace ITS152L_Project.Repositories.Implementations
             _context = context;
         }
 
+        //Creates reset token
         public async Task CreateTokenAsync(int userId, string token, int expiryMinutes)
         {
             var newToken = new PasswordResetToken
@@ -31,6 +44,7 @@ namespace ITS152L_Project.Repositories.Implementations
             await _context.SaveChangesAsync();
         }
 
+        //Retrieves all reset tokens
         public async Task<IEnumerable<PasswordResetToken>> GetAllTokensAsync()
         {
             return await _context.PasswordResetTokens
@@ -38,6 +52,7 @@ namespace ITS152L_Project.Repositories.Implementations
                 .ToListAsync();
         }
 
+        //Expires (or marks) a token as used when the user successfully uses it
         public async Task MarkTokenAsUsedAsync(int tokenId)
         {
             var token = await _context.PasswordResetTokens.FindAsync(tokenId);
@@ -48,6 +63,7 @@ namespace ITS152L_Project.Repositories.Implementations
             }
         }
 
+        //Purge all reset tokens that are past expiration date
         public async Task DeleteExpiredTokensAsync()
         {
             var expiredTokens = await _context.PasswordResetTokens

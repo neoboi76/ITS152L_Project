@@ -1,4 +1,17 @@
-﻿using System;
+﻿
+/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Password hasher config file. Generates,
+ * verifies, and validates hashed passwords.
+ **/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -1,4 +1,17 @@
-﻿using System;
+﻿/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Password Reset Tokens entity (table), 
+ * representing the internal model representation of the password reset tokens
+ **/
+
+
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

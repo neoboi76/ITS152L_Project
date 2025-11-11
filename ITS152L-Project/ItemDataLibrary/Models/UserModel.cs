@@ -1,22 +1,20 @@
-﻿/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
+﻿/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * User model entity (table), 
+ * representing the internal model representation of the users
+ **/
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-//User Model entity (has a table in the database for users)
 
 namespace ItemDataLibrary.Models
 {

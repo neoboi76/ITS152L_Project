@@ -1,4 +1,17 @@
-﻿using ITS152L_Project.Data;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * UserController class. Deals with user related
+ * http requeests
+ **/
+
+
+using ITS152L_Project.Data;
 using ItemDataLibrary.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,12 +33,14 @@ namespace ITS152L_Project.Controllers
             _context = context;
         }
 
+        //Retrieves all registered users
         [HttpGet]
         public async Task<ActionResult<List<UserModel>>> GetAllUsers()
         {
             return Ok(await _service.GetAllAsync());
         }
 
+        //Retrieves a particular registered user
         [HttpGet("{id}")]
         public async Task<ActionResult<UserModel>> GetUserById(int id)
         {
@@ -37,6 +52,7 @@ namespace ITS152L_Project.Controllers
             return Ok(user);
         }
 
+        //Verifies if email exists in the database and is tied to a registered user
         [HttpGet("check-email/{email}")]
         public async Task<ActionResult> CheckEmailExists(string email)
         {
@@ -50,6 +66,7 @@ namespace ITS152L_Project.Controllers
             return Ok();
         }
 
+        //Registers a user
         [HttpPost]
         public async Task<ActionResult<UserModel>> AddUser([FromBody] UserModel newUser)
         {
@@ -63,6 +80,7 @@ namespace ITS152L_Project.Controllers
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
         }
 
+        //Updates user role (from user to admin, done by the admin)
         [HttpPut("{id}/role")]
         public async Task<IActionResult> UpdateUserRole(int id, [FromBody] UserModel user)
         {
@@ -83,6 +101,7 @@ namespace ITS152L_Project.Controllers
             return NoContent();
         }
 
+        //Deletes a registered user
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {

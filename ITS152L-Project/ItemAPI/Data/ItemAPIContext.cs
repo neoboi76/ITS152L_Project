@@ -1,18 +1,27 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * Database context for the Teleoplex Inventory System
+ **/
+
+
+using ItemDataLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace ITS152L_Project.Data
 {
-    /// <summary>
-    /// Database context for the Teleoplex Inventory System
-    /// Developed by: Ken Aliling, Carl Norbi Felonia, Cedrick Miguel Kaneko,
-    ///               Amar Jacob Pajarito, Dino Alfred Timbol
-    /// </summary>
+
     public class ItemApiContext : DbContext
     {
         public ItemApiContext(DbContextOptions<ItemApiContext> options) : base(options) { }
 
+
+        //Builds context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -33,6 +42,7 @@ namespace ITS152L_Project.Data
                 .HasIndex(t => new { t.Token, t.UserId, t.IsUsed, t.Expiry });
         }
 
+        //Sets model classes as database tables
         public DbSet<ItemModel> Items { get; set; } = null!;
         public DbSet<UserModel> Users { get; set; } = null!;
         public DbSet<AuditLog> AuditLogs { get; set; } = null!;

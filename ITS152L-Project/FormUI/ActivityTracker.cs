@@ -1,4 +1,15 @@
-﻿using System;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * ActivityTracker Utility Class. Used in SessionManager service class.
+ **/
+
+using System;
 using System.Windows.Forms;
 
 namespace FormsUI

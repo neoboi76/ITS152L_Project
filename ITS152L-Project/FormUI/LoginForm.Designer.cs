@@ -1,4 +1,16 @@
-﻿using System.Runtime.InteropServices;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * LoginForm Designer class. Contains the design parameters for
+ * the aforementioned form
+ **/
+
+using System.Runtime.InteropServices;
 
 namespace FormsUI
 {
@@ -61,7 +73,7 @@ namespace FormsUI
             taglineLabel.TextAlign = ContentAlignment.MiddleCenter;
 
             Label versionLabel = new Label();
-            versionLabel.Text = "Bringing the future into the present";
+            versionLabel.Text = "Bringing the future into the present, for itself, by itself";
             versionLabel.Font = new Font("Segoe UI", 10);
             versionLabel.ForeColor = Color.FromArgb(147, 197, 253);
             versionLabel.AutoSize = false;

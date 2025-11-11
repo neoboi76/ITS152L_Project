@@ -1,4 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ **/
+
+
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 

@@ -1,4 +1,16 @@
-﻿using System;
+﻿/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Secure Token Service class. Generates, validates, and verifies
+ * generated tokens (for password resetting).
+ **/
+
+using System;
 using System.Linq;
 using System.Security.Cryptography;
 using ItemDataLibrary.Models;

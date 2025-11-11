@@ -1,4 +1,16 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * PasswordResetController class. Deals with password reset related
+ * http requeests
+ **/
+
+using ItemDataLibrary.Models;
 using ItemDataLibrary.Security;
 using ITS152L_Project.Data;
 using ITS152L_Project.Repositories.Interfaces;
@@ -28,9 +40,7 @@ namespace ITS152L_Project.Controllers
             _emailService = emailService;
         }
 
-        /// <summary>
-        /// Check if email exists and return user
-        /// </summary>
+        //Check if email exists and return user
         [HttpGet("check-email/{email}")]
         public async Task<ActionResult<UserModel>> CheckEmailExists(string email)
         {
@@ -45,9 +55,7 @@ namespace ITS152L_Project.Controllers
             return Ok(user);
         }
 
-        /// <summary>
-        /// Generate and send verification code
-        /// </summary>
+        //Generate and send verification code
         [HttpPost("send-code/{userId}")]
         public async Task<IActionResult> SendVerificationCode(int userId)
         {
@@ -76,9 +84,7 @@ namespace ITS152L_Project.Controllers
             }
         }
 
-        /// <summary>
-        /// Verify code and mark as used
-        /// </summary>
+        //Verify code and mark as used
         [HttpPost("verify-code")]
         public async Task<IActionResult> VerifyCode([FromBody] VerifyCodeRequest request)
         {
@@ -101,9 +107,7 @@ namespace ITS152L_Project.Controllers
             }
         }
 
-        /// <summary>
-        /// Reset password after verification
-        /// </summary>
+        //Reset password after verification
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordRequest request)
         {
@@ -133,9 +137,7 @@ namespace ITS152L_Project.Controllers
             }
         }
 
-        /// <summary>
-        /// Cleanup expired tokens (can be called periodically)
-        /// </summary>
+        //Cleanup expired tokens (can be called periodically)
         [HttpPost("cleanup-expired")]
         public async Task<IActionResult> CleanupExpiredTokens()
         {

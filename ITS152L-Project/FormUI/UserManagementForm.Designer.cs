@@ -1,4 +1,16 @@
-﻿using System;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * (admin) UserManagementForm Designer class. Contains the design parameters for
+ * the aforementioned form
+ **/
+
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 

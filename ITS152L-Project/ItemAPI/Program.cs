@@ -1,3 +1,14 @@
+/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Main entry point for the ItemApi Project
+ **/
+
 using ItemDataLibrary.Models;
 using ItemDataLibrary.Configuration;
 using ITS152L_Project.Data;
@@ -49,7 +60,6 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<ItemApiContext>();
 
-    // Ensure database is created
     context.Database.EnsureCreated();
 
     /* Seed admin user if no users exist

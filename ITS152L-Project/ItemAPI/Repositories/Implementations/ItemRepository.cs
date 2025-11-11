@@ -1,25 +1,23 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * ItemRepository class. Deals with item related
+ * database operations
+ **/
+
+using ItemDataLibrary.Models;
 using ITS152L_Project.Data;
 using ITS152L_Project.Repositories.Interfaces;
 using System;
 
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Item repository that inherits from the generic repository and item repository interface.
-
 namespace ITS152L_Project.Repositories.Implementations
 {
-    public class ItemRepository : GenericRepository<ItemModel>, IItemRepository
+    public class ItemRepository : GenericRepository<ItemModel>, IItemRepository //Extends Generic Repository (uses generic CRUD repository operations)
     {
         public ItemRepository(ItemApiContext context) : base(context) { }
     }

@@ -1,4 +1,16 @@
-﻿using System;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * LoginForm class. Main class for dealing with
+ * LoginForm related operations
+ **/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,19 +23,6 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using ItemDataLibrary.Models;
 
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Log in form UI
 
 namespace FormsUI
 {

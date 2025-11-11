@@ -1,19 +1,19 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+ * Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ *
+ * Interface for the IRepository. 
+ * Generic interface that is inherited by the User, Item, and
+ * Audit log interfaces (not including Log in interface)
+ * Promotes dependency injection and loosely coupled relationships
+ **/
 
-/*
 
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-
-//Generic interface that is inherited by the User and Item interfaces (not including Log in interface)
+using ItemDataLibrary.Models;
 
 namespace ITS152L_Project.Repositories.Interfaces
 {

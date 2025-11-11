@@ -1,18 +1,16 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * Interface for the ILoginRepository. Promotes dependency injection
+ * and loosely coupled relationships
+ **/
 
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Log in Repository Interface
+using ItemDataLibrary.Models;
 
 namespace ITS152L_Project.Repositories.Interfaces
 {

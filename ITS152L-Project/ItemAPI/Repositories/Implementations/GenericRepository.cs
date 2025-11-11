@@ -1,21 +1,18 @@
-﻿using ITS152L_Project.Repositories.Interfaces;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * GenericRepository class. Main Repository whose methods are inherited
+ * by the item, audit log, and user repositories respectively
+ **/
+
+using ITS152L_Project.Repositories.Interfaces;
 using ITS152L_Project.Data;
 using Microsoft.EntityFrameworkCore;
-
-/*
-
-Developed by: 
-
-    Ken Aliling
-    Carl Norbi Felonia
-    Cedrick Miguel Kaneko
-    Amar Jacob Pajarito
-    Dino Alfred Timbol
-
-*/
-
-//Generic repository that defines methods to be inherited
-//By the item and user repositories.
 
 namespace ITS152L_Project.Repositories.Implementations
 {
