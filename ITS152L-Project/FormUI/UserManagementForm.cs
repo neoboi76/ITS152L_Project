@@ -1,4 +1,16 @@
-﻿using ItemDataLibrary.Models;
+﻿/**
+* Developed by Group 9:
+     * Ken Aliling
+     * Carl Norbi Felonia
+     * Cedrick Miguel Kaneko
+     * Amar Jacob Pajarito
+     * Dino Alfred Timbol
+ * 
+ * (admin) UserManagementForm  class. Contains logic related to
+ admin user management
+ **/
+
+using ItemDataLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
