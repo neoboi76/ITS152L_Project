@@ -207,6 +207,3 @@ Key folders in the API project:
 
 This project was developed as part of an academic group project. Thanks to the contributors listed above and to the maintainers of .NET, EF Core, and Windows Forms libraries that made prototyping this app straightforward.
 
----
-
-**License**: (optional) Add a license file (e.g., `LICENSE` with MIT) if you want others to reuse the code.
