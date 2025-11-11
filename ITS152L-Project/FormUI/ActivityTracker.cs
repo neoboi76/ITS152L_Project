@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-
 
 namespace FormsUI
 {
     public class ActivityTracker
     {
-        private Form _form;
+        private readonly Form _form;
 
         public ActivityTracker(Form form)
         {
@@ -25,7 +19,6 @@ namespace FormsUI
             _form.KeyPress += OnActivity;
             _form.Click += OnActivity;
 
-            // Attach to all child controls
             foreach (Control control in _form.Controls)
             {
                 AttachToControl(control);
@@ -38,12 +31,9 @@ namespace FormsUI
             control.KeyPress += OnActivity;
             control.Click += OnActivity;
 
-            if (control.HasChildren)
+            foreach (Control child in control.Controls)
             {
-                foreach (Control child in control.Controls)
-                {
-                    AttachToControl(child);
-                }
+                AttachToControl(child);
             }
         }
 

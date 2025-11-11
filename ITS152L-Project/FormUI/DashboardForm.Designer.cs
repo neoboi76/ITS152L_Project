@@ -211,5 +211,8 @@ namespace FormsUI
             card.Controls.AddRange(new Control[] { accent, lblTitle, lblValue });
             return card;
         }
+
+
     }
+
 }

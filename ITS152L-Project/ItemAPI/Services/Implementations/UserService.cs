@@ -41,15 +41,6 @@ namespace ITS152L_Project.Services.Implementations
                 throw new ArgumentException("Invalid email address format.");
             }
 
-            if (user.UserName.ToLower() == "admin")
-            {
-                user.Role = "Admin";
-            }
-            else
-            {
-                user.Role = "User";
-            }
-
             user.Password = PasswordHasher.HashPassword(user.Password);
 
             try

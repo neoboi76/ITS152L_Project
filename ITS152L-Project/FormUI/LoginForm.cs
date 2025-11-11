@@ -30,7 +30,6 @@ namespace FormsUI
     public partial class LoginForm : Form
     {
 
-        //Facilitates http requests from front-ebd to back-end
         private readonly HttpClient _httpClient = new HttpClient
         {
             BaseAddress = new Uri("https://localhost:7173/")
@@ -59,7 +58,6 @@ namespace FormsUI
             resetForm.ShowDialog();
         }
 
-        //Facilitates log in mechanism
         private async void btnLogSub_ClickAsync(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtLogName.Text) ||
@@ -83,10 +81,8 @@ namespace FormsUI
                 var user = await response.Content.ReadFromJsonAsync<UserModel>();
                 if (user != null)
                 {
-                    // Start session
                     SessionManager.StartSession(user.Id, user.UserName, user.Role);
 
-                    // Subscribe to session expired event
                     SessionManager.SessionExpired += OnSessionExpired;
 
                     MessageBox.Show($"Welcome {user.UserName}!", "Login Successful",
@@ -106,7 +102,7 @@ namespace FormsUI
 
         private void OnSessionExpired(object sender, EventArgs e)
         {
-            // Must invoke on UI thread
+
             if (InvokeRequired)
             {
                 Invoke(new Action(() => HandleSessionExpired()));
@@ -120,7 +116,6 @@ namespace FormsUI
             MessageBox.Show("Your session has expired due to inactivity. Please login again.",
                 "Session Expired", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-            // Close all open forms and show login
             foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
             {
                 if (form is not LoginForm)
@@ -135,9 +130,7 @@ namespace FormsUI
 
         private void HandleSessionExpired()
         {
-            MessageBox.Show("Your session has expired due to inactivity. Please login again.",
-                "Session Expired", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+           
             foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
             {
                 if (form is not LoginForm)

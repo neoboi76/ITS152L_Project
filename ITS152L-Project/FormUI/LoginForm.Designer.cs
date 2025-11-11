@@ -1,4 +1,6 @@
-﻿namespace FormsUI
+﻿using System.Runtime.InteropServices;
+
+namespace FormsUI
 {
     partial class LoginForm
     {
@@ -102,6 +104,7 @@
             txtLogName.Location = new Point(90, 235);
             txtLogName.Size = new Size(360, 34);
             txtLogName.BorderStyle = BorderStyle.FixedSingle;
+            SetTextBoxPadding(txtLogName, 8, 0);
 
             Label lblPassword = new Label();
             lblPassword.Text = "Password";
@@ -116,6 +119,7 @@
             txtLogPass.Size = new Size(360, 34);
             txtLogPass.UseSystemPasswordChar = true;
             txtLogPass.BorderStyle = BorderStyle.FixedSingle;
+            SetTextBoxPadding(txtLogPass, 8, 0);
 
             forgotPass = new LinkLabel();
             forgotPass.Text = "Forgot password?";
@@ -161,6 +165,17 @@
             this.Controls.Add(leftPanel);
 
             this.ResumeLayout(false);
+        }
+
+
+        private const int EM_SETMARGINS = 0xD3;
+        private const int EC_LEFTMARGIN = 0x1;
+        private const int EC_RIGHTMARGIN = 0x2;
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+        private void SetTextBoxPadding(TextBox textBox, int left, int right)
+        {
+            SendMessage(textBox.Handle, EM_SETMARGINS, EC_LEFTMARGIN | EC_RIGHTMARGIN, (right << 16) + left);
         }
 
         #endregion

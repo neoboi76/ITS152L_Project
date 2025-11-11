@@ -1,4 +1,6 @@
-﻿namespace FormsUI
+﻿using System.Runtime.InteropServices;
+
+namespace FormsUI
 {
     partial class RegisterForm
     {
@@ -92,6 +94,7 @@
             txtRegUser.Size = new Size(fieldWidth, 32);
             txtRegUser.BorderStyle = BorderStyle.FixedSingle;
             txtRegUser.PlaceholderText = "example@email.com";
+            SetTextBoxPadding(txtRegUser, 8, 0);
 
             y += spacing;
 
@@ -107,6 +110,7 @@
             txtRegFirst.Location = new Point(startX, y + 25);
             txtRegFirst.Size = new Size(fieldWidth, 32);
             txtRegFirst.BorderStyle = BorderStyle.FixedSingle;
+            SetTextBoxPadding(txtRegFirst, 8, 0);
 
             y += spacing;
 
@@ -122,6 +126,7 @@
             txtRegLast.Location = new Point(startX, y + 25);
             txtRegLast.Size = new Size(fieldWidth, 32);
             txtRegLast.BorderStyle = BorderStyle.FixedSingle;
+            SetTextBoxPadding(txtRegLast, 8, 0);
 
             y += spacing;
 
@@ -139,6 +144,7 @@
             txtRegNewPass.BorderStyle = BorderStyle.FixedSingle;
             txtRegNewPass.UseSystemPasswordChar = true;
             txtRegNewPass.TextChanged += (s, e) => UpdatePasswordStrength();
+            SetTextBoxPadding(txtRegNewPass, 8, 0);
 
             lblPasswordStrength = new Label();
             lblPasswordStrength.Text = "Password Strength:";
@@ -167,6 +173,7 @@
             txtRegConfirm.Size = new Size(fieldWidth, 32);
             txtRegConfirm.BorderStyle = BorderStyle.FixedSingle;
             txtRegConfirm.UseSystemPasswordChar = true;
+            SetTextBoxPadding(txtRegConfirm, 8, 0);
 
             y += spacing + 20;
 
@@ -208,6 +215,16 @@
             this.Controls.Add(leftPanel);
 
             this.ResumeLayout(false);
+        }
+
+        private const int EM_SETMARGINS = 0xD3;
+        private const int EC_LEFTMARGIN = 0x1;
+        private const int EC_RIGHTMARGIN = 0x2;
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+        private void SetTextBoxPadding(TextBox textBox, int left, int right)
+        {
+            SendMessage(textBox.Handle, EM_SETMARGINS, EC_LEFTMARGIN | EC_RIGHTMARGIN, (right << 16) + left);
         }
 
         #endregion

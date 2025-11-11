@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace FormsUI
@@ -88,23 +89,28 @@ namespace FormsUI
 
             lblItemName = CreateLabel("Item Name", 20, 70);
             txtItemName = CreateTextBox(20, 95, 400);
+            SetTextBoxPadding(txtItemName, 8, 0);
             txtItemName.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Name", true));
 
             lblItemCode = CreateLabel("Item Code", 20, 140);
             txtItemCode = CreateTextBox(20, 165, 400);
             txtItemCode.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Code", true));
+            SetTextBoxPadding(txtItemCode, 8, 0);
 
             lblItemBrand = CreateLabel("Brand", 20, 210);
             txtItemBrand = CreateTextBox(20, 235, 400);
             txtItemBrand.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Brand", true));
+            SetTextBoxPadding(txtItemBrand, 8, 0);
 
             lblItemPrice = CreateLabel("Unit Price", 20, 280);
             txtItemPrice = CreateTextBox(20, 305, 190);
             txtItemPrice.DataBindings.Add(new Binding("Text", itemModelBindingSource, "UnitPrice", true));
+            SetTextBoxPadding(txtItemPrice, 8, 0);
 
             lblItemQuantity = CreateLabel("Quantity", 230, 280);
             txtItemQuantity = CreateTextBox(230, 305, 190);
             txtItemQuantity.DataBindings.Add(new Binding("Text", itemModelBindingSource, "Quantity", true));
+            SetTextBoxPadding(txtItemQuantity, 8, 0);
 
             label2 = new Label
             {
@@ -461,6 +467,17 @@ namespace FormsUI
 
             this.MainMenuStrip = menuStrip1;
             this.Controls.Add(menuStrip1);
+        }
+
+
+        private const int EM_SETMARGINS = 0xD3;
+        private const int EC_LEFTMARGIN = 0x1;
+        private const int EC_RIGHTMARGIN = 0x2;
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+        private void SetTextBoxPadding(TextBox textBox, int left, int right)
+        {
+            SendMessage(textBox.Handle, EM_SETMARGINS, EC_LEFTMARGIN | EC_RIGHTMARGIN, (right << 16) + left);
         }
 
         #endregion

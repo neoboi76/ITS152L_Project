@@ -17,25 +17,18 @@ namespace ITS152L_Project.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // UserLogin has no key
-            modelBuilder.Entity<UserLogin>().HasNoKey();
-
-            // Configure PasswordResetToken relationships
             modelBuilder.Entity<PasswordResetToken>()
                 .HasOne(t => t.User)
                 .WithMany()
                 .HasForeignKey(t => t.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Add index on Token for faster lookups
             modelBuilder.Entity<PasswordResetToken>()
                 .HasIndex(t => t.Token);
 
-            // Add index on UserId for faster user token queries
             modelBuilder.Entity<PasswordResetToken>()
                 .HasIndex(t => t.UserId);
 
-            // Add composite index for token validation queries
             modelBuilder.Entity<PasswordResetToken>()
                 .HasIndex(t => new { t.Token, t.UserId, t.IsUsed, t.Expiry });
         }

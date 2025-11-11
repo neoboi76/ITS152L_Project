@@ -1,4 +1,6 @@
-﻿namespace FormsUI
+﻿using System.Runtime.InteropServices;
+
+namespace FormsUI
 {
     partial class ResetForm
     {
@@ -90,6 +92,7 @@
             txtEmail.Size = new Size(350, 32);
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
             txtEmail.PlaceholderText = "example@email.com";
+            SetTextBoxPadding(txtEmail, 8, 0);
 
             btnSendCode = new Button();
             btnSendCode.Text = "Send Code";
@@ -127,6 +130,7 @@
             txtVerificationCode.BorderStyle = BorderStyle.FixedSingle;
             txtVerificationCode.PlaceholderText = "Enter 6-digit code";
             txtVerificationCode.MaxLength = 6;
+            SetTextBoxPadding(txtVerificationCode, 8, 0);
 
             btnVerifyCode = new Button();
             btnVerifyCode.Text = "Verify Code";
@@ -163,6 +167,7 @@
             txtNewPassword.Size = new Size(350, 32);
             txtNewPassword.BorderStyle = BorderStyle.FixedSingle;
             txtNewPassword.UseSystemPasswordChar = true;
+            SetTextBoxPadding(txtNewPassword, 8, 0);
 
             Label lblConfirmPass = new Label();
             lblConfirmPass.Text = "Confirm Password";
@@ -177,6 +182,7 @@
             txtConfirmPassword.Size = new Size(350, 32);
             txtConfirmPassword.BorderStyle = BorderStyle.FixedSingle;
             txtConfirmPassword.UseSystemPasswordChar = true;
+            SetTextBoxPadding(txtConfirmPassword, 8, 0);
 
             btnResetPassword = new Button();
             btnResetPassword.Text = "Reset Password";
@@ -204,6 +210,16 @@
             this.Controls.Add(leftPanel);
 
             this.ResumeLayout(false);
+        }
+
+        private const int EM_SETMARGINS = 0xD3;
+        private const int EC_LEFTMARGIN = 0x1;
+        private const int EC_RIGHTMARGIN = 0x2;
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+        private void SetTextBoxPadding(TextBox textBox, int left, int right)
+        {
+            SendMessage(textBox.Handle, EM_SETMARGINS, EC_LEFTMARGIN | EC_RIGHTMARGIN, (right << 16) + left);
         }
 
         #endregion

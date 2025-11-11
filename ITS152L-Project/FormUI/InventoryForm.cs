@@ -1,4 +1,5 @@
 ﻿using ItemDataLibrary.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,11 +28,13 @@ namespace FormsUI
         public InventoryForm(string userName, string userRole)
         {
             _currentUserName = userName ?? string.Empty;
+
             _currentUserRole = userRole ?? string.Empty;
 
             InitializeComponent();
 
             this.Load += InventoryForm_LoadAsync;
+
             this.FormClosed += InventoryForm_FormClosed;
 
             var activityTracker = new ActivityTracker(this);
@@ -40,6 +43,8 @@ namespace FormsUI
 
             InitializeMenuStrip();
         }
+
+
 
         private void InventoryForm_FormClosed(object? sender, FormClosedEventArgs e)
         {
@@ -52,40 +57,21 @@ namespace FormsUI
 
             if (this.InvokeRequired)
             {
-                try
-                {
-                    this.Invoke(new Action(() => OnSessionExpired(sender, e)));
-                }
-                catch (ObjectDisposedException)
-                {
-                }
+                try { this.Invoke(new Action(() => OnSessionExpired(sender, e))); }
+                catch { return; }
                 return;
             }
 
             MessageBox.Show("Your session has expired due to inactivity. Please login again.",
                 "Session Expired", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-            try
+            foreach (Form open in Application.OpenForms.Cast<Form>().ToList())
             {
-                foreach (Form open in Application.OpenForms.Cast<Form>().ToList())
-                {
-                    if (open is not LoginForm)
-                        open.Close();
-                }
-            }
-            catch
-            {
+                if (open is not LoginForm)
+                    open.Close();
             }
 
-            var loginForm = new LoginForm();
-            loginForm.Show();
-            try
-            {
-                this.Close();
-            }
-            catch
-            {
-            }
+            try { this.Close(); } catch { }
         }
 
         private void LogoutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,12 +83,7 @@ namespace FormsUI
                 SessionManager.EndSession();
 
                 foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
-                {
-                    if (form != this && !(form is LoginForm))
-                    {
-                        form.Close();
-                    }
-                }
+                    if (form != this && !(form is LoginForm)) form.Close();
 
                 var loginForm = new LoginForm();
                 loginForm.Show();
@@ -228,46 +209,25 @@ namespace FormsUI
 
             if (pnlLeftSide != null)
             {
-                if (!isAdmin)
-                {
-                    pnlLeftSide.Visible = false;
-
-                    foreach (Control ctrl in this.Controls)
-                    {
-                        if (ctrl != menuStrip1 && ctrl.Left > 100)
-                        {
-                            ctrl.Location = new Point(20, ctrl.Location.Y);
-                            if (ctrl is Panel panel)
-                            {
-                                panel.Size = new Size(1360, panel.Height);
-
-                                foreach (Control innerCtrl in panel.Controls)
-                                {
-                                    if (innerCtrl is DataGridView dgv)
-                                    {
-                                        dgv.Size = new Size(1320, dgv.Height);
-                                    }
-                                    else if (innerCtrl is Panel searchPanel && searchPanel.Top < 100)
-                                    {
-                                        searchPanel.Size = new Size(1320, searchPanel.Height);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    pnlLeftSide.Visible = true;
-                }
+                pnlLeftSide.Visible = true;
             }
 
-            if (btnItemNew != null) btnItemNew.Visible = isAdmin;
-            if (btnItemUpdate != null) btnItemUpdate.Visible = isAdmin;
-            if (btnItemDelete != null) btnItemDelete.Visible = isAdmin;
-            if (btnItemSave != null) btnItemSave.Visible = isAdmin;
-            if (btnItemCancel != null) btnItemCancel.Visible = isAdmin;
-            if (btnQuickPrint != null) btnQuickPrint.Visible = isAdmin;
+            if (btnItemNew != null)
+            {
+                btnItemNew.Visible = true;
+                btnItemNew.Enabled = true;
+            }
+            if (btnItemUpdate != null) { btnItemUpdate.Visible = true; btnItemUpdate.Enabled = true; }
+            if (btnItemDelete != null) { btnItemDelete.Visible = true; btnItemDelete.Enabled = true; }
+            if (btnItemSave != null) { btnItemSave.Visible = true; btnItemSave.Enabled = true; }
+            if (btnItemCancel != null) { btnItemCancel.Visible = true; btnItemCancel.Enabled = true; }
+            if (btnQuickPrint != null) { btnQuickPrint.Visible = true; btnQuickPrint.Enabled = true; }
+
+            if (viewToolStripMenuItem != null)
+            {
+                viewToolStripMenuItem.Visible = isAdmin;
+                viewToolStripMenuItem.Enabled = isAdmin;
+            }
 
             this.Text = $"Teleoplex Inventory System - {_currentUserName} ({_currentUserRole})";
         }
@@ -398,11 +358,7 @@ namespace FormsUI
 
                 if (response.IsSuccessStatusCode)
                 {
-                    try
-                    {
-                        itemModelBindingSource.RemoveCurrent();
-                    }
-                    catch { }
+                    try { itemModelBindingSource.RemoveCurrent(); } catch { }
 
                     MessageBox.Show("Item deleted successfully.", "Success",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -424,13 +380,7 @@ namespace FormsUI
         {
             ReadOnlyFields(true);
 
-            try
-            {
-                itemModelBindingSource?.CancelEdit();
-            }
-            catch
-            {
-            }
+            try { itemModelBindingSource?.CancelEdit(); } catch { }
         }
 
         private void BtnExportCsv_Click(object sender, EventArgs e)
@@ -481,12 +431,7 @@ namespace FormsUI
             {
                 foreach (var item in items)
                 {
-                    sb.AppendLine($"{item.Id}," +
-                                 $"\"{item.Name}\"," +
-                                 $"{item.Code}," +
-                                 $"\"{item.Brand}\"," +
-                                 $"{item.UnitPrice}," +
-                                 $"{item.Quantity}");
+                    sb.AppendLine($"{item.Id},\"{item.Name}\",{item.Code},\"{item.Brand}\",{item.UnitPrice},{item.Quantity}");
                 }
             }
 

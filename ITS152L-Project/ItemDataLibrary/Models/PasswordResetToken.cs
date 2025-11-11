@@ -4,16 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ItemDataLibrary.Models
 {
-    /// <summary>
-    /// Password reset token entity for secure password reset functionality
-    /// Developed by: Ken Aliling, Carl Norbi Felonia, Cedrick Miguel Kaneko, 
-    ///               Amar Jacob Pajarito, Dino Alfred Timbol
-    /// </summary>
-    [Table("password_reset_tokens")]
     public class PasswordResetToken
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required]
@@ -35,23 +27,15 @@ namespace ItemDataLibrary.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public DateTime? UsedAt { get; set; }
-
-        /// <summary>
-        /// Checks if the token is valid (not expired and not used)
-        /// </summary>
         public bool IsValid()
         {
             return !IsUsed && DateTime.Now <= Expiry;
         }
-
-        /// <summary>
-        /// Marks the token as used
-        /// </summary>
         public void MarkAsUsed()
         {
             IsUsed = true;
             UsedAt = DateTime.Now;
-            Expiry = DateTime.Now; // Immediately expire
+            Expiry = DateTime.Now; 
         }
     }
 }

@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
 using System.Windows.Forms;
 
 namespace FormsUI
 {
     public static class SessionManager
     {
-        private static System.Timers.Timer _inactivityTimer;
+        private static System.Windows.Forms.Timer _timer;
         private static DateTime _lastActivity;
-        private static int _sessionTimeoutMinutes = 30; // 30 minutes timeout
-        private static bool _isSessionActive = false;
+        private static int _sessionTimeoutMinutes = 10;
+        private static bool _isActive = false;
 
         public static string CurrentUserName { get; private set; }
         public static string CurrentUserRole { get; private set; }
@@ -28,26 +23,13 @@ namespace FormsUI
             CurrentUserName = userName;
             CurrentUserRole = userRole;
             LoginTime = DateTime.Now;
-            _isSessionActive = true;
             _lastActivity = DateTime.Now;
+            _isActive = true;
 
-            // Initialize inactivity timer
-            if (_inactivityTimer == null)
-            {
-                _inactivityTimer = new System.Timers.Timer(60000); // Check every minute
-                _inactivityTimer.Elapsed += CheckInactivity;
-            }
-
-            _inactivityTimer.Start();
-        }
-
-        public static void EndSession()
-        {
-            _inactivityTimer?.Stop();
-            CurrentUserName = null;
-            CurrentUserRole = null;
-            CurrentUserId = 0;
-            _isSessionActive = false;
+            _timer = new System.Windows.Forms.Timer();
+            _timer.Interval = 5000; 
+            _timer.Tick += Timer_Tick;
+            _timer.Start();
         }
 
         public static void UpdateActivity()
@@ -55,36 +37,34 @@ namespace FormsUI
             _lastActivity = DateTime.Now;
         }
 
-        private static void CheckInactivity(object sender, ElapsedEventArgs e)
+        private static void Timer_Tick(object sender, EventArgs e)
         {
-            if (_isSessionActive)
-            {
-                TimeSpan inactiveTime = DateTime.Now - _lastActivity;
+            if (!_isActive) return;
 
-                if (inactiveTime.TotalMinutes >= _sessionTimeoutMinutes)
-                {
-                    _inactivityTimer.Stop();
-                    _isSessionActive = false;
-                    SessionExpired?.Invoke(null, EventArgs.Empty);
-                }
+            if ((DateTime.Now - _lastActivity).TotalMinutes >= _sessionTimeoutMinutes)
+            {
+                _isActive = false;
+                _timer.Stop();
+                SessionExpired?.Invoke(null, EventArgs.Empty);
             }
         }
 
-        public static bool IsSessionActive()
+        public static void EndSession()
         {
-            return _isSessionActive;
+            _isActive = false;
+            _timer?.Stop();
+            CurrentUserName = null;
+            CurrentUserRole = null;
+            CurrentUserId = 0;
         }
 
-        public static TimeSpan GetSessionDuration()
-        {
-            return DateTime.Now - LoginTime;
-        }
+        public static bool IsSessionActive() => _isActive;
 
+        public static TimeSpan GetSessionDuration() => DateTime.Now - LoginTime;
         public static TimeSpan GetTimeUntilTimeout()
         {
-            TimeSpan inactiveTime = DateTime.Now - _lastActivity;
-            double remainingMinutes = _sessionTimeoutMinutes - inactiveTime.TotalMinutes;
-            return TimeSpan.FromMinutes(Math.Max(0, remainingMinutes));
+            var remaining = _sessionTimeoutMinutes - (DateTime.Now - _lastActivity).TotalMinutes;
+            return TimeSpan.FromMinutes(Math.Max(0, remaining));
         }
     }
 }

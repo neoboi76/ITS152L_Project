@@ -205,19 +205,19 @@ namespace FormsUI
             if (strength < 50)
             {
                 pbPasswordStrength.ForeColor = Color.Red;
-                lblPasswordStrength.Text = "Password Strength: Weak ⚠️";
+                lblPasswordStrength.Text = "Password Strength: Weak";
                 lblPasswordStrength.ForeColor = Color.FromArgb(220, 38, 38);
             }
             else if (strength < 80)
             {
                 pbPasswordStrength.ForeColor = Color.Orange;
-                lblPasswordStrength.Text = "Password Strength: Medium ⚡";
+                lblPasswordStrength.Text = "Password Strength: Medium";
                 lblPasswordStrength.ForeColor = Color.FromArgb(234, 179, 8);
             }
             else
             {
                 pbPasswordStrength.ForeColor = Color.Green;
-                lblPasswordStrength.Text = "Password Strength: Strong ✓";
+                lblPasswordStrength.Text = "Password Strength: Strong";
                 lblPasswordStrength.ForeColor = Color.FromArgb(34, 197, 94);
             }
         }
