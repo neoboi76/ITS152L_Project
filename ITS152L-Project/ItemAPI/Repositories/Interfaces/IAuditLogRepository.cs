@@ -13,6 +13,7 @@
 using ItemDataLibrary.Models;
 
 namespace ITS152L_Project.Repositories.Interfaces
+
 {
     public interface IAuditLogRepository : IRepository<AuditLog> //Extends Generic Interface Repository (uses generic CRUD repository operations)
     {

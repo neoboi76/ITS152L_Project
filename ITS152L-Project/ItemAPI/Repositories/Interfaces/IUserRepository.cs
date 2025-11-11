@@ -15,6 +15,6 @@ using ItemDataLibrary.Models;
 
 namespace ITS152L_Project.Repositories.Interfaces
 {
-    public interface IUserRepository : IRepository<UserModel> { }
+    public interface IUserRepository : IRepository<UserModel> { } //Extends Generic Interface Repository (uses generic CRUD repository operations)
 
 }

@@ -1,18 +1,7 @@
-﻿/**
-* Developed by Group 9:
-     * Ken Aliling
-     * Carl Norbi Felonia
-     * Cedrick Miguel Kaneko
-     * Amar Jacob Pajarito
-     * Dino Alfred Timbol
- * 
- * (admin) UserManagementForm class. Main class for dealing with
- * UserManagementForm related operations
- **/
-
-using ItemDataLibrary.Models;
+﻿using ItemDataLibrary.Models;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
@@ -23,11 +12,7 @@ namespace FormsUI
 {
     public partial class UserManagementForm : Form
     {
-        private readonly HttpClient _httpClient = new HttpClient
-        {
-            BaseAddress = new Uri("https://localhost:7173/")
-        };
-
+        private readonly HttpClient _httpClient = new HttpClient { BaseAddress = new Uri("https://localhost:7173/") };
         private string _currentUserName;
         private List<UserModel> _allUsers = new List<UserModel>();
 
@@ -35,8 +20,8 @@ namespace FormsUI
         {
             InitializeComponent();
             _currentUserName = adminUserName;
-            this.Text = "User Management - Teleoplex Inventory System";
-            this.Size = new Size(1200, 700);
+            Text = "User Management - Teleoplex Inventory System";
+            Size = new Size(1200, 700);
         }
 
         private async void UserManagementForm_Load(object sender, EventArgs e)
@@ -48,7 +33,7 @@ namespace FormsUI
         {
             try
             {
-                _allUsers = await _httpClient.GetFromJsonAsync<List<UserModel>>("api/user");
+                _allUsers = await _httpClient.GetFromJsonAsync<List<UserModel>>("api/user") ?? new List<UserModel>();
                 dgvUsers.DataSource = _allUsers.Select(u => new
                 {
                     u.Id,
@@ -58,22 +43,30 @@ namespace FormsUI
                     u.Role
                 }).ToList();
 
-                dgvUsers.Columns["Id"].Visible = false;
-                dgvUsers.Columns["UserName"].HeaderText = "Email";
-                dgvUsers.Columns["UserName"].Width = 250;
-                dgvUsers.Columns["FirstName"].HeaderText = "First Name";
-                dgvUsers.Columns["FirstName"].Width = 150;
-                dgvUsers.Columns["LastName"].HeaderText = "Last Name";
-                dgvUsers.Columns["LastName"].Width = 150;
-                dgvUsers.Columns["Role"].Width = 100;
+                if (dgvUsers.Columns.Contains("Id")) dgvUsers.Columns["Id"].Visible = false;
+                if (dgvUsers.Columns.Contains("UserName"))
+                {
+                    dgvUsers.Columns["UserName"].HeaderText = "Email";
+                    dgvUsers.Columns["UserName"].Width = 250;
+                }
+                if (dgvUsers.Columns.Contains("FirstName"))
+                {
+                    dgvUsers.Columns["FirstName"].HeaderText = "First Name";
+                    dgvUsers.Columns["FirstName"].Width = 150;
+                }
+                if (dgvUsers.Columns.Contains("LastName"))
+                {
+                    dgvUsers.Columns["LastName"].HeaderText = "Last Name";
+                    dgvUsers.Columns["LastName"].Width = 150;
+                }
+                if (dgvUsers.Columns.Contains("Role")) dgvUsers.Columns["Role"].Width = 100;
 
                 lblUserCount.Text = $"Total Users: {_allUsers.Count}";
                 lblAdminCount.Text = $"Admins: {_allUsers.Count(u => u.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))}";
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error loading users: {ex.Message}", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error loading users: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -81,8 +74,7 @@ namespace FormsUI
         {
             if (dgvUsers.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a user to delete.", "No Selection",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a user to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -90,78 +82,52 @@ namespace FormsUI
             var userId = (int)selectedRow.Cells["Id"].Value;
             var userName = selectedRow.Cells["UserName"].Value.ToString();
 
-            if (userName.ToLower() == "admin")
+            if (userName.Equals("admin", StringComparison.OrdinalIgnoreCase))
             {
-                MessageBox.Show("Cannot delete the admin account.", "Cannot Delete",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Cannot delete the admin account.", "Cannot Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (MessageBox.Show($"Are you sure you want to delete user: {userName}?",
-                "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show($"Are you sure you want to delete user: {userName}?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try
                 {
                     var response = await _httpClient.DeleteAsync($"api/user/{userId}");
                     if (response.IsSuccessStatusCode)
                     {
-                        MessageBox.Show("User deleted successfully.", "Success",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("User deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         await LoadUsersAsync();
                     }
                     else
                     {
-                        MessageBox.Show("Failed to delete user.", "Error",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Failed to delete user.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error deleting user: {ex.Message}", "Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Error deleting user: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        private async void BtnViewAuditLog_Click(object sender, EventArgs e)
+        private void BtnViewAuditLog_Click(object sender, EventArgs e)
         {
             if (dgvUsers.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a user to view audit log.", "No Selection",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a user to view audit log.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             var userName = dgvUsers.SelectedRows[0].Cells["UserName"].Value.ToString();
-
-            try
-            {
-                var logs = await _httpClient.GetFromJsonAsync<List<AuditLog>>($"api/auditlog/user/{Uri.EscapeDataString(userName)}");
-
-                if (logs != null && logs.Any())
-                {
-                    var auditForm = new AuditLogForm(_currentUserName);
-                    auditForm.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show($"No audit log entries found for {userName}.", "No Records",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading audit log: {ex.Message}", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            var auditForm = new AuditLogForm(userName);
+            auditForm.ShowDialog();
         }
 
         private async void BtnToggleAdmin_Click(object sender, EventArgs e)
         {
             if (dgvUsers.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a user.", "No Selection",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a user.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -170,18 +136,16 @@ namespace FormsUI
             var userName = selectedRow.Cells["UserName"].Value.ToString();
             var currentRole = selectedRow.Cells["Role"].Value.ToString();
 
-            if (userName.ToLower() == "admin")
+            if (userName.Equals("admin", StringComparison.OrdinalIgnoreCase))
             {
-                MessageBox.Show("Cannot modify the admin account role.", "Cannot Modify",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Cannot modify the admin account role.", "Cannot Modify", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             var newRole = currentRole.Equals("Admin", StringComparison.OrdinalIgnoreCase) ? "User" : "Admin";
             var action = newRole == "Admin" ? "grant admin privileges to" : "revoke admin privileges from";
 
-            if (MessageBox.Show($"Are you sure you want to {action} {userName}?",
-                "Confirm Role Change", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show($"Are you sure you want to {action} {userName}?", "Confirm Role Change", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try
                 {
@@ -193,21 +157,18 @@ namespace FormsUI
 
                         if (response.IsSuccessStatusCode)
                         {
-                            MessageBox.Show($"User role updated to {newRole}.", "Success",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show($"User role updated to {newRole}.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             await LoadUsersAsync();
                         }
                         else
                         {
-                            MessageBox.Show("Failed to update user role.", "Error",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Failed to update user role.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error updating role: {ex.Message}", "Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Error updating role: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

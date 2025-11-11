@@ -13,6 +13,6 @@
 using ItemDataLibrary.Models;
 
 namespace ITS152L_Project.Repositories.Interfaces
-{
-    public interface IItemRepository: IRepository<ItemModel> { } //Extends Generic Interface Repository (uses generic CRUD repository operations)
+{    public interface IItemRepository: IRepository<ItemModel> { } //Extends Generic Interface Repository (uses generic CRUD repository operations)
+
 }

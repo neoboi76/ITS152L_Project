@@ -120,33 +120,34 @@ namespace FormsUI
                 {
                     try
                     {
-                        var csv = new System.Text.StringBuilder();
-                        csv.AppendLine("Timestamp,User,Action,Details");
+                        var sb = new StringBuilder();
+                        sb.AppendLine("Timestamp,User,Action,Details");
 
-                        var logs = dgvAuditLog.DataSource as List<dynamic>;
-                        if (logs != null)
+                        foreach (DataGridViewRow row in dgvAuditLog.Rows)
                         {
-                            foreach (var log in logs)
-                            {
-                                csv.AppendLine($"\"{log.Timestamp:MM/dd/yyyy HH:mm:ss}\"," +
-                                             $"\"{log.User}\"," +
-                                             $"\"{log.Action}\"," +
-                                             $"\"{log.Details}\"");
-                            }
+                            if (row.IsNewRow) continue;
+
+                            object tsObj = row.Cells["Timestamp"].Value;
+                            string timestamp = tsObj is DateTime dt ? dt.ToString("MM/dd/yyyy HH:mm:ss") : tsObj?.ToString() ?? "";
+                            string user = row.Cells["User"].Value?.ToString() ?? "";
+                            string action = row.Cells["Action"].Value?.ToString() ?? "";
+                            string details = row.Cells["Details"].Value?.ToString() ?? "";
+
+                            string EscapeCsv(string s) => $"\"{s.Replace("\"", "\"\"").Replace("\r\n", " ").Replace("\n", " ")}\"";
+
+                            sb.AppendLine($"{EscapeCsv(timestamp)},{EscapeCsv(user)},{EscapeCsv(action)},{EscapeCsv(details)}");
                         }
 
-                        System.IO.File.WriteAllText(saveFileDialog.FileName, csv.ToString());
-                        MessageBox.Show("Audit log exported successfully!", "Success",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        System.IO.File.WriteAllText(saveFileDialog.FileName, sb.ToString(), Encoding.UTF8);
+                        MessageBox.Show("Audit log exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show($"Error exporting: {ex.Message}", "Error",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"Error exporting: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
-        }
 
+        }
     }
 }
