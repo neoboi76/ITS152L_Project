@@ -611,12 +611,15 @@ For questions, suggestions, or collaboration opportunities:
 
 ---
 
-<dlv align="center>
-  <dt><strong>Te·le·o·plexy</strong></dt>
-  <dd>
-    <em>(noun) — (self-reinforcing) cybernetic intensification;</em><br>
-    describes the wave-length of machines, escaping in the direction of extreme ultra-violet among the cosmic rays.
-  </dd>
-  <dd><small>Made by Group 9</small></dd>
-</v>
+<div align="center">
+  <dl>
+    <dt><strong>Te·le·o·plexy</strong></dt>
+    <dd>
+      <em>(noun) — (self-reinforcing) cybernetic intensification;</em><br>
+      describes the wave-length of machines, escaping in the direction of extreme ultra-violet among the cosmic rays.
+    </dd>
+    <dd><small>Made by Group 9</small></dd>
+  </dl>
+</div>
+
 
